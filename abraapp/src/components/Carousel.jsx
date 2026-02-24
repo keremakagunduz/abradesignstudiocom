@@ -51,7 +51,7 @@ const Carousel = ({ projects }) => {
             </Link>
           </div>
 
-          <div className={styles.overlay}>
+          <div className=''>
             <div>
               <h3 className={styles.title}>
                 {projects[currentIndex].title}
