@@ -16,7 +16,7 @@ class ProjectSerializer(serializers.ModelSerializer):
         fields = [
             'id', 'title', 'subtitle', 'display_priority', 'cover_image',
             'secondary_cover_image',
-            'summary', 'published_date', 'categories', 'artworks'
+            'summary', 'published_date', 'categories'#, 'artworks'
         ]
 
 
