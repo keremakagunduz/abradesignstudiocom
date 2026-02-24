@@ -1,0 +1,12 @@
+# Django / Python defaults
+*.pyc
+__pycache__/
+db.sqlite3
+
+# Optional: virtualenv, IDE files, etc.
+env/
+*.env
+*.log
+
+.next/cache
+.vite-cache
