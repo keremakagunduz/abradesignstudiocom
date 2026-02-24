@@ -54,7 +54,7 @@ export default function Header() {
         
           {/* Logo */}
           <img
-            src=""
+            src="https://d3hojcyp0aupte.cloudfront.net/asset/Abra_Logo_png.png"
             alt="Abra Design Studio"
             /*className="md:m-8 md:flex xl:max-w-5xl min-w-24 mr-4"*/
             className="max-w-110 md:mt-8 md:mr-8 md:mb-8 md:flex sm:max-w-full xl:max-w-3xl 2xl:max-w-3xl"
