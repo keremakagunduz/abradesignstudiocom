@@ -16,7 +16,6 @@ AWS_DEFAULT_ACL = 'public-read'
 AWS_QUERYSTRING_AUTH = False
 
 # Use the CloudFront domain (no custom CNAME)
-#AWS_S3_CUSTOM_DOMAIN = 'd1rl7dsydr917k.cloudfront.net'
 AWS_S3_CUSTOM_DOMAIN = 'd2ovy8bzbteauw.cloudfront.net'
 
 
