@@ -4,8 +4,7 @@ from corsheaders.defaults import default_headers, default_methods
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-#AWS_STORAGE_BUCKET_NAME = 'abradesign'
-AWS_STORAGE_BUCKET_NAME = 'imgtransformationstack-s3sampleoriginalimagebucket-gy409xwj8dxi'
+AWS_STORAGE_BUCKET_NAME = 'abradesign'
 AWS_S3_REGION_NAME = 'eu-west-1'
 AWS_S3_SIGNATURE_VERSION = 's3v4'
 
