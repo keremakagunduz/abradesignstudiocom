@@ -63,7 +63,7 @@ export default function Home() {
 
           <>
             {visibleProjects.length === 0 ? (
-              <p className="text-gray-600">No projects in this category.</p>
+              <p className="text-gray-600">No projects in this category. test deneme</p>
             ) : (
               <div className="columns-2 sm:columns-3 md:columns-4 lg:columns-4 xl:columns-4 sm:gap-0 py-1 sm:py-3 mx-0 xl:mx-12">
               </div>
