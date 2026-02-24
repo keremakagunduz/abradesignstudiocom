@@ -57,25 +57,6 @@ return (
   const isSketchbook = project.categories && project.categories.length > 0 && project.categories[0].id === 4;
   return (
     <>
-    {isSketchbook ? (
-    <li key={project.id} className={styles.item}>
-      <button
-        onClick={() => openAt(idx)}
-        className="border rounded overflow-hidden bg-white shadow-sm focus:outline-none">
-
-        <article className={styles.card} ref={cardRef}>
-          <div className={styles.thumbnail}>
-              <img
-                src={imageLoader(project.cover_image, 400)}
-                alt={project.title}
-                loading="lazy"/>
-          </div>
-        </article>
-      </button>
-    </li>
-
-    ) : (
-
     <li className={styles.item}>
       <article className={styles.card} ref={cardRef}>
         <div className={styles.thumbnail}>
@@ -105,7 +86,7 @@ return (
         </Link>
       </article>
     </li>
-        )}
+        
         </>
       );
       })}
