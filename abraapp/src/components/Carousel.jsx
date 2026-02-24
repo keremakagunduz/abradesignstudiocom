@@ -44,7 +44,7 @@ const Carousel = ({ projects }) => {
           <div className={styles.thumbnail}>
             <Link to={`/projects/${projects[currentIndex].id}`} aria-label={projects[currentIndex].title}>
               <img
-                src={imageLoader(projects[currentIndex].cover_image, 800)}
+                src={imageLoader(projects[currentIndex].cover_image, 1200)}
                 alt={projects[currentIndex].title}
                 loading="lazy"
               />
