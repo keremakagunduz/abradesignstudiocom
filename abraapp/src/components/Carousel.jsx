@@ -2,7 +2,7 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { Link } from 'react-router-dom';
 import styles from './Carousel/carousel.module.css';
-import Lightbox from "./Lightbox";
+
 
 const imageLoader = (src, width, quality) => {
   return `${src}?format=auto${quality ? `&quality=${quality}` : ''}&width=${width}`;
@@ -110,16 +110,6 @@ return (
       );
       })}
 
-      {isOpen && (
-        <Lightbox
-          artworks={projects}
-          index={currentIdx}
-          onClose={close}
-          onPrev={prev}
-          onNext={next}
-          category={4}
-        />
-      )}
     </>
   );
 }
