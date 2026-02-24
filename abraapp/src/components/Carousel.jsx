@@ -1,6 +1,6 @@
 import React, { useEffect, useState, useRef } from 'react';
 import { Link } from 'react-router-dom';
-import styles from './carousel.module.css'; // Adjust according to your styles
+import styles from '.Carousel/carousel.module.css'; // Adjust according to your styles
 import imageLoader from './imageLoader'; // Adjust according to your image loader
 
 const Carousel = ({ projects }) => {
