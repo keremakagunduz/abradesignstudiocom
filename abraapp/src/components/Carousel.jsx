@@ -1,96 +1,70 @@
-// src/components/ProjectCard/ProjectCard.jsx
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useEffect, useState, useRef } from 'react';
 import { Link } from 'react-router-dom';
-import styles from './Carousel/carousel.module.css';
+import styles from './Carousel.module.css'; // Adjust according to your styles
+import imageLoader from './imageLoader'; // Adjust according to your image loader
 
-
-const imageLoader = (src, width, quality) => {
-  return `${src}?format=auto${quality ? `&quality=${quality}` : ''}&width=${width}`;
-};
-
-export default function ProjectCard({ projects = [] }) {
-  const cardRef = useRef(null);
-
-  const resizeItem = () => {
-    if (!cardRef.current) return;
-
-    // the <ul> that holds the grid
-    const grid = cardRef.current.closest('ul');
-    if (!grid) return;
-
-    const rowHeight = parseInt(
-      getComputedStyle(grid).getPropertyValue('grid-auto-rows')
-    );
-    const rowGap = parseInt(getComputedStyle(grid).getPropertyValue('gap'));
-
-    const itemHeight = cardRef.current.getBoundingClientRect().height;
-    const rowSpan = Math.ceil((itemHeight + rowGap) / (rowHeight + rowGap));
-
-    const li = cardRef.current.parentElement;
-    if (li) li.style.gridRowEnd = `span ${rowSpan}`;
-  };
+const Carousel = ({ projects }) => {
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const intervalRef = useRef(null);
 
   useEffect(() => {
-    resizeItem();
-    window.addEventListener('resize', resizeItem);
-    return () => window.removeEventListener('resize', resizeItem);
-  }, [projects]);
+    // Change image every 3 seconds
+    intervalRef.current = setInterval(() => {
+      setCurrentIndex((prevIndex) =>
+        prevIndex === projects.length - 1 ? 0 : prevIndex + 1
+      );
+    }, 3000);
 
-  const [isOpen, setIsOpen] = useState(false);
-  const [currentIdx, setCurrentIdx] = useState(0);
+    return () => {
+      clearInterval(intervalRef.current);
+    };
+  }, [projects.length]);
 
-  const openAt = (idx) => {
-  console.log('Opening at index:', idx);
-  console.log('Projects:', projects);
-    setCurrentIdx(idx);
-    setIsOpen(true);
+  const goToNext = () => {
+    setCurrentIndex((prevIndex) =>
+      prevIndex === projects.length - 1 ? 0 : prevIndex + 1
+    );
   };
-  const close = () => setIsOpen(false);
-  const prev = () =>
-    setCurrentIdx((i) => (i === 0 ? projects.length - 1 : i - 1));
-  const next = () =>
-    setCurrentIdx((i) => (i === projects.length - 1 ? 0 : i + 1));
 
-return (
-<>
-{projects.map((project, idx) => {
-  const isSketchbook = project.categories && project.categories.length > 0 && project.categories[0].id === 4;
+  const goToPrevious = () => {
+    setCurrentIndex((prevIndex) =>
+      prevIndex === 0 ? projects.length - 1 : prevIndex - 1
+    );
+  };
+
   return (
-    <>
-    <li className={styles.item}>
-      <article className={styles.card} ref={cardRef}>
-        <div className={styles.thumbnail}>
-          <Link to={`/projects/${project.id}`} aria-label={project.title}>
-            <img
-              src={imageLoader(project.cover_image, 400)}
-              alt={project.title}
-              loading="lazy"
-            />
-          </Link>
-        </div>
-
-        <Link
-          to={`/projects/${project.id}`}
-          aria-label={project.title}
-          style={{ color: 'inherit', textDecoration: 'none' }}>
+    <div className={styles.carousel}>
+      <div className={styles.carouselItem}>
+        <article className={styles.card}>
+          <div className={styles.thumbnail}>
+            <Link to={`/projects/${projects[currentIndex].id}`} aria-label={projects[currentIndex].title}>
+              <img
+                src={imageLoader(projects[currentIndex].cover_image, 800)}
+                alt={projects[currentIndex].title}
+                loading="lazy"
+              />
+            </Link>
+          </div>
 
           <div className={styles.overlay}>
             <div>
               <h3 className={styles.title}>
-                  {project.title}
+                {projects[currentIndex].title}
               </h3>
-              {project.subtitle && (<p className={styles.subtitle}>{project.subtitle}</p>)}
+              {projects[currentIndex].subtitle && (
+                <p className={styles.subtitle}>{projects[currentIndex].subtitle}</p>
+              )}
             </div>
           </div>
-        
-        </Link>
-      </article>
-    </li>
-        
-        </>
-      );
-      })}
-
-    </>
+        </article>
+      </div>
+      
+      <div className={styles.navigation}>
+        <button onClick={goToPrevious} className={styles.navButton}>Prev</button>
+        <button onClick={goToNext} className={styles.navButton}>Next</button>
+      </div>
+    </div>
   );
-}
+};
+
+export default Carousel;
