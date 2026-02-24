@@ -13,7 +13,7 @@ router.register(r'categories', CategoryViewSet)
 urlpatterns = [
     path('', ReactAppView.as_view(), name='home'),
     path('admin/', admin.site.urls),
-    #path('api/', include(router.urls)),
+    path('api/', include(router.urls)),
     #path("api/subscribe/", SubscribeCreateView.as_view(), name="api-subscribe"),
 
 ]
