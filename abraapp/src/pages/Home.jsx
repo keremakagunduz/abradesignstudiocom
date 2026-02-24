@@ -1,6 +1,7 @@
 import { useEffect, useState, useMemo } from 'react';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
+import Carousel from '../components/Carousel';
 import { fetchProjects } from '../api/portfolio';
 
 export default function Home() {
@@ -66,7 +67,7 @@ export default function Home() {
               <p className="text-gray-600">No projects in this category. test deneme</p>
             ) : (
               <div className="columns-2 sm:columns-3 md:columns-4 lg:columns-4 xl:columns-4 sm:gap-0 py-1 sm:py-3 mx-0 xl:mx-12">
-                <ProjectCard projects={visibleProjects} />
+                <Carousel projects={visibleProjects} />
               </div>
             )}
           </>
