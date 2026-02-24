@@ -1,7 +1,12 @@
 import React, { useEffect, useState, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import styles from '.Carousel/carousel.module.css'; // Adjust according to your styles
-import imageLoader from './imageLoader'; // Adjust according to your image loader
+
+
+const imageLoader = (src, width, quality) => {
+  return `${src}?format=auto${quality ? `&quality=${quality}` : ''}&width=${width}`;
+};
+
 
 const Carousel = ({ projects }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
