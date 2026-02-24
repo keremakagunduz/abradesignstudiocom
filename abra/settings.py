@@ -16,8 +16,8 @@ AWS_DEFAULT_ACL = 'public-read'
 AWS_QUERYSTRING_AUTH = False
 
 # Use the CloudFront domain (no custom CNAME)
-AWS_S3_CUSTOM_DOMAIN = 'd2ovy8bzbteauw.cloudfront.net'
-
+#AWS_S3_CUSTOM_DOMAIN = 'd2ovy8bzbteauw.cloudfront.net'
+AWS_S3_CUSTOM_DOMAIN = 'd3hojcyp0aupte.cloudfront.net'
 
 # Media files (ImageField, FileField) will use this base URL
 MEDIA_URL = f'https://{AWS_S3_CUSTOM_DOMAIN}/'
