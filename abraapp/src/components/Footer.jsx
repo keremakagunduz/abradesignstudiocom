@@ -59,7 +59,9 @@ const Footer = () => (
               </svg>
             </a>
         </div>
-        <p className="mt-4 text-base leading-6 text-center text-gray-400">© Abra Design Studio</p>
+
+        <p className="mt-4 text-base leading-6 text-center text-gray-400">info@abradesignstudio.com</p>
+        <p className="mt-4 text-base leading-6 text-center text-gray-400">+90 505 251 8358</p>
         <p className="mt-1 text-base leading-6 text-center text-gray-400">
           Copyrights of all pictures published on this website are reserved by
           Abra Design Studio. No material published here can be copied, reproduced,

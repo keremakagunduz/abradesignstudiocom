@@ -50,17 +50,6 @@ const Carousel = ({ projects }) => {
               />
             </Link>
           </div>
-
-          <div className=''>
-            <div>
-              <h3 className={styles.title}>
-                {projects[currentIndex].title}
-              </h3>
-              {projects[currentIndex].subtitle && (
-                <p className={styles.subtitle}>{projects[currentIndex].subtitle}</p>
-              )}
-            </div>
-          </div>
         </article>
       </div>
       
