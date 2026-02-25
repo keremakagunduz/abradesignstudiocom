@@ -72,15 +72,17 @@ export default function Home() {
             {allProjects.length === 0 ? (
               <p className="text-gray-600">No projects in this category. test deneme</p>
             ) : (
-              <div className="w-full">
-          <img
-            src={imageLoader("https://d3hojcyp0aupte.cloudfront.net/asset/Abra_Logo_png.png", 800)}
-            alt="Abra Design Studio"
-            /*className="md:m-8 md:flex xl:max-w-5xl min-w-24 mr-4"*/
-            className="max-w-50"
-          />
-                <Carousel projects={allProjects} />
-              </div>
+        <div className="relative w-full">
+            {/* Transparent Overlay Container */}
+            <div className="absolute inset-0 bg-white bg-opacity-50 flex items-center justify-center">
+                <img
+                    src={imageLoader("https://d3hojcyp0aupte.cloudfront.net/asset/Abra_Logo_png.png", 800)}
+                    alt="Abra Design Studio"
+                    className="max-w-50 mx-auto"
+                />
+            </div>
+            <Carousel projects={allProjects} />
+        </div>
             )}
         <div className="block">
           <div className="block xl:p-48 justify-items-center">
