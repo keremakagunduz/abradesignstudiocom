@@ -3,6 +3,7 @@ import Header from '../components/Header';
 import Footer from '../components/Footer';
 import Carousel from '../components/Carousel';
 import { fetchProjects } from '../api/portfolio';
+import { Link, useLocation } from "react-router-dom";
 
 export default function Home() {
   const [projects, setProjects] = useState([]);
