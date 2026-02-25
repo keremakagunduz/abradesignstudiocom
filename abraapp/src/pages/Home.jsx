@@ -85,7 +85,7 @@ export default function Home() {
               </div>
             )}
 
-          <div className={styles.about-us}>
+          <div className={styles.aboutus}>
             <h2>ABRA DESIGN STUDIO</h2>
               <p className="mt-1 text-base leading-6 text-center text-gray-400">
                 2014 yılında Başak Bakkaloğlu ve Cemal Çobanoğlu tarafından İstanbul’da kurulan ABRA
@@ -105,7 +105,7 @@ export default function Home() {
               </p>
             <div className={styles.profiles}>
                 <div className={styles.profile}>
-                    <img src="https://d3hojcyp0aupte.cloudfront.net/asset/Başak_Bakkaloğlu.jpg" alt="Profile 1" className={styles.profile-pic} />
+                    <img src="https://d3hojcyp0aupte.cloudfront.net/asset/Başak_Bakkaloğlu.jpg" alt="Profile 1" className={styles.profilepic} />
                     <h3>Başak Bakkaloğlu</h3>
                     
                     <p>Lisans eğitimini İ.T.Ü. Mimarlık Fakültesi, Mimarlık Bölümü’nde tamamladı. 
@@ -117,7 +117,7 @@ export default function Home() {
                       Pek çok konferans ve söyleşide konuşmacı olarak yer aldı.</p>
                 </div>
                 <div className={styles.profile}>
-                    <img src="https://d3hojcyp0aupte.cloudfront.net/asset/Cemal_Çobanoğlu.jpg" alt="Profile 2" className={styles.profile-pic} />
+                    <img src="https://d3hojcyp0aupte.cloudfront.net/asset/Cemal_Çobanoğlu.jpg" alt="Profile 2" className={styles.profilepic} />
                     <h3>Cemal Çobanoğlu</h3>
                     
                     <p>Lisans eğitimini İ.T.Ü. Mimarlık Fakültesi, İç Mimarlık Bölümü’nde, yüksek lisans eğitimini  ise IMIAD’da tamamladı. 

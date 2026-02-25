@@ -1,4 +1,4 @@
-.about-us {
+.aboutus {
     text-align: center;
     padding: 20px;
 }
@@ -16,7 +16,7 @@
     border-radius: 8px;
 }
 
-.profile-pic {
+.profilepic {
     width: 100%; /* Ensure the image fits the container */
     border-radius: 50%; /* For circular profile pictures */
 }
