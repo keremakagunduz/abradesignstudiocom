@@ -110,7 +110,7 @@ export default function Home() {
             </div>
             <div className="flex">
                 <div className="block xl:mx-36">
-                    <img src={imageLoader("https://d3hojcyp0aupte.cloudfront.net/asset/Başak_Bakkaloğlu.jpg", 800)} alt="Profile 1" className={styles.profilepic} />
+                    <img src={imageLoader("https://d3hojcyp0aupte.cloudfront.net/asset/Başak_Bakkaloğlu.jpg", 400)} alt="Profile 1" className={styles.profilepic} />
                     <h3>Başak Bakkaloğlu</h3>
                     
                     <p>Lisans eğitimini İ.T.Ü. Mimarlık Fakültesi, Mimarlık Bölümü’nde tamamladı. 
@@ -122,7 +122,7 @@ export default function Home() {
                       Pek çok konferans ve söyleşide konuşmacı olarak yer aldı.</p>
                 </div>
                 <div className="block xl:mx-36">
-                    <img src={imageLoader("https://d3hojcyp0aupte.cloudfront.net/asset/Cemal_Çobanoğlu.jpg", 800)} alt="Profile 2" className={styles.profilepic} />
+                    <img src={imageLoader("https://d3hojcyp0aupte.cloudfront.net/asset/Cemal_Çobanoğlu.jpg", 400)} alt="Profile 2" className={styles.profilepic} />
                     <h3>Cemal Çobanoğlu</h3>
                     
                     <p>Lisans eğitimini İ.T.Ü. Mimarlık Fakültesi, İç Mimarlık Bölümü’nde, yüksek lisans eğitimini  ise IMIAD’da tamamladı. 
