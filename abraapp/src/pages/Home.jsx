@@ -73,15 +73,14 @@ export default function Home() {
               <p className="text-gray-600">No projects in this category. test deneme</p>
             ) : (
         <div className="relative w-full">
-            {/* Transparent Overlay Container */}
-            <div className="absolute inset-0 bg-white bg-opacity-50 flex items-center justify-center">
+            <Carousel projects={allProjects} />
+            <div className="absolute inset-0 bg-white bg-opacity-50 flex w-fit h-fit place-self-center p-24">
                 <img
                     src={imageLoader("https://d3hojcyp0aupte.cloudfront.net/asset/Abra_Logo_png.png", 800)}
                     alt="Abra Design Studio"
                     className="max-w-50 mx-auto"
                 />
             </div>
-            <Carousel projects={allProjects} />
         </div>
             )}
         <div className="block">
