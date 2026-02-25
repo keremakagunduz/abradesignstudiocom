@@ -73,18 +73,12 @@ export default function Home() {
               <p className="text-gray-600">No projects in this category. test deneme</p>
             ) : (
               <div className="w-full">
-        <div className="h-auto max-w-full">
-        <Link to="/" className="flex items-center space-x-3">
-        
-          {/* Logo */}
           <img
             src={imageLoader("https://d3hojcyp0aupte.cloudfront.net/asset/Abra_Logo_png.png", 800)}
             alt="Abra Design Studio"
             /*className="md:m-8 md:flex xl:max-w-5xl min-w-24 mr-4"*/
             className="max-w-50"
           />
-          </Link>
-          </div>
                 <Carousel projects={allProjects} />
               </div>
             )}
@@ -109,7 +103,7 @@ export default function Home() {
               </p>
             </div>
             <div className="flex">
-                <div className="block xl:mx-36">
+                <div className="block xl:mx-36 justify-items-center">
                     <img src={imageLoader("https://d3hojcyp0aupte.cloudfront.net/asset/Başak_Bakkaloğlu.jpg", 400)} alt="Profile 1" className={styles.profilepic} />
                     <h3>Başak Bakkaloğlu</h3>
                     
@@ -121,7 +115,7 @@ export default function Home() {
                       Tasarımları yurt içinde ve yurt dışında pek çok farklı sergi ve yayında yer aldı. Mobilya tasarımı yarışmalarında çeşitli ödüller aldı. 
                       Pek çok konferans ve söyleşide konuşmacı olarak yer aldı.</p>
                 </div>
-                <div className="block xl:mx-36">
+                <div className="block xl:mx-36 justify-items-center">
                     <img src={imageLoader("https://d3hojcyp0aupte.cloudfront.net/asset/Cemal_Çobanoğlu.jpg", 400)} alt="Profile 2" className={styles.profilepic} />
                     <h3>Cemal Çobanoğlu</h3>
                     
