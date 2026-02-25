@@ -37,25 +37,3 @@
   }
 }
 
-.about-us {
-    text-align: center;
-    padding: 20px;
-}
-
-.profiles {
-    display: flex;
-    justify-content: center;
-    gap: 20px; /* Adjust the spacing between columns */
-}
-
-.profile {
-    width: 250px; /* Set a fixed width for each profile */
-    border: 1px solid #ccc; /* Optional, for better visibility */
-    padding: 10px;
-    border-radius: 8px;
-}
-
-.profile-pic {
-    width: 100%; /* Ensure the image fits the container */
-    border-radius: 50%; /* For circular profile pictures */
-}

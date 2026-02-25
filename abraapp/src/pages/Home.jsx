@@ -4,7 +4,7 @@ import Footer from '../components/Footer';
 import Carousel from '../components/Carousel';
 import { fetchProjects } from '../api/portfolio';
 import { Link, useLocation } from "react-router-dom";
-import styles from '../../App.css';
+import styles from '../home.css';
 
 export default function Home() {
   const [projects, setProjects] = useState([]);
