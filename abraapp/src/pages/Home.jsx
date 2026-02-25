@@ -84,8 +84,8 @@ export default function Home() {
                 <Carousel projects={allProjects} />
               </div>
             )}
-
-          <div className={styles.aboutus}>
+        <div className="flex">
+          <div className="flex">
             <h2>ABRA DESIGN STUDIO</h2>
               <p className="mt-1 text-base leading-6 text-center text-gray-400">
                 2014 yılında Başak Bakkaloğlu ve Cemal Çobanoğlu tarafından İstanbul’da kurulan ABRA
@@ -103,8 +103,9 @@ export default function Home() {
                 buldu, İstanbul Senin Kent Mobilyaları Yarışması birinciliği başta olmak üzere, çeşitli
                 yarışmalarda farklı derecelerde ödüller aldı.
               </p>
-            <div className={styles.profiles}>
-                <div className={styles.profile}>
+            </div>
+            <div className="flex flex-col">
+                <div className="flex">
                     <img src="https://d3hojcyp0aupte.cloudfront.net/asset/Başak_Bakkaloğlu.jpg" alt="Profile 1" className={styles.profilepic} />
                     <h3>Başak Bakkaloğlu</h3>
                     
@@ -116,7 +117,7 @@ export default function Home() {
                       Tasarımları yurt içinde ve yurt dışında pek çok farklı sergi ve yayında yer aldı. Mobilya tasarımı yarışmalarında çeşitli ödüller aldı. 
                       Pek çok konferans ve söyleşide konuşmacı olarak yer aldı.</p>
                 </div>
-                <div className={styles.profile}>
+                <div className="flex">
                     <img src="https://d3hojcyp0aupte.cloudfront.net/asset/Cemal_Çobanoğlu.jpg" alt="Profile 2" className={styles.profilepic} />
                     <h3>Cemal Çobanoğlu</h3>
                     
