@@ -84,8 +84,8 @@ export default function Home() {
                 <Carousel projects={allProjects} />
               </div>
             )}
-        <div className="flex">
-          <div className="flex">
+        <div className="block">
+          <div className="block p-6">
             <h2>ABRA DESIGN STUDIO</h2>
               <p className="mt-1 text-base leading-6 text-center text-gray-400">
                 2014 yılında Başak Bakkaloğlu ve Cemal Çobanoğlu tarafından İstanbul’da kurulan ABRA
@@ -105,7 +105,7 @@ export default function Home() {
               </p>
             </div>
             <div className="flex flex-col">
-                <div className="flex">
+                <div className="block mx-12">
                     <img src="https://d3hojcyp0aupte.cloudfront.net/asset/Başak_Bakkaloğlu.jpg" alt="Profile 1" className={styles.profilepic} />
                     <h3>Başak Bakkaloğlu</h3>
                     
@@ -117,7 +117,7 @@ export default function Home() {
                       Tasarımları yurt içinde ve yurt dışında pek çok farklı sergi ve yayında yer aldı. Mobilya tasarımı yarışmalarında çeşitli ödüller aldı. 
                       Pek çok konferans ve söyleşide konuşmacı olarak yer aldı.</p>
                 </div>
-                <div className="flex">
+                <div className="block mx-12">
                     <img src="https://d3hojcyp0aupte.cloudfront.net/asset/Cemal_Çobanoğlu.jpg" alt="Profile 2" className={styles.profilepic} />
                     <h3>Cemal Çobanoğlu</h3>
                     
@@ -135,9 +135,7 @@ export default function Home() {
         </div>
   
           </>
-        
-        {loading && <p className="text-gray-600">Loading more projects...</p>}
-      </main>
+              </main>
       <Footer />
     </>
   );
