@@ -103,8 +103,8 @@ export default function Home() {
                 yarışmalarda farklı derecelerde ödüller aldı.
               </p>
             </div>
-            <div className="flex flex-col">
-                <div className="block xl:mx-96">
+            <div className="flex">
+                <div className="block xl:mx-36">
                     <img src="https://d3hojcyp0aupte.cloudfront.net/asset/Başak_Bakkaloğlu.jpg" alt="Profile 1" className={styles.profilepic} />
                     <h3>Başak Bakkaloğlu</h3>
                     
@@ -116,7 +116,7 @@ export default function Home() {
                       Tasarımları yurt içinde ve yurt dışında pek çok farklı sergi ve yayında yer aldı. Mobilya tasarımı yarışmalarında çeşitli ödüller aldı. 
                       Pek çok konferans ve söyleşide konuşmacı olarak yer aldı.</p>
                 </div>
-                <div className="block xl:mx-96">
+                <div className="block xl:mx-36">
                     <img src="https://d3hojcyp0aupte.cloudfront.net/asset/Cemal_Çobanoğlu.jpg" alt="Profile 2" className={styles.profilepic} />
                     <h3>Cemal Çobanoğlu</h3>
                     
