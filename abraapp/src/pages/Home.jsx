@@ -4,6 +4,7 @@ import Footer from '../components/Footer';
 import Carousel from '../components/Carousel';
 import { fetchProjects } from '../api/portfolio';
 import { Link, useLocation } from "react-router-dom";
+import styles from '../../App.css';
 
 export default function Home() {
   const [projects, setProjects] = useState([]);
@@ -84,7 +85,7 @@ export default function Home() {
               </div>
             )}
 
-          <div className="about-us">
+          <div className={styles.about-us}>
             <h2>ABRA DESIGN STUDIO</h2>
               <p className="mt-1 text-base leading-6 text-center text-gray-400">
                 2014 yılında Başak Bakkaloğlu ve Cemal Çobanoğlu tarafından İstanbul’da kurulan ABRA
@@ -102,9 +103,9 @@ export default function Home() {
                 buldu, İstanbul Senin Kent Mobilyaları Yarışması birinciliği başta olmak üzere, çeşitli
                 yarışmalarda farklı derecelerde ödüller aldı.
               </p>
-            <div className="profiles">
-                <div className="profile">
-                    <img src="https://d3hojcyp0aupte.cloudfront.net/asset/Başak_Bakkaloğlu.jpg" alt="Profile 1" className="profile-pic" />
+            <div className={styles.profiles}>
+                <div className={styles.profile}>
+                    <img src="https://d3hojcyp0aupte.cloudfront.net/asset/Başak_Bakkaloğlu.jpg" alt="Profile 1" className={styles.profile-pic} />
                     <h3>Başak Bakkaloğlu</h3>
                     
                     <p>Lisans eğitimini İ.T.Ü. Mimarlık Fakültesi, Mimarlık Bölümü’nde tamamladı. 
@@ -115,8 +116,8 @@ export default function Home() {
                       Tasarımları yurt içinde ve yurt dışında pek çok farklı sergi ve yayında yer aldı. Mobilya tasarımı yarışmalarında çeşitli ödüller aldı. 
                       Pek çok konferans ve söyleşide konuşmacı olarak yer aldı.</p>
                 </div>
-                <div className="profile">
-                    <img src="https://d3hojcyp0aupte.cloudfront.net/asset/Cemal_Çobanoğlu.jpg" alt="Profile 2" className="profile-pic" />
+                <div className={styles.profile}>
+                    <img src="https://d3hojcyp0aupte.cloudfront.net/asset/Cemal_Çobanoğlu.jpg" alt="Profile 2" className={styles.profile-pic} />
                     <h3>Cemal Çobanoğlu</h3>
                     
                     <p>Lisans eğitimini İ.T.Ü. Mimarlık Fakültesi, İç Mimarlık Bölümü’nde, yüksek lisans eğitimini  ise IMIAD’da tamamladı. 
