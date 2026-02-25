@@ -76,8 +76,7 @@ export default function Home() {
             src="https://d3hojcyp0aupte.cloudfront.net/asset/Abra_Logo_png.png"
             alt="Abra Design Studio"
             /*className="md:m-8 md:flex xl:max-w-5xl min-w-24 mr-4"*/
-            className="max-w-110 md:mt-8 md:mr-8 md:mb-8 md:flex sm:max-w-full xl:max-w-3xl 2xl:max-w-3xl"
-            style={{ maxHeight: '21rem'}}
+            className="max-w-50"
           />
           </Link>
           </div>
@@ -85,7 +84,7 @@ export default function Home() {
               </div>
             )}
         <div className="block">
-          <div className="block p-48 justify-items-center">
+          <div className="block xl:p-48 justify-items-center">
             <h2>ABRA DESIGN STUDIO</h2>
               <p className="mt-1 text-base leading-6 text-center text-gray-400">
                 2014 yılında Başak Bakkaloğlu ve Cemal Çobanoğlu tarafından İstanbul’da kurulan ABRA
@@ -105,7 +104,7 @@ export default function Home() {
               </p>
             </div>
             <div className="flex flex-col">
-                <div className="block mx-96">
+                <div className="block xl:mx-96">
                     <img src="https://d3hojcyp0aupte.cloudfront.net/asset/Başak_Bakkaloğlu.jpg" alt="Profile 1" className={styles.profilepic} />
                     <h3>Başak Bakkaloğlu</h3>
                     
@@ -117,7 +116,7 @@ export default function Home() {
                       Tasarımları yurt içinde ve yurt dışında pek çok farklı sergi ve yayında yer aldı. Mobilya tasarımı yarışmalarında çeşitli ödüller aldı. 
                       Pek çok konferans ve söyleşide konuşmacı olarak yer aldı.</p>
                 </div>
-                <div className="block mx-96">
+                <div className="block xl:mx-96">
                     <img src="https://d3hojcyp0aupte.cloudfront.net/asset/Cemal_Çobanoğlu.jpg" alt="Profile 2" className={styles.profilepic} />
                     <h3>Cemal Çobanoğlu</h3>
                     
