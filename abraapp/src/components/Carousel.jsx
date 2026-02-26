@@ -38,8 +38,7 @@ const Carousel = ({ projects }) => {
   };
 
   return (
-    <div className={styles.carousel}>
-      <div className={styles.carouselItem}>
+    <>
         <article className={styles.card}>
           <div className={styles.thumbnail}>
               <img
@@ -49,13 +48,13 @@ const Carousel = ({ projects }) => {
               />
           </div>
         </article>
-      </div>
       
       <div className={styles.navigation}>
         <button onClick={goToPrevious} className={styles.navButton}>Prev</button>
         <button onClick={goToNext} className={styles.navButton}>Next</button>
       </div>
-    </div>
+    
+    </>
   );
 };
 

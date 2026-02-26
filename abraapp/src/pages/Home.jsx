@@ -67,7 +67,6 @@ export default function Home() {
   return (
     <>
       <main className="mx-auto p-2 sm:p-4">
-
           <>
             {allProjects.length === 0 ? (
               <p className="text-gray-600">No projects in this category. test deneme</p>
