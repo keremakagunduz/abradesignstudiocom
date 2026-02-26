@@ -42,8 +42,8 @@ const Carousel = ({ projects }) => {
         <article className={styles.card}>
           <div className={styles.thumbnail + "absolute w-[150vh] flex justify-between text-[3rem]"}>
       <div className={styles.navigation + "w-full justify-center pt-24 pb-24 flex"}>
-        <button onClick={goToPrevious} className={styles.navButton}>Prev</button>
-        <button onClick={goToNext} className={styles.navButton}>Next</button>
+        <button onClick={goToPrevious} className={styles.navButton}>&lt;</button>
+        <button onClick={goToNext} className={styles.navButton}>&gt;</button>
       </div>
               <img
                 src={imageLoader(projects[currentIndex].cover_image, 1200)}
