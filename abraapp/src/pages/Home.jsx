@@ -77,7 +77,7 @@ export default function Home() {
                 <img
                     src={imageLoader("https://d3hojcyp0aupte.cloudfront.net/asset/Abra_Logo_png.png", 800)}
                     alt="Abra Design Studio"
-                    className="max-w-50 mx-auto"
+                    className="max-w-50 mx-auto max-h-screen"
                 />
             </div>
         </div>
