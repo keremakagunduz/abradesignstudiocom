@@ -15,7 +15,7 @@ const Footer = () => (
     <div class="max-w-screen-xl px-4 mx-auto overflow-hidden sm:px-6 lg:px-8">
 
         <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-          width="512px" height="512px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+          width="512px" height="512px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" space="preserve">
         <g>
           <path d="M448,64H64C28.656,64,0,92.656,0,128v256c0,35.344,28.656,64,64,64h384c35.344,0,64-28.656,64-64V128
             C512,92.656,483.344,64,448,64z M342.656,234.781l135.469-116.094c0.938,3,1.875,6,1.875,9.313v256
