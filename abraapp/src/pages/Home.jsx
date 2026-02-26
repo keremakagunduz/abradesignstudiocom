@@ -77,7 +77,7 @@ export default function Home() {
                 <img
                     src={imageLoader("https://d3hojcyp0aupte.cloudfront.net/asset/Abra_Logo_png.png", 800)}
                     alt="Abra Design Studio"
-                    className="max-w-50 mx-auto max-h-screen"
+                    className="max-w-50 mx-auto"
                 />
 <svg className="max-w-6" xmlns="http://www.w3.org/2000/svg" data-name="Layer 1" viewBox="0 0 95 118.75" x="0px" y="0px">
 <path d="M82.664,81.539a2.745,2.745,0,0,1-1.45,2.12L72.024,89.2a44.218,44.218,0,0,1-7.933.707c-14.785,0-30.433-7.085-43.22-19.871C5.766,54.932-1.381,
