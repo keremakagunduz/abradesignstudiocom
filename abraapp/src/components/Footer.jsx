@@ -16,9 +16,15 @@ const Footer = () => (
   
     <div class="max-w-screen-xl px-4 mx-auto overflow-hidden sm:px-6 lg:px-8">
 
-        <p className="mt-4 text-base leading-6 text-center text-gray-400"><BsEnvelope />info@abradesignstudio.com</p>
-
-        <p className="mt-4 text-base leading-6 text-center text-gray-400"><FaPhoneAlt />+90 505 251 8358</p>
+        <div>
+        <BsEnvelope />
+        <p className="mt-4 text-base leading-6 text-center text-gray-400">info@abradesignstudio.com</p>
+        </div>
+        
+        <div>
+        <FaPhoneAlt />
+        <p className="mt-4 text-base leading-6 text-center text-gray-400">+90 505 251 8358</p>
+        </div>
 
         <p className="mt-1 text-base leading-6 text-center text-gray-400">
           Copyrights of all pictures published on this website are reserved by
