@@ -5,6 +5,7 @@ import Carousel from '../components/Carousel';
 import { fetchProjects } from '../api/portfolio';
 import { Link, useLocation } from "react-router-dom";
 import styles from '../home.css';
+import ScrollToTop from './ScrollToTop';
 
 const imageLoader = (src, width, quality) => {
   return `${src}?format=auto${quality ? `&quality=${quality}` : ''}&width=${width}`;
@@ -90,6 +91,10 @@ export default function Home() {
             </div>
         </div>
             )}
+<div>
+<ScrollToTop />
+</div>
+
 <div className="block px-6 py-12 lg:px-48">
     <h2 className="text-3xl font-bold text-center text-gray-800 mb-6">ABRA DESIGN STUDIO</h2>
     <p className="mt-2 text-base leading-7 text-center text-gray-500 max-w-2xl mx-auto">
