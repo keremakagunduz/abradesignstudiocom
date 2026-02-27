@@ -75,7 +75,7 @@ export default function Home() {
             ) : (
         <div className="relative w-full">
             <Carousel projects={allProjects} />
-            <div className="absolute inset-0 bg-white bg-opacity-50 flex w-fit h-fit place-self-center p-24">
+            <div className="absolute inset-0 bg-white bg-opacity-50 flex w-full h-fit place-self-center p-24">
                 <img
                     src={imageLoader("https://d3hojcyp0aupte.cloudfront.net/asset/Abra_Logo_png.png", 800)}
                     alt="Abra Design Studio"
