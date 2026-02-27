@@ -5,7 +5,7 @@ import Carousel from '../components/Carousel';
 import { fetchProjects } from '../api/portfolio';
 import { Link, useLocation } from "react-router-dom";
 import styles from '../home.css';
-import ScrollToTop from './ScrollToTop';
+import ScrollToTop from '../components/ScrollToTop';
 
 const imageLoader = (src, width, quality) => {
   return `${src}?format=auto${quality ? `&quality=${quality}` : ''}&width=${width}`;
