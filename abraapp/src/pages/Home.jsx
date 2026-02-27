@@ -73,9 +73,7 @@ export default function Home() {
             {allProjects.length === 0 ? (
               <p className="text-gray-600">No projects in this category. test deneme</p>
             ) : (
-        <div className="">
             <Carousel projects={allProjects} />
-        </div>
             )}
 <div>
 <ScrollToTop />
