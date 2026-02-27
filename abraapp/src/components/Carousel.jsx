@@ -40,7 +40,7 @@ const Carousel = ({ projects }) => {
   return (
     <>
         <article className={styles.card + " items-center"}>
-          <div className={styles.thumbnail + " absolute h-screen flex justify-between text-[3rem]"}>
+          <div className={styles.thumbnail + " absolute h-auto flex justify-between text-[3rem]"}>
       
           <img
             src={imageLoader(projects[currentIndex].cover_image, 1200)}

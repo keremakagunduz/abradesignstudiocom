@@ -73,7 +73,7 @@ export default function Home() {
             {allProjects.length === 0 ? (
               <p className="text-gray-600">No projects in this category. test deneme</p>
             ) : (
-        <div className="relative w-full">
+        <div className="w-screen">
             <Carousel projects={allProjects} />
         </div>
             )}
