@@ -41,7 +41,7 @@ const Carousel = ({ projects }) => {
     <>
         <article className={styles.card}>
           <div className={styles.thumbnail + "absolute w-[150vh] flex justify-between text-[3rem]"}>
-      <div className={styles.navigation + "w-full justify-center pt-24 pb-24 flex"}>
+      <div className={styles.navigation + "w-full pt-24 pb-24 flex absolute self-center w-full justify-between"}>
         <button onClick={goToPrevious} className={styles.navButton}>&lt;</button>
         <button onClick={goToNext} className={styles.navButton}>&gt;</button>
       </div>
