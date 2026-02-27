@@ -51,7 +51,7 @@ const Carousel = ({ projects }) => {
         </article>
 
           <div className="absolute inset-0 bg-white bg-opacity-50 flex w-full h-fit place-self-center pt-24 pb-24">
-      <div className={styles.navigation + "w-full pt-24 pb-24 flex absolute self-center w-full justify-between"}>
+      <div className={styles.navigation + "w-full pt-24 pb-24 flex absolute self-center w-full justify-between text-4xl"}>
         <button onClick={goToPrevious} className={styles.navButton}>&lt;</button>
         <button onClick={goToNext} className={styles.navButton}>&gt;</button>
       </div>
