@@ -6,6 +6,7 @@ import { fetchProjects } from '../api/portfolio';
 import { Link, useLocation } from "react-router-dom";
 import styles from '../home.css';
 import ScrollToTop from '../components/ScrollToTop';
+import { FaPhoneAlt } from "react-icons/fa";
 
 const imageLoader = (src, width, quality) => {
   return `${src}?format=auto${quality ? `&quality=${quality}` : ''}&width=${width}`;
