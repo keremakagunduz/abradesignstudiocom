@@ -85,9 +85,10 @@
   display: block;
   transition: transform var(--transition);
 }
+/*
 .thumbnail:hover img {
   transform: scale(1.05);
-}
+}*/
 
 .sketchbook_thumbnail {
   width: 100%;
