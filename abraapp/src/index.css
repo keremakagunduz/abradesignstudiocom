@@ -19,6 +19,10 @@ code {
 .top-to-btm{
   position: relative;
 }
+
+.btm-to-top{
+  position: relative;
+}
 .icon-position{
   position: fixed;
   bottom: 40px;
