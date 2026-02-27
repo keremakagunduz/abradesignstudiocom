@@ -39,7 +39,7 @@ const Carousel = ({ projects }) => {
 
   return (
     <>
-        <article className={styles.card}>
+        <article className={styles.card + "items-center"}>
           <div className={styles.thumbnail + "absolute h-[150vh] flex justify-between text-[3rem]"}>
       
           <img
