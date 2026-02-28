@@ -14,14 +14,14 @@ const Footer = () => (
     }}
   >
   
-    <div class="max-w-screen-xl px-4 mx-auto overflow-hidden sm:px-6 lg:px-8">
+    <div class="max-w-screen-xl px-4 mx-auto overflow-hidden sm:px-6 lg:px-8 place-items-center">
 
-        <div>
+        <div className="w-min">
         <BsEnvelope />
         <p className="mt-4 text-base leading-6 text-center text-gray-400">info@abradesignstudio.com</p>
         </div>
 
-        <div>
+        <div className="w-min">
         <FaPhoneAlt />
         <p className="mt-4 text-base leading-6 text-center text-gray-400">+90 505 251 8358</p>
         </div>
