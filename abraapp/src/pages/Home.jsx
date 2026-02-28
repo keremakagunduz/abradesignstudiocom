@@ -127,9 +127,9 @@ const about_text = userLocale.startsWith('tr') ? (
                 onClick={toggleLanguage}
                 className="mt-4 flex self-end px-4 py-2 bg-blue-500 text-white rounded"
             >
-                <span className={userLocale.startsWith('tr') ? 'font-bold' : ''}>EN</span>
+                <span className={userLocale.startsWith('tr') ? 'font-bold' : ''}>TR</span>
                 <span className="mx-2">|</span>
-                <span className={userLocale.startsWith('tr') ? '' : 'font-bold'}>TR</span>
+                <span className={userLocale.startsWith('tr') ? '' : 'font-bold'}>EN</span>
             </button>
     <h2 className="text-3xl font-bold text-center text-gray-800 mb-6">ABRA DESIGN STUDIO</h2>
     {about_text}
