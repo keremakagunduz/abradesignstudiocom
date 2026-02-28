@@ -68,7 +68,7 @@ const Carousel = ({ projects }) => {
             />
 
           </div>
-      <div className="absolute inset-0 self-end w-fit bg-white bg-opacity-50">
+      <div className="absolute inset-0 self-end w-fit bg-white bg-opacity-50 p-12 text-5xl">
         <button onClick={scrollToElement}>Biz Kimiz?</button>
       </div>
         </article>
