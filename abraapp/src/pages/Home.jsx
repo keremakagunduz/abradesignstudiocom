@@ -123,9 +123,9 @@ const about_text = userLocale.startsWith('tr') ? (
   />
 
 <div id="about-us" className="block px-6 py-12 lg:px-48">
-  <button
+            <button
                 onClick={toggleLanguage}
-                className="mt-4 flex self-end px-4 py-2 rounded"
+                className="mt-4 flex self-end px-4 py-2 rounded ml-auto mr-0"
             >
                 <span className={userLocale.startsWith('tr') ? 'font-bold' : ''}>TR</span>
                 <span className="mx-2">|</span>
