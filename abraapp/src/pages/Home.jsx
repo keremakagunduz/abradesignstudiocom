@@ -75,7 +75,7 @@ export default function Home() {
     }
   };
 
-  const [userLocale, setUserLocale] = useState(navigator.language || navigator.userLanguage);
+const [userLocale, setUserLocale] = useState(navigator.language || navigator.userLanguage);
 const toggleLanguage = () => {
         setUserLocale((prevLocale) => (prevLocale.startsWith('tr') ? 'en-US' : 'tr-TR'));
     };
@@ -125,7 +125,7 @@ const about_text = userLocale.startsWith('tr') ? (
 <div id="about-us" className="block px-6 py-12 lg:px-48">
   <button
                 onClick={toggleLanguage}
-                className="mt-4 flex self-end px-4 py-2 bg-blue-500 text-white rounded"
+                className="mt-4 flex self-end px-4 py-2 rounded"
             >
                 <span className={userLocale.startsWith('tr') ? 'font-bold' : ''}>TR</span>
                 <span className="mx-2">|</span>
