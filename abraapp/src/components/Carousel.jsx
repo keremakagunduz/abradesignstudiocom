@@ -38,6 +38,13 @@ const Carousel = ({ projects }) => {
     );
   };
 
+    const scrollToElement = () => {
+    const element = document.getElementById('about-us');
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <>
         <article className="items-center">
@@ -76,6 +83,11 @@ const Carousel = ({ projects }) => {
         />
 
        </div>
+      
+      <div>
+        <button onClick={scrollToElement}>Biz Kimiz?</button>
+      </div>
+
 
     
     </>

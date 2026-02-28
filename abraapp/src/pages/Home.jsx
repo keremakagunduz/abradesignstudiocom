@@ -84,9 +84,6 @@ export default function Home() {
             ) : (
             <Carousel projects={allProjects} />
             )}
-<div>
-<button onClick={scrollToElement}>Biz Kimiz?</button>
-</div>
 
   <img
       src={imageLoader("https://d3hojcyp0aupte.cloudfront.net/asset/Abra_Icon_png.png", 400)}
