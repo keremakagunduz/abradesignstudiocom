@@ -6,7 +6,6 @@ import { fetchProjects } from '../api/portfolio';
 import { Link, useLocation } from "react-router-dom";
 import styles from '../home.css';
 import ScrollToTop from '../components/ScrollToTop';
-import ScrollToBottom from '../components/ScrollToBottom';
 import { FaPhoneAlt } from "react-icons/fa";
 
 const imageLoader = (src, width, quality) => {
