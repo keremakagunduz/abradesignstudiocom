@@ -75,7 +75,11 @@ export default function Home() {
     }
   };
 
-const userLocale = navigator.language || navigator.userLanguage;
+  const [userLocale, setUserLocale] = useState(navigator.language || navigator.userLanguage);
+const toggleLanguage = () => {
+        setUserLocale((prevLocale) => (prevLocale.startsWith('tr') ? 'en-US' : 'tr-TR'));
+    };
+
 const about_text = userLocale.startsWith('tr') ? (
   <>
     <p className="mt-2 text-base leading-7 text-center text-gray-500 max-w-2xl mx-auto">
@@ -101,13 +105,6 @@ const about_text = userLocale.startsWith('tr') ? (
     </p>
 </>
 );
-
-const [userLocale, setUserLocale] = useState(navigator.language || navigator.userLanguage);
-const toggleLanguage = () => {
-        setUserLocale((prevLocale) => (prevLocale.startsWith('tr') ? 'en-US' : 'tr-TR'));
-    };
-
-
 
   return (
     <>
