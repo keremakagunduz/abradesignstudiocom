@@ -90,12 +90,6 @@
   transform: scale(1.05);
 }*/
 
-.sketchbook_thumbnail {
-  width: 100%;
-  overflow: hidden;
-  position: relative;
-}
-
 /* -------------------------------------------------
    Hover overlay – appears on hover
 ------------------------------------------------- */
