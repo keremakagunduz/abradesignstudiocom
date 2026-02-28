@@ -108,7 +108,7 @@ export default function Home() {
                 mobilya tarihi ve ileri sunum teknikleri dersleri verdi. Tasarımları yurt içinde ve yurt dışında pek çok farklı sergi ve yayında yer aldı. Mobilya tasarımı yarışmalarında 
                 çeşitli ödüller aldı. Pek çok konferans ve söyleşide konuşmacı olarak yer aldı.
             </p>
-                <a href="" target="_blank" class="text-gray-400 hover:text-gray-500">
+                <a href="https://www.linkedin.com/in/ba%C5%9Fak-bakkalo%C4%9Flu-8502b6126/" target="_blank" class="text-gray-400 hover:text-gray-500">
                 <span class="sr-only">LinkedIn</span>
                 <svg class="w-8 h-6 justify-self-center" aria-hidden="true" fill="currentColor" viewBox="0 0 24 24">
                   <g clip-path="url(#clip0_4062_37004)">
@@ -138,7 +138,7 @@ export default function Home() {
                 olarak bulundu, yurt içi ve yurt dışındaki tasarım haftalarında ve sergilerinde katılımcı ve küratör olarak yer aldı. Farklı mimarlık ve tasarım yayınlarında köşe 
                 yazarlığı yaptı, üniversitelerde mobilya tasarımı, mobilya tarihi ve temel tasarım dersleri verdi. Pek çok farklı konferans ve söyleşide konuşmacı ve moderatör olarak yer aldı.
             </p>
-                <a href="" target="_blank" class="text-gray-400 hover:text-gray-500">
+                <a href="https://www.linkedin.com/in/cem-cemal-cobanoglu-71aa3531/" target="_blank" class="text-gray-400 hover:text-gray-500">
                 <span class="sr-only">LinkedIn</span>
                 <FaLinkedin className="w-8 h-6 justify-self-center" />
 
