@@ -68,6 +68,9 @@ const Carousel = ({ projects }) => {
             />
 
           </div>
+      <div className="absolute inset-0 self-end">
+        <button onClick={scrollToElement}>Biz Kimiz?</button>
+      </div>
         </article>
 
       <div className="absolute inset-0 bg-white bg-opacity-50 flex w-full h-fit place-self-center pt-24 pb-24">
@@ -84,9 +87,7 @@ const Carousel = ({ projects }) => {
 
        </div>
       
-      <div>
-        <button onClick={scrollToElement}>Biz Kimiz?</button>
-      </div>
+
 
 
     
