@@ -102,9 +102,12 @@ const about_text = userLocale.startsWith('tr') ? (
 </>
 );
 
+const [userLocale, setUserLocale] = useState(navigator.language || navigator.userLanguage);
 const toggleLanguage = () => {
         setUserLocale((prevLocale) => (prevLocale.startsWith('tr') ? 'en-US' : 'tr-TR'));
     };
+
+
 
   return (
     <>
