@@ -49,7 +49,6 @@ const Carousel = ({ projects }) => {
     <>
         <article className="items-center">
           <div className="relative h-screen flex justify-center text-[3rem]">
-      
             <img
               src={imageLoader(projects[currentIndex].cover_image, 1200)} // Fallback for older browsers
               srcSet={`
@@ -66,11 +65,11 @@ const Carousel = ({ projects }) => {
               loading="lazy"
               className="w-full h-full object-cover"
             />
-
           </div>
-      <div className="absolute inset-0 self-end w-fit bg-white bg-opacity-50 p-12 text-4xl">
-        <button onClick={scrollToElement}>Biz Kimiz?</button>
-      </div>
+
+          <div className="absolute inset-0 self-end w-fit bg-white bg-opacity-50 p-8 text-4xl">
+            <button onClick={scrollToElement}>Biz Kimiz?</button>
+          </div>
         </article>
 
       <div className="absolute inset-0 bg-white bg-opacity-50 flex w-full h-fit place-self-center pt-24 pb-24">
