@@ -67,6 +67,14 @@ export default function Home() {
     return filteredProjects.sort((a, b) => a.display_priority - b.display_priority);
   }, [projects, filter]);
 
+
+  const scrollToElement = () => {
+    const element = document.getElementById('about-us');
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <>
       <main className="mx-auto">
@@ -77,10 +85,10 @@ export default function Home() {
             <Carousel projects={allProjects} />
             )}
 <div>
-<ScrollToTop />
+<button onClick={scrollToElement}>Biz Kimiz?</button>
 </div>
 
-<div className="block px-6 py-12 lg:px-48">
+<div id="about-us" className="block px-6 py-12 lg:px-48">
     <h2 className="text-3xl font-bold text-center text-gray-800 mb-6">ABRA DESIGN STUDIO</h2>
     <p className="mt-2 text-base leading-7 text-center text-gray-500 max-w-2xl mx-auto">
         2014 yılında Başak Bakkaloğlu ve Cemal Çobanoğlu tarafından İstanbul’da kurulan ABRA Design Studio, mobilya ve ürün tasarımının yanında, mimarlık, iç mimarlık ve kamusal mekan tasarımı disiplinlerinde üretimler yapmaktadır.
