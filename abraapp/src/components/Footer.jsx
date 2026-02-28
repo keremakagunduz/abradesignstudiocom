@@ -18,12 +18,12 @@ const Footer = () => (
 
         <div className="w-fit flex">
         <BsEnvelope className="self-center" />
-        <p className="mt-4 text-base leading-6 text-center text-gray-400">info@abradesignstudio.com</p>
+        <p className="ml-4text-base leading-6 text-center text-gray-400">info@abradesignstudio.com</p>
         </div>
 
         <div className="w-fit flex">
         <FaPhoneAlt className="self-center"/>
-        <p className="mt-4 text-base leading-6 text-center text-gray-400">+90 505 251 8358</p>
+        <p className="ml-4 text-base leading-6 text-center text-gray-400">+90 505 251 8358</p>
         </div>
 
         <p className="pt-6 mt-1 text-base leading-6 text-center text-gray-400">
