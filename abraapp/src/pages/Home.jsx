@@ -75,6 +75,34 @@ export default function Home() {
     }
   };
 
+const userLocale = navigator.language || navigator.userLanguage;
+const about_text = userLocale.startsWith('tr') ? (
+  <>
+    <p className="mt-2 text-base leading-7 text-center text-gray-500 max-w-2xl mx-auto">
+        2014 yılında Başak Bakkaloğlu ve Cemal Çobanoğlu tarafından İstanbul’da kurulan ABRA Design Studio, mobilya ve ürün tasarımının yanında, mimarlık, iç mimarlık ve kamusal mekan tasarımı disiplinlerinde üretimler yapmaktadır.
+    </p>
+    <p className="mt-4 text-base leading-7 text-center text-gray-500 max-w-2xl mx-auto">
+        ABRA, Türkçe’de denge anlamına gelmektedir ve denge tüm ABRA tasarımları için bir başlangıç noktasıdır. Hem bir tasarım fikrinin ortaya çıkışında hem de kullanıcı-tasarım ve tasarım-mekan arasında bir etkileşim yaratma sürecinde, bu “denge arayışı” ABRA’ya rehberlik etmektedir.
+    </p>
+    <p className="mt-4 text-base leading-7 text-center text-gray-500 max-w-2xl mx-auto">
+        ABRA, çeşitli ürünleri ile bugüne kadar Milano Design Week, Design Week Turkey, Design Spirit, States of Materials, Yan, Deka II gibi pek çok ulusal ve uluslararası fuar ve sergide küratör ya da katılımcı olarak yer aldı, yurt içi ve yurt dışında birçok basın organında tasarımları ile yer buldu, İstanbul Senin Kent Mobilyaları Yarışması birinciliği başta olmak üzere, çeşitli yarışmalarda farklı derecelerde ödüller aldı.
+    </p> 
+</>
+):(
+  <>
+    <p className="mt-2 text-base leading-7 text-center text-gray-500 max-w-2xl mx-auto">
+    ABRA Design Studio, founded in 2014 in Istanbul by Başak Bakkaloğlu and Cemal Çobanoğlu, engages in furniture and product design as well as architecture, interior architecture, and public space design. 
+    </p>
+    <p className="mt-4 text-base leading-7 text-center text-gray-500 max-w-2xl mx-auto">
+    The name ABRA means "balance" in Turkish, and balance serves as a starting point for all ABRA designs. This "quest for balance" guides the studio both in the emergence of design ideas and in creating interactions between users, design, and space.
+    </p>
+    <p className="mt-4 text-base leading-7 text-center text-gray-500 max-w-2xl mx-auto">
+      To date, ABRA has participated as a curator or exhibitor in many national and international fairs and exhibitions, including Milan Design Week, Design Week Turkey, Design Spirit, States of Materials, Yan, and Deka II. The studio has also been featured in various press outlets both domestically and internationally, and it has received different levels of awards in various competitions, notably winning first place in the Istanbul Your City Furniture Competition.
+    </p>
+</>
+);
+
+
   return (
     <>
       <main className="mx-auto">
@@ -93,15 +121,7 @@ export default function Home() {
 
 <div id="about-us" className="block px-6 py-12 lg:px-48">
     <h2 className="text-3xl font-bold text-center text-gray-800 mb-6">ABRA DESIGN STUDIO</h2>
-    <p className="mt-2 text-base leading-7 text-center text-gray-500 max-w-2xl mx-auto">
-        2014 yılında Başak Bakkaloğlu ve Cemal Çobanoğlu tarafından İstanbul’da kurulan ABRA Design Studio, mobilya ve ürün tasarımının yanında, mimarlık, iç mimarlık ve kamusal mekan tasarımı disiplinlerinde üretimler yapmaktadır.
-    </p>
-    <p className="mt-4 text-base leading-7 text-center text-gray-500 max-w-2xl mx-auto">
-        ABRA, Türkçe’de denge anlamına gelmektedir ve denge tüm ABRA tasarımları için bir başlangıç noktasıdır. Hem bir tasarım fikrinin ortaya çıkışında hem de kullanıcı-tasarım ve tasarım-mekan arasında bir etkileşim yaratma sürecinde, bu “denge arayışı” ABRA’ya rehberlik etmektedir.
-    </p>
-    <p className="mt-4 text-base leading-7 text-center text-gray-500 max-w-2xl mx-auto">
-        ABRA, çeşitli ürünleri ile bugüne kadar Milano Design Week, Design Week Turkey, Design Spirit, States of Materials, Yan, Deka II gibi pek çok ulusal ve uluslararası fuar ve sergide küratör ya da katılımcı olarak yer aldı, yurt içi ve yurt dışında birçok basın organında tasarımları ile yer buldu, İstanbul Senin Kent Mobilyaları Yarışması birinciliği başta olmak üzere, çeşitli yarışmalarda farklı derecelerde ödüller aldı.
-    </p>
+    {about_text}
 
     <div className="flex flex-col lg:flex-row items-center justify-center mt-12 space-y-12 lg:space-y-0 lg:space-x-12">
         <div className="block text-center bg-white shadow-lg rounded-lg p-6 border border-gray-200">
