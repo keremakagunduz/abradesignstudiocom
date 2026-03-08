@@ -38,7 +38,7 @@ export default function Home() {
 
 
 const scrollToElement = () => {
-  const element = document.getElementById('lang-button');
+  const element = document.getElementById('abra-icon');
   if (element) {
     element.scrollIntoView({
       behavior: 'smooth',
@@ -142,8 +142,9 @@ const cemal_cv = userLocale.startsWith('tr') ? (
       src={imageLoader("https://d3hojcyp0aupte.cloudfront.net/asset/Abra_Icon_png.png", 400)}
       alt="Abra Design Studio"
       className="max-w-40 ml-0 mr-auto absolute pt-6"
+      id="abra-icon"
   />
-  <button id="lang-button"
+  <button
       onClick={toggleLanguage}
       className="mt-4 flex self-end px-4 py-2 rounded ml-auto mr-0"
   >
