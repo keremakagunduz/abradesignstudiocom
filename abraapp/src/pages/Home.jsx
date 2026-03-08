@@ -45,6 +45,11 @@ export default function Home() {
   };
 
   useEffect(() => {
+  window.addEventListener('scroll', handleScroll);
+  return () => window.removeEventListener('scroll', handleScroll);
+}, [loading]);
+
+  useEffect(() => {
     const handleScroll = () => {
       if (
         window.innerHeight + document.documentElement.scrollTop
@@ -90,7 +95,7 @@ export default function Home() {
 
 
   const scrollToElement = () => {
-    const element = document.getElementById('about-us');
+    const element = document.getElementById('lang-button');
     if (element) {
       element.scrollIntoView({ behavior: 'smooth' });
     }
@@ -190,7 +195,7 @@ const cemal_cv = userLocale.startsWith('tr') ? (
       alt="Abra Design Studio"
       className="max-w-40 ml-0 mr-auto absolute pt-6"
   />
-  <button
+  <button id="lang-button"
       onClick={toggleLanguage}
       className="mt-4 flex self-end px-4 py-2 rounded ml-auto mr-0"
   >
