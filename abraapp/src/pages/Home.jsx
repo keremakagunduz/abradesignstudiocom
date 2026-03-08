@@ -135,17 +135,19 @@ const cemal_cv = userLocale.startsWith('tr') ? (
             ) : (
             <Carousel projects={allProjects} />
             )}
-
+<div id="abra-icon">
   <img
       src={imageLoader("https://d3hojcyp0aupte.cloudfront.net/asset/Abra_Icon_png.png", 400)}
       alt="Abra Design Studio"
       className="max-w-40 ml-0 mr-auto absolute pt-6"
-      id="abra-icon"
   />
+</div>
+
   <button
       onClick={toggleLanguage}
       className="mt-4 flex self-end px-4 py-2 rounded ml-auto mr-0"
   >
+
       <span className={userLocale.startsWith('tr') ? 'font-bold' : ''}>TR</span>
       <span className="mx-2">|</span>
       <span className={userLocale.startsWith('tr') ? '' : 'font-bold'}>EN</span>
