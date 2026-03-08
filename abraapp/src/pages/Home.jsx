@@ -39,11 +39,7 @@ export default function Home() {
 const scrollToElement = () => {
   const element = document.getElementById('abra-icon');
   if (element) {
-    element.scrollIntoView({
-      behavior: 'smooth',
-      block: 'nearest',
-      inline: 'nearest'
-    });
+    element.scrollIntoView({alignToTop});
   }
 };
 
