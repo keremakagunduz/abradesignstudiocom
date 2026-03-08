@@ -45,11 +45,6 @@ export default function Home() {
   };
 
   useEffect(() => {
-  window.addEventListener('scroll', handleScroll);
-  return () => window.removeEventListener('scroll', handleScroll);
-}, [loading]);
-
-  useEffect(() => {
     const handleScroll = () => {
       if (
         window.innerHeight + document.documentElement.scrollTop
@@ -63,27 +58,6 @@ export default function Home() {
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, [loading, allProjects]);
-
-    const handleScroll = () => {
-      const scrollThreshold = 100; // Change this value to adjust how much scrolling is needed before the next section scrolls into view.
-      if (loading) return; // Prevent loading more if already loading
-
-      const scrollTop = document.documentElement.scrollTop;
-      const windowHeight = window.innerHeight;
-      const documentHeight = document.documentElement.offsetHeight;
-
-      if (scrollTop + windowHeight >= documentHeight - scrollThreshold) {
-        loadMoreProjects();
-      }
-
-      // Scroll to next section if scrolled past the threshold
-      if (scrollTop > 0 && scrollTop % windowHeight < scrollThreshold) {
-        window.scrollBy({
-          top: windowHeight,
-          behavior: 'smooth',
-        });
-      }
-    };
 
   const visibleProjects = useMemo(() => {
     const filteredProjects = filter
