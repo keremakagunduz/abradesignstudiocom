@@ -36,18 +36,16 @@ export default function Home() {
     return filteredProjects.sort((a, b) => a.display_priority - b.display_priority);
   }, [projects, filter]);
 
-
 const scrollToElement = () => {
   const element = document.getElementById('abra-icon');
   if (element) {
     element.scrollIntoView({
       behavior: 'smooth',
-      block: 'center',
+      block: 'start',
       inline: 'nearest'
     });
   }
 };
-
 
 const [userLocale, setUserLocale] = useState(navigator.language || navigator.userLanguage);
 const toggleLanguage = () => {
@@ -152,7 +150,7 @@ const cemal_cv = userLocale.startsWith('tr') ? (
       <span className="mx-2">|</span>
       <span className={userLocale.startsWith('tr') ? '' : 'font-bold'}>EN</span>
   </button>
-<div id="about-us" className="block px-6 py-12 lg:px-48">
+<div className="block px-6 py-12 lg:px-48">
 
     <h2 className="text-3xl font-bold text-center text-gray-800 mb-6">ABRA DESIGN STUDIO</h2>
     {about_text}
