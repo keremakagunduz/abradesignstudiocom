@@ -1,4 +1,4 @@
-import { useEffect, useState, useMemo, useCallback } from 'react';
+import { useEffect, useState, useMemo } from 'react';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import Carousel from '../components/Carousel';
@@ -28,41 +28,6 @@ export default function Home() {
     });
   }, []);
 
-  const loadMoreProjects = () => {
-    setLoading(true);
-    const nextPage = page + 1;
-
-    setTimeout(() => {
-      const nextProjects = allProjects.slice(
-        (nextPage - 1) * projectsPerPage,
-        nextPage * projectsPerPage
-      );
-      setProjects(prev => [...prev, ...nextProjects]);
-      setPage(nextPage);
-      setLoading(false);
-    }, 1000);
-  };
-
-  const handleScroll = useCallback(() => {
-    // Check if we're at the bottom of the page and not loading
-    if (window.innerHeight + document.documentElement.scrollTop >= document.documentElement.offsetHeight && !loading) {
-      loadMoreProjects();
-    }
-  }, [loading, loadMoreProjects]);
-
-  useEffect(() => {
-    const onScroll = () => {
-      // Use a debounce function for optimal performance
-      handleScroll();
-    };
-
-    window.addEventListener('scroll', onScroll);
-    
-    return () => {
-      window.removeEventListener('scroll', onScroll);
-    };
-  }, [handleScroll]);
-
   const visibleProjects = useMemo(() => {
     const filteredProjects = filter
       ? allProjects.filter(p => p.categories?.some(cat => cat.id === filter))
@@ -72,12 +37,17 @@ export default function Home() {
   }, [projects, filter]);
 
 
-  const scrollToElement = () => {
-    const element = document.getElementById('lang-button');
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
-    }
-  };
+const scrollToElement = () => {
+  const element = document.getElementById('lang-button');
+  if (element) {
+    element.scrollIntoView({
+      behavior: 'smooth',
+      block: 'center',
+      inline: 'nearest'
+    });
+  }
+};
+
 
 const [userLocale, setUserLocale] = useState(navigator.language || navigator.userLanguage);
 const toggleLanguage = () => {
