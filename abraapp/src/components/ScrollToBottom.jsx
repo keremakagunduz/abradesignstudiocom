@@ -6,7 +6,7 @@ import "../index.css";
 const ScrollToBottom = () => {
     const goToBottom = () => {
         window.scrollTo({
-            top: document.documentElement.scrollHeight, // Scroll to the bottom
+            top: document.documentElement.scrollHeight,
             behavior: "smooth",
         });
     };

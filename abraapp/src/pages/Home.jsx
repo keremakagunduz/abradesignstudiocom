@@ -19,12 +19,12 @@ export default function Home() {
   const [allProjects, setAllProjects] = useState([]);
   const [loading, setLoading] = useState(false);
   const [page, setPage] = useState(1);
-  const projectsPerPage = 24; // Change this to your desired number of items per load
+  const projectsPerPage = 24;
 
   useEffect(() => {
     fetchProjects().then(data => {
       setAllProjects(data.data);
-      setProjects(data.data.slice(0, projectsPerPage)); // load initial set of projects
+      setProjects(data.data.slice(0, projectsPerPage));
     });
   }, []);
 
@@ -36,23 +36,12 @@ export default function Home() {
     return filteredProjects.sort((a, b) => a.display_priority - b.display_priority);
   }, [projects, filter]);
 
-const scrollToElement = () => {
-  const element = document.getElementById('abra-icon');
-  if (element) {
-    element.scrollIntoView({
-      behavior: 'smooth',
-      block: 'center',
-      inline: 'nearest'
-    });
-  }
-};
+  const [userLocale, setUserLocale] = useState(navigator.language || navigator.userLanguage);
+  const toggleLanguage = () => {
+          setUserLocale((prevLocale) => (prevLocale.startsWith('tr') ? 'en-US' : 'tr-TR'));
+      };
 
-const [userLocale, setUserLocale] = useState(navigator.language || navigator.userLanguage);
-const toggleLanguage = () => {
-        setUserLocale((prevLocale) => (prevLocale.startsWith('tr') ? 'en-US' : 'tr-TR'));
-    };
-
-const about_text = userLocale.startsWith('tr') ? (
+  const about_text = userLocale.startsWith('tr') ? (
   <>
     <p className="mt-2 text-base leading-7 text-center text-gray-500 max-w-2xl mx-auto">
         2014 yılında Başak Bakkaloğlu ve Cemal Çobanoğlu tarafından İstanbul’da kurulan ABRA Design Studio, mobilya ve ürün tasarımının yanında, mimarlık, iç mimarlık ve kamusal mekan tasarımı disiplinlerinde üretimler yapmaktadır.
@@ -135,13 +124,13 @@ const cemal_cv = userLocale.startsWith('tr') ? (
             ) : (
             <Carousel projects={allProjects} />
             )}
-<div id="abra-icon">
-  <img
-      src={imageLoader("https://d3hojcyp0aupte.cloudfront.net/asset/Abra_Icon_png.png", 400)}
-      alt="Abra Design Studio"
-      className="max-w-40 ml-0 mr-auto absolute pt-6"
-  />
-</div>
+      <div id="abra-icon">
+        <img
+            src={imageLoader("https://d3hojcyp0aupte.cloudfront.net/asset/Abra_Icon_png.png", 400)}
+            alt="Abra Design Studio"
+            className="max-w-40 ml-0 mr-auto absolute pt-6"
+        />
+      </div>
 
   <button
       onClick={toggleLanguage}
@@ -152,7 +141,7 @@ const cemal_cv = userLocale.startsWith('tr') ? (
       <span className="mx-2">|</span>
       <span className={userLocale.startsWith('tr') ? '' : 'font-bold'}>EN</span>
   </button>
-<div className="block px-6 py-12 lg:px-48">
+  <div className="block px-6 py-12 lg:px-48">
 
     <h2 className="text-3xl font-bold text-center text-gray-800 mb-6">ABRA DESIGN STUDIO</h2>
     {about_text}

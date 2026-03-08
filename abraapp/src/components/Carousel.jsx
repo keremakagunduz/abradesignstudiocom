@@ -14,12 +14,11 @@ const Carousel = ({ projects }) => {
   const intervalRef = useRef(null);
 
   useEffect(() => {
-    // Change image every 3 seconds
     intervalRef.current = setInterval(() => {
       setCurrentIndex((prevIndex) =>
         prevIndex === projects.length - 1 ? 0 : prevIndex + 1
       );
-    }, 3000);
+    }, 3500);
 
     return () => {
       clearInterval(intervalRef.current);
@@ -39,7 +38,7 @@ const Carousel = ({ projects }) => {
   };
 
     const scrollToElement = () => {
-    const element = document.getElementById('about-us');
+    const element = document.getElementById('abra-icon');
     if (element) {
       element.scrollIntoView({ behavior: 'smooth' });
     }
@@ -83,13 +82,8 @@ const Carousel = ({ projects }) => {
             alt="Abra Design Studio"
             className="max-w-50 mx-auto"
         />
-
-       </div>
+      </div>
       
-
-
-
-    
     </>
   );
 };
