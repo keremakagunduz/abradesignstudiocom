@@ -1,4 +1,4 @@
-import { useEffect, useState, useMemo } from 'react';
+import { useEffect, useState, useMemo, useCallback } from 'react';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import Carousel from '../components/Carousel';
@@ -12,7 +12,6 @@ import { FaLinkedin } from "react-icons/fa";
 const imageLoader = (src, width, quality) => {
   return `${src}?format=auto${quality ? `&quality=${quality}` : ''}&width=${width}`;
 };
-
 
 export default function Home() {
   const [projects, setProjects] = useState([]);
@@ -44,20 +43,25 @@ export default function Home() {
     }, 1000);
   };
 
-  useEffect(() => {
-    const handleScroll = () => {
-      if (
-        window.innerHeight + document.documentElement.scrollTop
-        !== document.documentElement.offsetHeight || loading
-      ) {
-        return;
-      }
+  const handleScroll = useCallback(() => {
+    // Check if we're at the bottom of the page and not loading
+    if (window.innerHeight + document.documentElement.scrollTop >= document.documentElement.offsetHeight && !loading) {
       loadMoreProjects();
+    }
+  }, [loading, loadMoreProjects]);
+
+  useEffect(() => {
+    const onScroll = () => {
+      // Use a debounce function for optimal performance
+      handleScroll();
     };
 
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, [loading, allProjects]);
+    window.addEventListener('scroll', onScroll);
+    
+    return () => {
+      window.removeEventListener('scroll', onScroll);
+    };
+  }, [handleScroll]);
 
   const visibleProjects = useMemo(() => {
     const filteredProjects = filter
