@@ -49,7 +49,7 @@ const Carousel = ({ projects }) => {
   return (
     <>
       <article className="items-center">
-<div className="relative h-fit sm:h-screen flex justify-center overflow-hidden">
+<div className="relative h-svh sm:h-screen flex justify-center overflow-hidden">
     <img
         src={imageLoader(projects[currentIndex].cover_image, 1200)} 
         srcSet={`
@@ -64,7 +64,7 @@ const Carousel = ({ projects }) => {
                1600px"
         alt={projects[currentIndex].title}
         loading="lazy"
-        className="w-full h-full object-cover"
+        className="w-full sm:h-full object-cover"
     />
 </div>
 
