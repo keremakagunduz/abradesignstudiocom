@@ -176,29 +176,31 @@ const cemal_cv = userLocale.startsWith('tr') ? (
         />
         <h3 className="text-xl font-bold text-gray-800">Başak Bakkaloğlu</h3>
         {basak_cv}
-        <a href="https://www.linkedin.com/in/ba%C5%9Fak-bakkalo%C4%9Flu-8502b6126/" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-gray-500">
+        <a href="https://www.linkedin.com/in/ba%C5%9Fak-bakkalo%C4%9Flu-8502b6126/" target="_blank" className="flex justify-center text-gray-400 hover:text-gray-500">
             <span className="sr-only">LinkedIn</span>
-            <FaLinkedin className="w-8 h-6 justify-self-center" />
+            <FaLinkedin className="w-8 h-6" />
+        </a>
+    </div>
+
+    <div className="block text-center bg-white shadow-lg rounded-lg p-6 border border-gray-200">
+        <img 
+            src={imageLoader("https://d3hojcyp0aupte.cloudfront.net/asset/Cemal_Çobanoğlu.jpg", 400)} 
+            alt="Cemal Çobanoğlu" 
+            className="rounded-full mb-4 h-32 w-32 object-cover mx-auto"
+        />
+        <h3 className="text-xl font-bold text-gray-800">Cemal Çobanoğlu</h3>
+        {cemal_cv}
+        <a href="https://www.linkedin.com/in/cem-cemal-cobanoglu-71aa3531/" target="_blank" className="flex justify-center text-gray-400 hover:text-gray-500">
+            <span className="sr-only">LinkedIn</span>
+            <FaLinkedin className="w-8 h-6" />
         </a>
     </div>
 </div>
-        <div className="flex flex-col lg:flex-row items-center justify-center mt-12 space-y-12 lg:space-y-0 lg:space-x-12">
-          <div className="block text-center bg-white shadow-lg rounded-lg p-6 border border-gray-200">
-            <img 
-                src={imageLoader("https://d3hojcyp0aupte.cloudfront.net/asset/Cemal_Çobanoğlu.jpg", 400)} 
-                alt="Cemal Çobanoğlu" 
-                className="rounded-full mb-4 h-32 w-32 object-cover mx-auto" // Centering added
-            />
-            <h3 className="text-xl font-bold text-gray-800">Cemal Çobanoğlu</h3>
-              {cemal_cv}
-                <a href="https://www.linkedin.com/in/cem-cemal-cobanoglu-71aa3531/" target="_blank" class="text-gray-400 hover:text-gray-500">
-                <span class="sr-only">LinkedIn</span>
-                <FaLinkedin className="w-8 h-6 justify-self-center" />
-            </a>
-        </div>
-    </div>
+
 
 </div>
+
+
   
           </>
               </main>
