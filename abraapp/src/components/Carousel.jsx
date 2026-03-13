@@ -79,12 +79,15 @@ const Carousel = ({ projects }) => {
           <ScrollToBottom />
           <button onClick={goToNext} className={styles.navButton}>&gt;</button>
         </div>
-        
+
+        <div className="max-w-3xs">
         <img
           src={imageLoader("https://d3hojcyp0aupte.cloudfront.net/asset/Abra_Logo_png.png", 800)}
           alt="Abra Design Studio"
-          className="max-w-lvh mx-auto"
+          className="mx-auto"
         />
+        </div>
+
       </div>
 
       <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-2">
