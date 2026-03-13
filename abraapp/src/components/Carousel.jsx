@@ -64,7 +64,7 @@ const Carousel = ({ projects }) => {
                1600px"
         alt={projects[currentIndex].title}
         loading="lazy"
-        className="w-full min-h-screen object-cover"
+        className="w-full max-h-full object-cover"
     />
 </div>
 
