@@ -70,18 +70,14 @@ export default function Home() {
 
 const basak_cv = userLocale.startsWith('tr') ? (
   <div className="max-w-3xl mx-auto px-4 md:px-8 py-8">
-    <h2 className="text-2xl font-semibold text-gray-800 mb-4">Başak Bakkaloğlu</h2>
     <div className="flex flex-col sm:flex-row sm:space-x-8">
       <div className="flex-1 mb-4 sm:mb-0">
-        <p className="mt-2 text-base md:text-lg leading-7 text-gray-600 p-6 bg-gray-100 rounded-lg">
+        <p className="mt-2 text-base md:text-lg leading-7 text-gray-600 p-6 rounded-lg">
           Lisans eğitimini İ.T.Ü. Mimarlık Fakültesi, Mimarlık Bölümü’nde tamamladı. Mezuniyeti sonrasında, çeşitli mimarlık ofislerinde, kentsel 
           tasarım, konut, ofis ve mağaza tasarımı gibi farklı fonksiyon ve ölçekler üzerine çalışma imkanı buldu, deneyim kazandı. Eş zamanlı olarak 
           mobilya ve ürün tasarımına ağırlık verdi. Mimarlık, iç mimarlık ve ürün tasarımı çalışmalarını tek bir isim altında sürdürme isteğiyle, 2014 
           yılında Cemal Çobanoğlu ile “ABRA Design Studio”yu kurdu.
-        </p>
-      </div>
-      <div className="flex-1 mb-4 sm:mb-0">
-        <p className="mt-2 text-base md:text-lg leading-7 text-gray-600 p-6 bg-gray-100 rounded-lg">
+
           Kadir Has Üniversitesi, MEF Üniversitesi ve Beykent Üniversitesi’nde temel tasarım, mobilya tasarımı, mobilya tarihi ve ileri sunum teknikleri 
           dersleri verdi. Tasarımları yurt içinde ve yurt dışında pek çok farklı sergi ve yayında yer aldı. Mobilya tasarımı yarışmalarında çeşitli 
           ödüller aldı. Pek çok konferans ve söyleşide konuşmacı olarak yer aldı.
@@ -91,17 +87,13 @@ const basak_cv = userLocale.startsWith('tr') ? (
   </div>
 ) : (
   <div className="max-w-3xl mx-auto px-4 md:px-8 py-8">
-    <h2 className="text-2xl font-semibold text-gray-800 mb-4">Başak Bakkaloğlu</h2>
     <div className="flex flex-col sm:flex-row sm:space-x-8">
       <div className="flex-1 mb-4 sm:mb-0">
-        <p className="mt-2 text-base md:text-lg leading-7 text-gray-600 p-6 bg-gray-100 rounded-lg">
+        <p className="mt-2 text-base md:text-lg leading-7 text-gray-600 p-6 rounded-lg">
           She completed her bachelor’s degree in I.T.U. Architecture Faculty, Architecture Department. After graduation, she worked in several 
           architecture offices, where she had the opportunity to work and gained experience on different functions and scales like urban design, 
           residence, office, and showroom designs.
-        </p>
-      </div>
-      <div className="flex-1 mb-4 sm:mb-0">
-        <p className="mt-2 text-base md:text-lg leading-7 text-gray-600 p-6 bg-gray-100 rounded-lg">
+
           In the meanwhile, she continued to explore the world of furniture and product design. In 2014, aiming to go on with her works on 
           architecture, interior design, and product design, under a single name, she founded “ABRA Design Studio” with Cemal Cobanoğlu. She gave 
           basic design, furniture design, furniture history, and advanced representation techniques courses at Kadir Has University, MEF University, 
@@ -114,7 +106,6 @@ const basak_cv = userLocale.startsWith('tr') ? (
 
 const cemal_cv = userLocale.startsWith('tr') ? (
   <div className="max-w-3xl mx-auto px-4 md:px-8 py-8">
-    <h2 className="text-2xl font-semibold text-gray-800 mb-4">Cemal Cobanoğlu</h2>
     <div className="flex flex-col sm:flex-row sm:space-x-8">
       <div className="flex-1 mb-4 sm:mb-0">
         <p className="mt-2 text-base md:text-lg leading-7 text-gray-600 p-6 rounded-lg">
@@ -129,7 +120,6 @@ const cemal_cv = userLocale.startsWith('tr') ? (
   </div>
 ) : (
   <div className="max-w-3xl mx-auto px-4 md:px-8 py-8">
-    <h2 className="text-2xl font-semibold text-gray-800 mb-4">Cemal Cobanoğlu</h2>
     <div className="flex flex-col sm:flex-row sm:space-x-8">
       <div className="flex-1 mb-4 sm:mb-0">
         <p className="mt-2 text-base md:text-lg leading-7 text-gray-600 p-6 rounded-lg">
