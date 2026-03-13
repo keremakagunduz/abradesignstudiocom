@@ -49,7 +49,7 @@ const Carousel = ({ projects }) => {
   return (
     <>
       <article className="items-center">
-        <div className="relative h-screen flex justify-center text-[3rem]">
+        <div className="relative min-h-screen md:h-screen flex justify-center text-[3rem]">
           <img
             src={imageLoader(projects[currentIndex].cover_image, 1200)} // Fallback for older browsers
             srcSet={`
