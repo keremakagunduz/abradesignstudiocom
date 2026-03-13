@@ -72,7 +72,7 @@ const basak_cv = userLocale.startsWith('tr') ? (
   <div className="max-w-3xl mx-auto sm:px-4 md:px-8 sm:py-8">
     <div className="flex flex-col sm:flex-row sm:space-x-8">
       <div className="flex-1 mb-4 sm:mb-0">
-        <p className="mt-2 text-base md:text-lg leading-7 text-gray-600 p-6 rounded-lg">
+        <p className="mt-2 text-base md:text-lg leading-7 text-gray-600 p-4 sm:p-6 rounded-lg">
           Lisans eğitimini İ.T.Ü. Mimarlık Fakültesi, Mimarlık Bölümü’nde tamamladı. Mezuniyeti sonrasında, çeşitli mimarlık ofislerinde, kentsel 
           tasarım, konut, ofis ve mağaza tasarımı gibi farklı fonksiyon ve ölçekler üzerine çalışma imkanı buldu, deneyim kazandı. Eş zamanlı olarak 
           mobilya ve ürün tasarımına ağırlık verdi. Mimarlık, iç mimarlık ve ürün tasarımı çalışmalarını tek bir isim altında sürdürme isteğiyle, 2014 
@@ -89,7 +89,7 @@ const basak_cv = userLocale.startsWith('tr') ? (
   <div className="max-w-3xl mx-auto sm:px-4 md:px-8 sm:py-8">
     <div className="flex flex-col sm:flex-row sm:space-x-8">
       <div className="flex-1 mb-4 sm:mb-0">
-        <p className="mt-2 text-base md:text-lg leading-7 text-gray-600 p-6 rounded-lg">
+        <p className="mt-2 text-base md:text-lg leading-7 text-gray-600 p-4 sm:p-6 rounded-lg">
           She completed her bachelor’s degree in I.T.U. Architecture Faculty, Architecture Department. After graduation, she worked in several 
           architecture offices, where she had the opportunity to work and gained experience on different functions and scales like urban design, 
           residence, office, and showroom designs.
@@ -108,7 +108,7 @@ const cemal_cv = userLocale.startsWith('tr') ? (
   <div className="max-w-3xl mx-auto sm:px-4 md:px-8 sm:py-8">
     <div className="flex flex-col sm:flex-row sm:space-x-8">
       <div className="flex-1 mb-4 sm:mb-0">
-        <p className="mt-2 text-base md:text-lg leading-7 text-gray-600 p-6 rounded-lg">
+        <p className="mt-2 text-base md:text-lg leading-7 text-gray-600 p-4 sm:p-6 rounded-lg">
           Lisans eğitimini İ.T.Ü. Mimarlık Fakültesi, İç Mimarlık Bölümü’nde, yüksek lisans eğitimini ise IMIAD’da tamamladı. IMIAD kapsamında İ.T.Ü 
           ile birlikte, Finlandiya’da Lahti University of Applied Sciences’da, İskoçya’da Edinburgh College of Art’da eğitim aldı. Bu süreçte yüzyıl 
           ortası mobilya tasarımı ve İskandinav tasarımı üzerine tezini yazdı.
@@ -122,7 +122,7 @@ const cemal_cv = userLocale.startsWith('tr') ? (
   <div className="max-w-3xl mx-auto sm:px-4 md:px-8 sm:py-8">
     <div className="flex flex-col sm:flex-row sm:space-x-8">
       <div className="flex-1 mb-4 sm:mb-0">
-        <p className="mt-2 text-base md:text-lg leading-7 text-gray-600 p-6 rounded-lg">
+        <p className="mt-2 text-base md:text-lg leading-7 text-gray-600 p-4 sm:p-6 rounded-lg">
           He completed his bachelor’s degree in I.T.U. Architecture Faculty, Interior Architecture Department and his postgraduate degree in IMIAD, 
           where he studied in I.T.U, in Finland, Lahti University of Applied Sciences and in Scotland, Edinburgh College of Art.
 
