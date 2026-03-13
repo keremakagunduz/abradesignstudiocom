@@ -84,7 +84,7 @@ const Carousel = ({ projects }) => {
         <img
           src={imageLoader("https://d3hojcyp0aupte.cloudfront.net/asset/Abra_Logo_png.png", 800)}
           alt="Abra Design Studio"
-          className="max-w-xs sm:max-w-full mx-auto"
+          className="max-w-64 sm:max-w-full mx-auto"
         />
 
 
