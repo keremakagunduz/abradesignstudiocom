@@ -171,7 +171,7 @@ const cemal_cv = userLocale.startsWith('tr') ? (
     <h2 className="text-3xl font-bold text-center text-gray-800 mb-6">ABRA DESIGN STUDIO</h2>
     {about_text}
 
-<div className="flex flex-col lg:flex-row justify-center mt-12 space-y-12 lg:space-y-0 lg:space-x-12">
+<div className="flex flex-col xl:flex-row justify-center mt-12 space-y-12 xl:space-y-0 xl:space-x-12">
     <div className="block text-center bg-white shadow-lg rounded-lg p-6 border border-gray-200">
         <img 
             src={imageLoader("https://d3hojcyp0aupte.cloudfront.net/asset/Başak_Bakkaloğlu.jpg", 400)} 
