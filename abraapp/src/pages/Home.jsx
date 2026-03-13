@@ -117,14 +117,10 @@ const cemal_cv = userLocale.startsWith('tr') ? (
     <h2 className="text-2xl font-semibold text-gray-800 mb-4">Cemal Cobanoğlu</h2>
     <div className="flex flex-col sm:flex-row sm:space-x-8">
       <div className="flex-1 mb-4 sm:mb-0">
-        <p className="mt-2 text-base md:text-lg leading-7 text-gray-600 p-6 bg-gray-100 rounded-lg">
+        <p className="mt-2 text-base md:text-lg leading-7 text-gray-600 p-6 rounded-lg">
           Lisans eğitimini İ.T.Ü. Mimarlık Fakültesi, İç Mimarlık Bölümü’nde, yüksek lisans eğitimini ise IMIAD’da tamamladı. IMIAD kapsamında İ.T.Ü 
           ile birlikte, Finlandiya’da Lahti University of Applied Sciences’da, İskoçya’da Edinburgh College of Art’da eğitim aldı. Bu süreçte yüzyıl 
           ortası mobilya tasarımı ve İskandinav tasarımı üzerine tezini yazdı.
-        </p>
-      </div>
-      <div className="flex-1 mb-4 sm:mb-0">
-        <p className="mt-2 text-base md:text-lg leading-7 text-gray-600 p-6 bg-gray-100 rounded-lg">
           Katıldığı kentsel tasarım, iç mimarlık ve mobilya tasarımı yarışmalarında birçok farklı ödül aldı. Mezuniyeti sonrasında, çeşitli iç 
           mimarlık ve tasarım ofislerinde deneyim kazandı. 2014 senesinde Başak Bakkaloğlu ile birlikte “ABRA Design Studio”yu kurdu.
         </p>
@@ -136,13 +132,10 @@ const cemal_cv = userLocale.startsWith('tr') ? (
     <h2 className="text-2xl font-semibold text-gray-800 mb-4">Cemal Cobanoğlu</h2>
     <div className="flex flex-col sm:flex-row sm:space-x-8">
       <div className="flex-1 mb-4 sm:mb-0">
-        <p className="mt-2 text-base md:text-lg leading-7 text-gray-600 p-6 bg-gray-100 rounded-lg">
+        <p className="mt-2 text-base md:text-lg leading-7 text-gray-600 p-6 rounded-lg">
           He completed his bachelor’s degree in I.T.U. Architecture Faculty, Interior Architecture Department and his postgraduate degree in IMIAD, 
           where he studied in I.T.U, in Finland, Lahti University of Applied Sciences and in Scotland, Edinburgh College of Art.
-        </p>
-      </div>
-      <div className="flex-1 mb-4 sm:mb-0">
-        <p className="mt-2 text-base md:text-lg leading-7 text-gray-600 p-6 bg-gray-100 rounded-lg">
+
           In this period, he wrote his thesis on mid-century furniture design and Scandinavian design. He won several different prizes in urban design, 
           interior design and furniture design competitions. After graduation, he gained experience in several interior architecture and design studios. 
           In 2014, he founded “ABRA Design Studio” with Başak Bakkaloğlu.
