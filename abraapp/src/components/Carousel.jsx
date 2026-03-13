@@ -80,7 +80,7 @@ const Carousel = ({ projects }) => {
           <button onClick={goToNext} className={styles.navButton}>&gt;</button>
         </div>
 
-        <div className="max-w-3xs">
+        <div className="max-w-3xs sm:max-w-full">
         <img
           src={imageLoader("https://d3hojcyp0aupte.cloudfront.net/asset/Abra_Logo_png.png", 800)}
           alt="Abra Design Studio"
