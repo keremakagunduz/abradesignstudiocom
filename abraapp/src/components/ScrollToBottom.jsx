@@ -15,10 +15,10 @@ const ScrollToBottom = () => {
         <>
         <div>
             <a href="https://www.instagram.com/abradesignstudio/" target="_blank" className="flex justify-center text-gray-400 hover:text-gray-500">
-                <FaInstagram className="max-w-8 cursor-pointer" />
+                <FaInstagram className="max-w-8 self-end cursor-pointer" />
             </a>
-            <BsEnvelope onClick={goToBottom} className="max-w-8 cursor-pointer" />
-            <FaPhoneAlt onClick={goToBottom} className="max-w-8 cursor-pointer" />
+            <BsEnvelope onClick={goToBottom} className="max-w-8 self-end cursor-pointer" />
+            <FaPhoneAlt onClick={goToBottom} className="max-w-8 self-end cursor-pointer" />
         </div>
         </>
     );
