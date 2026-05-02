@@ -45,11 +45,24 @@ const Carousel = ({ projects }) => {
     if (element) {
       element.scrollIntoView({ behavior: 'smooth' });
     }
+    
   };
+   const toggleLanguage = () => {
+          setUserLocale((prevLocale) => (prevLocale.startsWith('tr') ? 'en-US' : 'tr-TR'));
+      };
 
   return (
     <>
       <article className="items-center">
+          <button
+      onClick={toggleLanguage}
+      className="mt-4 flex self-end px-4 py-2 rounded ml-auto mr-0"
+  >
+
+      <span className={userLocale.startsWith('tr') ? 'font-bold' : ''}>TR</span>
+      <span className="mx-2">|</span>
+      <span className={userLocale.startsWith('tr') ? '' : 'font-bold'}>EN</span>
+  </button>
 <div className="relative h-svh sm:h-screen flex justify-center overflow-hidden">
     <img
         src={imageLoader(projects[currentIndex].cover_image, 1200)} 
