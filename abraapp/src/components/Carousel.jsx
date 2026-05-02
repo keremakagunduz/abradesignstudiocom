@@ -1,5 +1,5 @@
 import React, { useEffect, useState, useRef } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from "react-router-dom";
 import styles from './Carousel/carousel.module.css';
 import ScrollToBottom from '../components/ScrollToBottom';
 import { IoIosArrowDroprightCircle,IoIosArrowDropleftCircle } from "react-icons/io";
@@ -47,7 +47,8 @@ const Carousel = ({ projects }) => {
     }
     
   };
-   const toggleLanguage = () => {
+  const [userLocale, setUserLocale] = useState(navigator.language || navigator.userLanguage);
+  const toggleLanguage = () => {
           setUserLocale((prevLocale) => (prevLocale.startsWith('tr') ? 'en-US' : 'tr-TR'));
       };
 
