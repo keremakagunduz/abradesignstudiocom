@@ -59,7 +59,7 @@ export default function Home() {
   <>
     <div className="text-justify">
     <p className="mt-2 text-base leading-7 text-gray-500 max-w-2xl mx-auto">
-    ec2 connection test: ABRA Design Studio, founded in 2014 in Istanbul by Başak Bakkaloğlu and Cemal Çobanoğlu, engages in furniture and product design as well as architecture, interior architecture, and public space design. 
+    ABRA Design Studio, founded in 2014 in Istanbul by Başak Bakkaloğlu and Cemal Çobanoğlu, engages in furniture and product design as well as architecture, interior architecture, and public space design. 
     </p>
     <p className="mt-4 text-base leading-7 text-gray-500 max-w-2xl mx-auto">
     The name ABRA means "balance" in Turkish, and balance serves as a starting point for all ABRA designs. This "quest for balance" guides the studio both in the emergence of design ideas and in creating interactions between users, design, and space.
