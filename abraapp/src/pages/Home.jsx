@@ -143,9 +143,19 @@ const cemal_cv = userLocale.startsWith('tr') ? (
   return (
     <>
       <main className="mx-auto">
+            <button
+      onClick={toggleLanguage}
+      className="mt-4 flex self-end px-4 py-2 rounded ml-auto mr-0"
+  >
+
+      <span className={userLocale.startsWith('tr') ? 'font-bold' : ''}>TR</span>
+      <span className="mx-2">|</span>
+      <span className={userLocale.startsWith('tr') ? '' : 'font-bold'}>EN</span>
+  </button>
           <>
+          
             {allProjects.length === 0 ? (
-              <p className="text-gray-600">No projects in this category. test deneme</p>
+              <p className="text-gray-600">No projects in this category.</p>
             ) : (
             <Carousel projects={allProjects} />
             )}
@@ -201,10 +211,7 @@ const cemal_cv = userLocale.startsWith('tr') ? (
     </div>
 </div>
 
-
 </div>
-
-
   
           </>
               </main>
