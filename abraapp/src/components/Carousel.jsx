@@ -74,7 +74,7 @@ const Carousel = ({ projects }) => {
         </div>
       </article>
 
-      <div className="absolute inset-0 bg-white bg-opacity-50 flex w-full h-fit place-self-center pt-24 pb-24">
+      <div className="absolute inset-0 bg-white bg-opacity-50 flex w-full h-fit place-self-center pt-16 pb-16">
         <div className="flex absolute self-center justify-between text-4xl w-full h-full">
           <button onClick={goToPrevious} className={styles.navButton}>&lt;</button>
           <ScrollToBottom />
