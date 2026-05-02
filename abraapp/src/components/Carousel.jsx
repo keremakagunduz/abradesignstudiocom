@@ -1,6 +1,6 @@
 import React, { useEffect, useState, useRef } from 'react';
 import { Link } from 'react-router-dom';
-import styles from './Carousel/carousel.module.css'; // Adjust according to your styles
+import styles from './Carousel/carousel.module.css';
 import ScrollToBottom from '../components/ScrollToBottom';
 import { IoIosArrowDroprightCircle,IoIosArrowDropleftCircle } from "react-icons/io";
 
@@ -77,9 +77,9 @@ const Carousel = ({ projects }) => {
 
       <div className="absolute inset-0 bg-white bg-opacity-50 flex w-full h-fit place-self-center pt-16 pb-16">
         <div className="flex absolute self-center justify-between text-4xl w-full h-full">
-          <button onClick={goToPrevious} className={styles.navButton}><IoIosArrowDropleftCircle /></button>
+          <button onClick={goToPrevious} className="pr-4"><IoIosArrowDropleftCircle /></button>
           <ScrollToBottom />
-          <button onClick={goToNext} className={styles.navButton}><IoIosArrowDroprightCircle /></button>
+          <button onClick={goToNext} className="pr-4"><IoIosArrowDroprightCircle /></button>
         </div>
 
 
