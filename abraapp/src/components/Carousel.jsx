@@ -79,7 +79,7 @@ const Carousel = ({ projects }) => {
         <div className="flex absolute self-center justify-between text-4xl w-full h-full">
           <button onClick={goToPrevious} className="pr-4"><IoIosArrowDropleftCircle /></button>
           <ScrollToBottom />
-          <button onClick={goToNext} className="pr-4"><IoIosArrowDroprightCircle /></button>
+          <button onClick={goToNext} className="pl-4"><IoIosArrowDroprightCircle /></button>
         </div>
 
 
