@@ -139,6 +139,53 @@ const cemal_cv = userLocale.startsWith('tr') ? (
   </div>
 );
 
+const basak_title = userLocale.startsWith('tr') ? (
+  <div className="max-w-3xl mx-auto sm:px-4 md:px-8 sm:py-8">
+    <div className="flex flex-col sm:flex-row sm:space-x-8">
+      <div className="flex-1 mb-4 sm:mb-0 text-justify">
+        <p className="mt-2 text-base md:text-lg leading-7 text-gray-600 p-4 sm:p-6 rounded-lg">
+          Architect - ITU, co-Founder<br></br>
+          Creative Director
+        </p>
+      </div>
+    </div>
+  </div>
+) : (
+  <div className="max-w-3xl mx-auto sm:px-4 md:px-8 sm:py-8">
+    <div className="flex flex-col sm:flex-row sm:space-x-8">
+      <div className="flex-1 mb-4 sm:mb-0 text-justify">
+        <p className="mt-2 text-base md:text-lg leading-7 text-gray-600 p-4 sm:p-6 rounded-lg">
+          Architect - ITU, co-Founder<br></br>
+          Creative Director
+        </p>
+      </div>
+    </div>
+  </div>
+);
+
+const cemal_title = userLocale.startsWith('tr') ? (
+  <div className="max-w-3xl mx-auto sm:px-4 md:px-8 sm:py-8">
+    <div className="flex flex-col sm:flex-row sm:space-x-8">
+      <div className="flex-1 mb-4 sm:mb-0 text-justify">
+        <p className="mt-2 text-base md:text-lg leading-7 text-gray-600 p-4 sm:p-6 rounded-lg">
+          Architect - ITU, co-Founder<br></br>
+          Creative Director
+        </p>
+      </div>
+    </div>
+  </div>
+) : (
+  <div className="max-w-3xl mx-auto sm:px-4 md:px-8 sm:py-8">
+    <div className="flex flex-col sm:flex-row sm:space-x-8">
+      <div className="flex-1 mb-4 sm:mb-0 text-justify">
+        <p className="mt-2 text-base md:text-lg leading-7 text-gray-600 p-4 sm:p-6 rounded-lg">
+          Architect - ITU, co-Founder<br></br>
+          Creative Director
+        </p>
+      </div>
+    </div>
+  </div>
+);
 
   return (
     <>
@@ -175,13 +222,19 @@ const cemal_cv = userLocale.startsWith('tr') ? (
 
     <h2 className="text-3xl font-bold underline underline-offset-8 text-gray-700 mb-6 mt-24">Team<span aria-hidden="true">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></h2>
 <div className="flex flex-col xl:flex-row justify-center mt-12 space-y-12 xl:space-y-0 xl:space-x-12 max-w-5xl">
-    <div className="block text-center bg-white shadow-lg rounded-lg p-6 border border-gray-200">
+    <div className="block text-center bg-white shadow-lg rounded-lg p-6">
+        <h3 className="text-xl font-bold text-gray-800">Başak Bakkaloğlu</h3>
+        {basak_title}
+        <div className="w-fit flex items-center">
+        <BsEnvelope className="self-center" />
+        <p className="ml-2 text-base leading-6 text-gray-400">basak@abradesignstudio.com</p>
+        </div>
         <img 
             src={imageLoader("https://d3hojcyp0aupte.cloudfront.net/asset/Başak_Bakkaloğlu.jpg", 400)} 
             alt="Başak Bakkaloğlu" 
             className="rounded-full mb-4 h-32 w-32 object-cover mx-auto"
         />
-        <h3 className="text-xl font-bold text-gray-800">Başak Bakkaloğlu</h3>
+        
         {basak_cv}
         <a href="https://www.linkedin.com/in/ba%C5%9Fak-bakkalo%C4%9Flu-8502b6126/" target="_blank" rel="noreferrer" className="flex justify-center text-gray-400 hover:text-gray-500">
             <span className="sr-only">LinkedIn</span>
@@ -189,13 +242,18 @@ const cemal_cv = userLocale.startsWith('tr') ? (
         </a>
     </div>
 
-    <div className="block text-center bg-white shadow-lg rounded-lg p-6 border border-gray-200">
+    <div className="block text-center bg-white shadow-lg rounded-lg p-6">
+        <h3 className="text-xl font-bold text-gray-800">Cemal Çobanoğlu</h3>
+        {cemal_title}
+        <div className="w-fit flex items-center">
+        <BsEnvelope className="self-center" />
+        <p className="ml-2 text-base leading-6 text-gray-400">cemal@abradesignstudio.com</p>
+        </div>
         <img 
             src={imageLoader("https://d3hojcyp0aupte.cloudfront.net/asset/Cemal_Çobanoğlu.jpg", 400)} 
             alt="Cemal Çobanoğlu" 
             className="rounded-full mb-4 h-32 w-32 object-cover mx-auto"
         />
-        <h3 className="text-xl font-bold text-gray-800">Cemal Çobanoğlu</h3>
         {cemal_cv}
         <a href="https://www.linkedin.com/in/cem-cemal-cobanoglu-71aa3531/" target="_blank" rel="noreferrer" className="flex justify-center text-gray-400 hover:text-gray-500">
             <span className="sr-only">LinkedIn</span>
