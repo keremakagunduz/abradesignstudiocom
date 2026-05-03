@@ -25,7 +25,7 @@ const Footer = () => (
         <p className="ml-2 text-base leading-6 text-gray-400">+90 505 251 8358</p>
     </div>
 
-    <p className="pt-6 mt-1 text-base leading-6 text-gray-400">
+    <p className="pt-6 mt-1 text-sm leading-6 text-gray-400">
         Copyrights of all pictures published on this website are reserved by
         Abra Design Studio. No material published here can be copied, reproduced,
         posted, used in any way without my written permission.
