@@ -26,9 +26,9 @@ const Footer = () => (
     </div>
 
     <p className="pt-6 mt-1 text-sm leading-6 text-gray-400">
-        Copyrights of all pictures published on this website are reserved by
+        Copyrights of all media published on this website are reserved by
         Abra Design Studio. No material published here can be copied, reproduced,
-        posted, used in any way without my written permission.
+        posted, used in any way without written permission.
     </p>
 
 </div>
