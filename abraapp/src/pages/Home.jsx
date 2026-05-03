@@ -190,7 +190,7 @@ const cemal_cv = userLocale.startsWith('tr') ? (
         />
         <h3 className="text-xl font-bold text-gray-800">Başak Bakkaloğlu</h3>
         {basak_cv}
-        <a href="https://www.linkedin.com/in/ba%C5%9Fak-bakkalo%C4%9Flu-8502b6126/" target="_blank" className="flex justify-center text-gray-400 hover:text-gray-500">
+        <a href="https://www.linkedin.com/in/ba%C5%9Fak-bakkalo%C4%9Flu-8502b6126/" target="_blank" rel="noreferrer" className="flex justify-center text-gray-400 hover:text-gray-500">
             <span className="sr-only">LinkedIn</span>
             <FaLinkedin className="w-8 h-6" />
         </a>
@@ -204,7 +204,7 @@ const cemal_cv = userLocale.startsWith('tr') ? (
         />
         <h3 className="text-xl font-bold text-gray-800">Cemal Çobanoğlu</h3>
         {cemal_cv}
-        <a href="https://www.linkedin.com/in/cem-cemal-cobanoglu-71aa3531/" target="_blank" className="flex justify-center text-gray-400 hover:text-gray-500">
+        <a href="https://www.linkedin.com/in/cem-cemal-cobanoglu-71aa3531/" target="_blank" rel="noreferrer" className="flex justify-center text-gray-400 hover:text-gray-500">
             <span className="sr-only">LinkedIn</span>
             <FaLinkedin className="w-8 h-6" />
         </a>
