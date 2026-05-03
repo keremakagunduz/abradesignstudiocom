@@ -217,11 +217,11 @@ const cemal_title = userLocale.startsWith('tr') ? (
   </button>
   <div className="block px-6 py-12 pt-24 sm:pt-12 lg:px-48 place-self-center">
 
-    <h2 className="text-3xl font-bold underline underline-offset-8 text-gray-700 mb-6">Studio<span aria-hidden="true">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></h2>
+    <h2 className="text-3xl font-bold underline underline-offset-8 text-gray-600 mb-6">Studio<span aria-hidden="true">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></h2>
     {about_text}
 
 
-    <h2 className="text-3xl font-bold underline underline-offset-8 text-gray-700 mb-6 mt-24">Team<span aria-hidden="true">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></h2>
+    <h2 className="text-3xl font-bold underline underline-offset-8 text-gray-600 mb-6 mt-24">Team<span aria-hidden="true">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></h2>
 <div className="flex flex-col xl:flex-row justify-center mt-12 space-y-12 xl:space-y-0 xl:space-x-12 max-w-5xl">
     <div className="block bg-white p-2">
         <h3 className="text-xl font-semibold  text-gray-800">Başak Bakkaloğlu</h3>
@@ -233,7 +233,7 @@ const cemal_title = userLocale.startsWith('tr') ? (
         <img 
             src={imageLoader("https://d3hojcyp0aupte.cloudfront.net/asset/Başak_Bakkaloğlu.jpg", 400)} 
             alt="Başak Bakkaloğlu" 
-            className="mb-4 object-cover mx-auto"
+            className="mb-4 object-cover"
         />
         
         {basak_cv}
@@ -253,7 +253,7 @@ const cemal_title = userLocale.startsWith('tr') ? (
         <img 
             src={imageLoader("https://d3hojcyp0aupte.cloudfront.net/asset/Cemal_Çobanoğlu.jpg", 400)} 
             alt="Cemal Çobanoğlu" 
-            className="mb-4 object-cover mx-auto"
+            className="mb-4 object-cover"
         />
         {cemal_cv}
         <a href="https://www.linkedin.com/in/cem-cemal-cobanoglu-71aa3531/" target="_blank" rel="noreferrer" className="flex justify-center text-gray-400 hover:text-gray-500">
