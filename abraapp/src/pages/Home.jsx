@@ -74,7 +74,7 @@ export default function Home() {
 
 
 const basak_cv = userLocale.startsWith('tr') ? (
-  <div className="max-w-3xl mx-auto">
+  <div className="max-w-lg mx-auto">
     <div className="flex flex-col sm:flex-row sm:space-x-8">
       <div className="flex-1 mb-4 sm:mb-0 text-justify">
         <p className="mt-2 text-base md:text-lg leading-7 text-gray-600 p-4 sm:p-6 rounded-lg">
@@ -91,7 +91,7 @@ const basak_cv = userLocale.startsWith('tr') ? (
     </div>
   </div>
 ) : (
-  <div className="max-w-3xl mx-auto">
+  <div className="max-w-lg mx-auto">
     <div className="flex flex-col sm:flex-row sm:space-x-8">
       <div className="flex-1 mb-4 sm:mb-0 text-justify">
         <p className="mt-2 text-base md:text-lg leading-7 text-gray-600 p-4 sm:p-6 rounded-lg">
@@ -110,7 +110,7 @@ const basak_cv = userLocale.startsWith('tr') ? (
 );
 
 const cemal_cv = userLocale.startsWith('tr') ? (
-  <div className="max-w-3xl mx-auto">
+  <div className="max-w-lg mx-auto">
     <div className="flex flex-col sm:flex-row sm:space-x-8">
       <div className="flex-1 mb-4 sm:mb-0 text-justify">
         <p className="mt-2 text-base md:text-lg leading-7 text-gray-600 p-4 sm:p-6 rounded-lg">
@@ -124,7 +124,7 @@ const cemal_cv = userLocale.startsWith('tr') ? (
     </div>
   </div>
 ) : (
-  <div className="max-w-3xl mx-auto">
+  <div className="max-w-lg mx-auto">
     <div className="flex flex-col sm:flex-row sm:space-x-8">
       <div className="flex-1 mb-4 sm:mb-0 text-justify">
         <p className="mt-2 text-base md:text-lg leading-7 text-gray-600 p-4 sm:p-6 rounded-lg">
@@ -141,7 +141,7 @@ const cemal_cv = userLocale.startsWith('tr') ? (
 );
 
 const basak_title = userLocale.startsWith('tr') ? (
-  <div className="max-w-3xl mx-auto">
+  <div className="max-w-lg mx-auto">
     <div className="flex flex-col sm:flex-row sm:space-x-8">
       <div className="flex-1 mb-4 sm:mb-0 text-justify">
         <p className="font-medium mt-2 mb-2 text-base md:text-lg leading-7 text-gray-600">
@@ -152,7 +152,7 @@ const basak_title = userLocale.startsWith('tr') ? (
     </div>
   </div>
 ) : (
-  <div className="max-w-3xl mx-auto">
+  <div className="max-w-lg mx-auto">
     <div className="flex flex-col sm:flex-row sm:space-x-8">
       <div className="flex-1 mb-4 sm:mb-0 text-justify">
         <p className="font-medium mt-2 mb-2 text-base md:text-lg leading-7 text-gray-600">
@@ -165,7 +165,7 @@ const basak_title = userLocale.startsWith('tr') ? (
 );
 
 const cemal_title = userLocale.startsWith('tr') ? (
-  <div className="max-w-3xl mx-auto">
+  <div className="max-w-lg mx-auto">
     <div className="flex flex-col sm:flex-row sm:space-x-8">
       <div className="flex-1 mb-4 sm:mb-0 text-justify">
         <p className="font-medium mt-2 mb-2 text-base md:text-lg leading-7 text-gray-600">
@@ -176,7 +176,7 @@ const cemal_title = userLocale.startsWith('tr') ? (
     </div>
   </div>
 ) : (
-  <div className="max-w-3xl mx-auto">
+  <div className="max-w-lg mx-auto">
     <div className="flex flex-col sm:flex-row sm:space-x-8">
       <div className="flex-1 mb-4 sm:mb-0 text-justify">
         <p className="font-medium mt-2 mb-2 text-base md:text-lg leading-7 text-gray-600">
@@ -233,7 +233,7 @@ const cemal_title = userLocale.startsWith('tr') ? (
         <img 
             src={imageLoader("https://d3hojcyp0aupte.cloudfront.net/asset/Başak_Bakkaloğlu.jpg", 400)} 
             alt="Başak Bakkaloğlu" 
-            className="mb-4 object-cover"
+            className="mb-4 object-cover max-w-lg"
         />
         
         {basak_cv}
@@ -253,7 +253,7 @@ const cemal_title = userLocale.startsWith('tr') ? (
         <img 
             src={imageLoader("https://d3hojcyp0aupte.cloudfront.net/asset/Cemal_Çobanoğlu.jpg", 400)} 
             alt="Cemal Çobanoğlu" 
-            className="mb-4 object-cover"
+            className="mb-4 object-cover max-w-lg"
         />
         {cemal_cv}
         <a href="https://www.linkedin.com/in/cem-cemal-cobanoglu-71aa3531/" target="_blank" rel="noreferrer" className="flex justify-center text-gray-400 hover:text-gray-500">
