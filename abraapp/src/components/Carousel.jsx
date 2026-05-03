@@ -99,7 +99,7 @@ const Carousel = ({ projects }) => {
           <button
             key={index}
             onClick={() => goToSlide(index)}
-            className={`h-2 w-2 rounded-full ${currentIndex === index ? 'bg-blue-600' : 'bg-gray-400'} transition`}
+            className={`h-2 w-2 rounded-full ${currentIndex === index ? 'bg-gray-600' : 'bg-white'} transition`}
           />
         ))}
       </div>
