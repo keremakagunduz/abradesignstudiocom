@@ -79,9 +79,9 @@ const Carousel = ({ projects }) => {
 
       <div className="absolute inset-0 bg-white bg-opacity-50 flex w-full h-fit place-self-center pt-16 pb-16">
         <div className="flex absolute self-center justify-between text-4xl w-full h-full">
-          <button onClick={goToPrevious} className="pl-4"><IoIosArrowDropleftCircle /></button>
+          <button onClick={goToPrevious} className="pl-4"><IoIosArrowDropleftCircle className="[fill:gray]"/></button>
           <ScrollToBottom />
-          <button onClick={goToNext} className="pr-4"><IoIosArrowDroprightCircle /></button>
+          <button onClick={goToNext} className="pr-4"><IoIosArrowDroprightCircle className="[fill:gray]" /></button>
         </div>
 
 
