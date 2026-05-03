@@ -74,7 +74,7 @@ export default function Home() {
 
 
 const basak_cv = userLocale.startsWith('tr') ? (
-  <div className="max-w-3xl mx-auto sm:px-4 md:px-8 sm:py-8">
+  <div className="max-w-3xl mx-auto">
     <div className="flex flex-col sm:flex-row sm:space-x-8">
       <div className="flex-1 mb-4 sm:mb-0 text-justify">
         <p className="mt-2 text-base md:text-lg leading-7 text-gray-600 p-4 sm:p-6 rounded-lg">
@@ -91,7 +91,7 @@ const basak_cv = userLocale.startsWith('tr') ? (
     </div>
   </div>
 ) : (
-  <div className="max-w-3xl mx-auto sm:px-4 md:px-8 sm:py-8">
+  <div className="max-w-3xl mx-auto">
     <div className="flex flex-col sm:flex-row sm:space-x-8">
       <div className="flex-1 mb-4 sm:mb-0 text-justify">
         <p className="mt-2 text-base md:text-lg leading-7 text-gray-600 p-4 sm:p-6 rounded-lg">
@@ -110,7 +110,7 @@ const basak_cv = userLocale.startsWith('tr') ? (
 );
 
 const cemal_cv = userLocale.startsWith('tr') ? (
-  <div className="max-w-3xl mx-auto sm:px-4 md:px-8 sm:py-8">
+  <div className="max-w-3xl mx-auto">
     <div className="flex flex-col sm:flex-row sm:space-x-8">
       <div className="flex-1 mb-4 sm:mb-0 text-justify">
         <p className="mt-2 text-base md:text-lg leading-7 text-gray-600 p-4 sm:p-6 rounded-lg">
@@ -124,7 +124,7 @@ const cemal_cv = userLocale.startsWith('tr') ? (
     </div>
   </div>
 ) : (
-  <div className="max-w-3xl mx-auto sm:px-4 md:px-8 sm:py-8">
+  <div className="max-w-3xl mx-auto">
     <div className="flex flex-col sm:flex-row sm:space-x-8">
       <div className="flex-1 mb-4 sm:mb-0 text-justify">
         <p className="mt-2 text-base md:text-lg leading-7 text-gray-600 p-4 sm:p-6 rounded-lg">
