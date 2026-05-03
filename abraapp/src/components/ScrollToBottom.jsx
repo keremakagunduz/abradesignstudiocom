@@ -14,7 +14,7 @@ const ScrollToBottom = () => {
     return (
         <>
         <div className="flex pb-2">
-            <a href="https://www.instagram.com/abradesignstudio/" target="_blank" className="flex justify-center text-gray-400 hover:text-gray-500 mr-4">
+            <a href="https://www.instagram.com/abradesignstudio/" target="_blank" rel="noreferrer" className="flex justify-center text-gray-500 hover:text-gray-600 mr-4">
                 <FaInstagram className="max-w-8 self-end cursor-pointer" />
             </a>
             <BsEnvelope onClick={goToBottom} className="max-w-8 self-end cursor-pointer mr-4 ml-4 [fill:gray]" />
