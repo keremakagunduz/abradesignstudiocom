@@ -223,7 +223,7 @@ const cemal_title = userLocale.startsWith('tr') ? (
 
     <h2 className="text-3xl font-bold underline underline-offset-8 text-gray-700 mb-6 mt-24">Team<span aria-hidden="true">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></h2>
 <div className="flex flex-col xl:flex-row justify-center mt-12 space-y-12 xl:space-y-0 xl:space-x-12 max-w-5xl">
-    <div className="block text-center bg-white shadow-lg rounded-lg p-6">
+    <div className="block bg-white p-6">
         <h3 className="text-xl font-bold text-gray-800">Başak Bakkaloğlu</h3>
         {basak_title}
         <div className="w-fit flex items-center">
@@ -243,7 +243,7 @@ const cemal_title = userLocale.startsWith('tr') ? (
         </a>
     </div>
 
-    <div className="block text-center bg-white shadow-lg rounded-lg p-6">
+    <div className="block bg-white p-6">
         <h3 className="text-xl font-bold text-gray-800">Cemal Çobanoğlu</h3>
         {cemal_title}
         <div className="w-fit flex items-center">
