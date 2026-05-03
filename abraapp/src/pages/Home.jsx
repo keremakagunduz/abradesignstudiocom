@@ -8,6 +8,7 @@ import styles from '../home.css';
 import ScrollToTop from '../components/ScrollToTop';
 import { FaPhoneAlt } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
+import { BsEnvelope } from "react-icons/bs";
 
 const imageLoader = (src, width, quality) => {
   return `${src}?format=auto${quality ? `&quality=${quality}` : ''}&width=${width}`;
