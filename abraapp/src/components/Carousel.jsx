@@ -54,12 +54,12 @@ const Carousel = ({ projects }) => {
       <article className="items-center">
 <div className="relative h-svh sm:h-screen flex justify-center overflow-hidden">
     <img
-        src={imageLoader(projects[currentIndex].cover_image, 1200)} 
+        src={imageLoader(projects[currentIndex].cover_image, 2400)} 
         srcSet={`
-            ${imageLoader(projects[currentIndex].cover_image, 400)} 400w,
-            ${imageLoader(projects[currentIndex].cover_image, 800)} 800w,
-            ${imageLoader(projects[currentIndex].cover_image, 1200)} 1200w,
-            ${imageLoader(projects[currentIndex].cover_image, 1600)} 1600w
+            ${imageLoader(projects[currentIndex].cover_image, 800)} 400w,
+            ${imageLoader(projects[currentIndex].cover_image, 1600)} 800w,
+            ${imageLoader(projects[currentIndex].cover_image, 2400)} 1200w,
+            ${imageLoader(projects[currentIndex].cover_image, 3200)} 1600w
         `}
         sizes="(max-width: 400px) 400px,
                (max-width: 800px) 800px,
