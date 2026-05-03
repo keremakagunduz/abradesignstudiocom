@@ -167,7 +167,7 @@ const cemal_cv = userLocale.startsWith('tr') ? (
       <span className="mx-2">|</span>
       <span className={userLocale.startsWith('tr') ? '' : 'font-bold'}>EN</span>
   </button>
-  <div className="block px-6 py-12 pt-24 sm:pt-12 lg:px-48">
+  <div className="block px-6 py-12 pt-24 sm:pt-12 lg:px-48 place-self-center">
 
     <h2 className="text-3xl font-bold underline underline-offset-8 text-gray-700 mb-6">Studio<span aria-hidden="true">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></h2>
     {about_text}
