@@ -233,7 +233,7 @@ const cemal_title = userLocale.startsWith('tr') ? (
         <img 
             src={imageLoader("https://d3hojcyp0aupte.cloudfront.net/asset/Başak_Bakkaloğlu.jpg", 400)} 
             alt="Başak Bakkaloğlu" 
-            className="mb-4 object-cover max-w-lg"
+            className="mb-4 object-cover max-w-md"
         />
         
         {basak_cv}
@@ -253,7 +253,7 @@ const cemal_title = userLocale.startsWith('tr') ? (
         <img 
             src={imageLoader("https://d3hojcyp0aupte.cloudfront.net/asset/Cemal_Çobanoğlu.jpg", 400)} 
             alt="Cemal Çobanoğlu" 
-            className="mb-4 object-cover max-w-lg"
+            className="mb-4 object-cover max-w-md"
         />
         {cemal_cv}
         <a href="https://www.linkedin.com/in/cem-cemal-cobanoglu-71aa3531/" target="_blank" rel="noreferrer" className="flex justify-center text-gray-400 hover:text-gray-500">
