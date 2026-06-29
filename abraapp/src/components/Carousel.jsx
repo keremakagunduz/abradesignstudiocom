@@ -77,7 +77,7 @@ const Carousel = ({ projects }) => {
         </div>
       </article>
 
-      <div className="absolute inset-0 bg-white bg-opacity-50 flex w-full h-fit place-self-center pt-16 pb-20">
+      <div className="absolute inset-0 bg-black bg-opacity-50 flex w-full h-fit place-self-center pt-16 pb-20">
         <div className="flex absolute self-center justify-between text-4xl w-full h-full">
           <button onClick={goToPrevious} className="pl-4"><IoIosArrowDropleftCircle className="[fill:gray]"/></button>
           <ScrollToBottom />
