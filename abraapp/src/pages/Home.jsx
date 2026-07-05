@@ -194,7 +194,7 @@ const cemal_title = userLocale.startsWith('tr') ? (
             ) : (
             <Carousel projects={allProjects} />
             )}
-      <div id="abra-icon" className="sticky top-0 left-0 z-50 p-4">
+      <div id="abra-icon" className="md:sticky md:top-0 md:left-0 md:z-50 p-4">
         <ScrollToTop />
       </div>
 
