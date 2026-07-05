@@ -15,15 +15,15 @@ const Footer = () => (
   >
   <div className="max-w-screen-xl px-4 mx-auto overflow-hidden sm:px-6 lg:px-8 flex flex-col items-center justify-center text-center">
 
-    <div className="w-fit flex items-center">
-        <BsEnvelope className="self-center" />
-        <p className="ml-2 text-base leading-6 text-gray-400">info@abradesignstudio.com</p>
-    </div>
+<div className="w-fit flex items-center">
+    <BsEnvelope className="self-center fill-black text-white" style={{strokeWidth: '1px'}} />
+    <p className="ml-2 text-base leading-6 text-gray-400">info@abradesignstudio.com</p>
+</div>
 
-    <div className="w-fit flex items-center">
-        <FaPhoneAlt className="self-center" />
-        <p className="ml-2 text-base leading-6 text-gray-400">+90 505 251 8358</p>
-    </div>
+<div className="w-fit flex items-center">
+    <FaPhoneAlt className="self-center fill-black text-white" style={{strokeWidth: '1px'}} />
+    <p className="ml-2 text-base leading-6 text-gray-400">+90 505 251 8358</p>
+</div>
 
     <p className="pt-6 mt-1 text-sm leading-6 text-gray-400">
         Copyrights of all media published on this website are reserved by
