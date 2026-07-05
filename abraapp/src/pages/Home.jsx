@@ -45,13 +45,13 @@ export default function Home() {
   const about_text = userLocale.startsWith('tr') ? (
   <>
   <div className="text-justify">
-    <p className="mt-2 text-base leading-7 text-black max-w-4xl">
+    <p className="mt-2 text-base leading-7 text-gray-600 max-w-4xl">
         2014 yılında Başak Bakkaloğlu ve Cemal Çobanoğlu tarafından İstanbul’da kurulan ABRA Design Studio, mobilya ve ürün tasarımının yanında, mimarlık, iç mimarlık ve kamusal mekan tasarımı disiplinlerinde üretimler yapmaktadır.
     </p>
-    <p className="mt-4 text-base leading-7 text-black max-w-4xl">
+    <p className="mt-4 text-base leading-7 text-gray-600 max-w-4xl">
         ABRA, Türkçe’de denge anlamına gelmektedir ve denge tüm ABRA tasarımları için bir başlangıç noktasıdır. Hem bir tasarım fikrinin ortaya çıkışında hem de kullanıcı-tasarım ve tasarım-mekan arasında bir etkileşim yaratma sürecinde, bu “denge arayışı” ABRA’ya rehberlik etmektedir.
     </p>
-    <p className="mt-4 text-base leading-7 text-black max-w-4xl">
+    <p className="mt-4 text-base leading-7 text-gray-600 max-w-4xl">
         ABRA, çeşitli ürünleri ile bugüne kadar Milano Design Week, Design Week Turkey, Design Spirit, States of Materials, Yan, Deka II gibi pek çok ulusal ve uluslararası fuar ve sergide küratör ya da katılımcı olarak yer aldı, yurt içi ve yurt dışında birçok basın organında tasarımları ile yer buldu, İstanbul Senin Kent Mobilyaları Yarışması birinciliği başta olmak üzere, çeşitli yarışmalarda farklı derecelerde ödüller aldı.
     </p> 
   </div>
@@ -59,13 +59,13 @@ export default function Home() {
 ):(
   <>
     <div className="text-justify">
-    <p className="mt-2 text-base leading-7 text-black max-w-4xl">
+    <p className="mt-2 text-base leading-7 text-gray-600 max-w-4xl">
     ABRA Design Studio, founded in 2014 in Istanbul by Başak Bakkaloğlu and Cemal Çobanoğlu, engages in furniture and product design as well as architecture, interior architecture, and public space design. 
     </p>
-    <p className="mt-4 text-base leading-7 text-black max-w-4xl">
+    <p className="mt-4 text-base leading-7 text-gray-600 max-w-4xl">
     The name ABRA means "balance" in Turkish, and balance serves as a starting point for all ABRA designs. This "quest for balance" guides the studio both in the emergence of design ideas and in creating interactions between users, design, and space.
     </p>
-    <p className="mt-4 text-base leading-7 text-black max-w-4xl">
+    <p className="mt-4 text-base leading-7 text-gray-600 max-w-4xl">
       To date, ABRA has participated as a curator or exhibitor in many national and international fairs and exhibitions, including Milan Design Week, Design Week Turkey, Design Spirit, States of Materials, Yan, and Deka II. The studio has also been featured in various press outlets both domestically and internationally, and it has received different levels of awards in various competitions, notably winning first place in the Istanbul Your City Furniture Competition.
     </p>
     </div>
@@ -77,7 +77,7 @@ const basak_cv = userLocale.startsWith('tr') ? (
   <div className="max-w-lg mx-auto">
     <div className="flex flex-col sm:flex-row sm:space-x-8">
       <div className="flex-1 mb-4 sm:mb-0 text-justify">
-        <p className="mt-2 text-base leading-7 text-black p-4 rounded-lg">
+        <p className="mt-2 text-base leading-7 text-gray-600 p-4 rounded-lg">
           Lisans eğitimini İ.T.Ü. Mimarlık Fakültesi, Mimarlık Bölümü’nde tamamladı. Mezuniyeti sonrasında, çeşitli mimarlık ofislerinde, kentsel 
           tasarım, konut, ofis ve mağaza tasarımı gibi farklı fonksiyon ve ölçekler üzerine çalışma imkanı buldu, deneyim kazandı. Eş zamanlı olarak 
           mobilya ve ürün tasarımına ağırlık verdi. Mimarlık, iç mimarlık ve ürün tasarımı çalışmalarını tek bir isim altında sürdürme isteğiyle, 2014 
@@ -94,7 +94,7 @@ const basak_cv = userLocale.startsWith('tr') ? (
   <div className="max-w-lg mx-auto">
     <div className="flex flex-col sm:flex-row sm:space-x-8">
       <div className="flex-1 mb-4 sm:mb-0 text-justify">
-        <p className="mt-2 text-base leading-7 text-black p-4 rounded-lg">
+        <p className="mt-2 text-base leading-7 text-gray-600 p-4 rounded-lg">
           She completed her bachelor’s degree in I.T.U. Architecture Faculty, Architecture Department. After graduation, she worked in several 
           architecture offices, where she had the opportunity to work and gained experience on different functions and scales like urban design, 
           residence, office, and showroom designs.
@@ -113,7 +113,7 @@ const cemal_cv = userLocale.startsWith('tr') ? (
   <div className="max-w-lg mx-auto">
     <div className="flex flex-col sm:flex-row sm:space-x-8">
       <div className="flex-1 mb-4 sm:mb-0 text-justify">
-        <p className="mt-2 text-base leading-7 text-black p-4 rounded-lg">
+        <p className="mt-2 text-base leading-7 text-gray-600 p-4 rounded-lg">
           Lisans eğitimini İ.T.Ü. Mimarlık Fakültesi, İç Mimarlık Bölümü’nde, yüksek lisans eğitimini ise IMIAD’da tamamladı. IMIAD kapsamında İ.T.Ü 
           ile birlikte, Finlandiya’da Lahti University of Applied Sciences’da, İskoçya’da Edinburgh College of Art’da eğitim aldı. Bu süreçte yüzyıl 
           ortası mobilya tasarımı ve İskandinav tasarımı üzerine tezini yazdı.
@@ -127,7 +127,7 @@ const cemal_cv = userLocale.startsWith('tr') ? (
   <div className="max-w-lg mx-auto">
     <div className="flex flex-col sm:flex-row sm:space-x-8">
       <div className="flex-1 mb-4 sm:mb-0 text-justify">
-        <p className="mt-2 text-base leading-7 text-black p-4 rounded-lg">
+        <p className="mt-2 text-base leading-7 text-gray-600 p-4 rounded-lg">
           He completed his bachelor’s degree in I.T.U. Architecture Faculty, Interior Architecture Department and his postgraduate degree in IMIAD, 
           where he studied in I.T.U, in Finland, Lahti University of Applied Sciences and in Scotland, Edinburgh College of Art.
 
@@ -224,7 +224,7 @@ const cemal_title = userLocale.startsWith('tr') ? (
     <h2 className="text-3xl font-bold underline underline-offset-8 text-gray-600 mb-6 mt-24 max-w-4xl">Team<span aria-hidden="true">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></h2>
 <div className="flex flex-col xl:flex-row justify-center mt-12 space-y-12 xl:space-y-0 xl:space-x-12 max-w-4xl">
     <div className="block bg-white p-2">
-        <h3 className="text-xl font-semibold  text-gray-800">Başak Bakkaloğlu</h3>
+        <h3 className="text-xl font-semibold  text-gray-600">Başak Bakkaloğlu</h3>
         {basak_title}
         <div className="w-fit flex items-center">
         <BsEnvelope className="self-center" />
@@ -244,7 +244,7 @@ const cemal_title = userLocale.startsWith('tr') ? (
     </div>
 
     <div className="block bg-white p-2">
-        <h3 className="text-xl font-semibold text-gray-800">Cemal Çobanoğlu</h3>
+        <h3 className="text-xl font-semibold text-gray-600">Cemal Çobanoğlu</h3>
         {cemal_title}
         <div className="w-fit flex items-center">
         <BsEnvelope className="self-center" />
