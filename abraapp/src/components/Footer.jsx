@@ -16,7 +16,7 @@ const Footer = () => (
   <div className="max-w-screen-xl px-4 mx-auto overflow-hidden sm:px-6 lg:px-8 flex flex-col items-center justify-center text-center">
 
 <div className="w-fit flex items-center">
-    <BsEnvelope className="self-center fill-black text-white" style={{strokeWidth: '1px'}} />
+    <BsEnvelope className="self-center fill-white text-black" style={{strokeWidth: '1px'}} />
     <p className="ml-2 text-base leading-6 text-gray-400">info@abradesignstudio.com</p>
 </div>
 
