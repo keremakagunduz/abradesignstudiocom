@@ -3,6 +3,11 @@ import { FaAngleUp } from "react-icons/fa";
 
 import "../index.css";
 
+const imageLoader = (src, width, quality) => {
+  return `${src}?format=auto${quality ? `&quality=${quality}` : ''}&width=${width}`;
+};
+
+
 const ScrollToTop = () => {
     const [showTopBtn, setShowTopBtn] = useState(false);
     useEffect(() => {
