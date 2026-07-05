@@ -227,7 +227,7 @@ const cemal_title = userLocale.startsWith('tr') ? (
         <h3 className="text-xl font-semibold  text-gray-600">Başak Bakkaloğlu</h3>
         {basak_title}
         <div className="w-fit flex items-center">
-        <BsEnvelope className="self-center" />
+        <BsEnvelope className="self-center text-gray-400" />
         <p className="ml-2 text-base leading-6 text-gray-400">basak@abradesignstudio.com</p>
         </div>
         <img 
@@ -247,7 +247,7 @@ const cemal_title = userLocale.startsWith('tr') ? (
         <h3 className="text-xl font-semibold text-gray-600">Cemal Çobanoğlu</h3>
         {cemal_title}
         <div className="w-fit flex items-center">
-        <BsEnvelope className="self-center" />
+        <BsEnvelope className="self-center text-gray-400" />
         <p className="ml-2 text-base leading-6 text-gray-400">cemal@abradesignstudio.com</p>
         </div>
         <img 
