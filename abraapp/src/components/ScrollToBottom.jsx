@@ -14,11 +14,11 @@ const ScrollToBottom = () => {
     return (
         <>
         <div className="flex pb-2">
-            <a href="https://www.instagram.com/abradesignstudio/" target="_blank" rel="noreferrer" className="flex justify-center text-white hover:text-white mt-4 mr-6">
+            <a href="https://www.instagram.com/abradesignstudio/" target="_blank" rel="noreferrer" className="flex justify-center text-white hover:text-white mt-4 mr-5">
                 <FaInstagram className="max-w-8 self-end cursor-pointer" />
             </a>
-            <BsEnvelope onClick={goToBottom} className="max-w-8 self-end cursor-pointer mt-4 mr-6 ml-6 [fill:white]" />
-            <FaPhoneAlt onClick={goToBottom} className="max-w-8 self-end cursor-pointer mt-4 ml-6 [stroke:white] [stroke-width:35] fill-transparent" />
+            <BsEnvelope onClick={goToBottom} className="max-w-8 self-end cursor-pointer mt-4 mr-5 ml-5 [fill:white]" />
+            <FaPhoneAlt onClick={goToBottom} className="max-w-8 self-end cursor-pointer mt-4 ml-5 [stroke:white] [stroke-width:35] fill-transparent" />
         </div>
         </>
     );
