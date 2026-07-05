@@ -12,6 +12,18 @@ import "../index.css";
 import { FaAngleUp, FaPhoneAlt, FaInstagram } from "react-icons/fa";
 
 
+const imageLoader = (src, width, quality) => {
+  return `${src}?format=auto${quality ? `&quality=${quality}` : ''}&width=${width}`;
+};
+
+export default function Home() {
+  const [projects, setProjects] = useState([]);
+  const [filter, setFilter] = useState(null);
+  const [allProjects, setAllProjects] = useState([]);
+  const [loading, setLoading] = useState(false);
+  const [page, setPage] = useState(1);
+  const projectsPerPage = 24;
+
 const ScrollToBottom = () => {
     const [showOverlay, setShowOverlay] = useState(false);
 
@@ -57,19 +69,6 @@ const ScrollToBottom = () => {
         </>
     );
 };
-
-
-const imageLoader = (src, width, quality) => {
-  return `${src}?format=auto${quality ? `&quality=${quality}` : ''}&width=${width}`;
-};
-
-export default function Home() {
-  const [projects, setProjects] = useState([]);
-  const [filter, setFilter] = useState(null);
-  const [allProjects, setAllProjects] = useState([]);
-  const [loading, setLoading] = useState(false);
-  const [page, setPage] = useState(1);
-  const projectsPerPage = 24;
 
   useEffect(() => {
     fetchProjects().then(data => {
