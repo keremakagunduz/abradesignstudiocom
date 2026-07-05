@@ -1,4 +1,4 @@
-import React,{ useEffect, useState, useMemo } from 'react';
+import { useEffect, useState, useMemo } from 'react';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import Carousel from '../components/Carousel';
@@ -6,11 +6,9 @@ import { fetchProjects } from '../api/portfolio';
 import { Link, useLocation } from "react-router-dom";
 import styles from '../home.css';
 import ScrollToTop from '../components/ScrollToTop';
+import { FaPhoneAlt } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { BsEnvelope } from "react-icons/bs";
-import "../index.css";
-import { FaAngleUp, FaPhoneAlt, FaInstagram } from "react-icons/fa";
-
 
 const imageLoader = (src, width, quality) => {
   return `${src}?format=auto${quality ? `&quality=${quality}` : ''}&width=${width}`;
@@ -23,52 +21,6 @@ export default function Home() {
   const [loading, setLoading] = useState(false);
   const [page, setPage] = useState(1);
   const projectsPerPage = 24;
-
-const ScrollToBottom = () => {
-    const [showOverlay, setShowOverlay] = useState(false);
-
-    const goToBottom = () => {
-        window.scrollTo({
-            top: document.documentElement.scrollHeight,
-            behavior: "smooth",
-        });
-        
- 
-        setShowOverlay(true);
-        
-        setTimeout(() => {
-            setShowOverlay(false);
-        }, 2000);
-    };
-
-    return (
-        <>
-            {/* Black overlay */}
-            {showOverlay && (
-                <div className="fixed inset-0 bg-black bg-opacity-70 z-40 pointer-events-none transition-opacity duration-300"></div>
-            )}
-
-            <div className="flex pb-2">
-                <a 
-                    href="https://www.instagram.com/abradesignstudio/" 
-                    target="_blank" 
-                    rel="noreferrer" 
-                    className="flex justify-center text-white hover:text-white mt-4 mr-5"
-                >
-                    <FaInstagram className="max-w-8 self-end cursor-pointer" />
-                </a>
-                <BsEnvelope 
-                    onClick={goToBottom} 
-                    className="max-w-8 self-end cursor-pointer mt-4 mr-5 ml-5 [fill:white]" 
-                />
-                <FaPhoneAlt 
-                    onClick={goToBottom} 
-                    className="max-w-8 self-end cursor-pointer mt-4 ml-5 [stroke:white] [stroke-width:35] fill-transparent" 
-                />
-            </div>
-        </>
-    );
-};
 
   useEffect(() => {
     fetchProjects().then(data => {
@@ -314,8 +266,7 @@ const cemal_title = userLocale.startsWith('tr') ? (
   
           </>
               </main>
-      <Footer className={`${showOverlay ? 'ring-2 ring-white' : ''}`}
- />
+      <Footer />
     </>
   );
 }
