@@ -217,12 +217,12 @@ const cemal_title = userLocale.startsWith('tr') ? (
 
     <h2 className="text-3xl font-light underline underline-offset-8 decoration-1 text-gray-600 mb-12 mt-24 max-w-4xl">Team<span aria-hidden="true">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></h2>
 <div className="flex flex-col xl:flex-row justify-center mt-12 space-y-12 xl:space-y-0 xl:space-x-12 max-w-4xl">
-    <div className="block bg-white p-2">
-        <h3 className="text-xl font-semibold  text-gray-600">Başak Bakkaloğlu</h3>
+    <div className="flex flex-col bg-white p-2 flex-1">
+        <h3 className="text-xl font-semibold text-gray-600">Başak Bakkaloğlu</h3>
         {basak_title}
         <div className="w-fit flex items-center">
-        <BsEnvelope className="self-center text-gray-400" />
-        <p className="ml-2 text-base leading-6 text-gray-400">basak@abradesignstudio.com</p>
+            <BsEnvelope className="self-center text-gray-400" />
+            <p className="ml-2 text-base leading-6 text-gray-400">basak@abradesignstudio.com</p>
         </div>
         <img 
             src={imageLoader("https://d3hojcyp0aupte.cloudfront.net/asset/Başak_Bakkaloğlu.jpg", 400)} 
@@ -230,32 +230,35 @@ const cemal_title = userLocale.startsWith('tr') ? (
             className="mb-4 object-cover max-w-md"
         />
         
-        {basak_cv}
+        <div className="flex-1">{basak_cv}</div>
+        
         <a href="https://www.linkedin.com/in/ba%C5%9Fak-bakkalo%C4%9Flu-8502b6126/" target="_blank" rel="noreferrer" className="flex justify-center text-gray-400 hover:text-gray-500">
             <span className="sr-only">LinkedIn</span>
             <FaLinkedin className="w-8 h-6" />
         </a>
     </div>
 
-    <div className="block bg-white p-2">
+    <div className="flex flex-col bg-white p-2 flex-1">
         <h3 className="text-xl font-semibold text-gray-600">Cemal Çobanoğlu</h3>
         {cemal_title}
         <div className="w-fit flex items-center">
-        <BsEnvelope className="self-center text-gray-400" />
-        <p className="ml-2 text-base leading-6 text-gray-400">cemal@abradesignstudio.com</p>
+            <BsEnvelope className="self-center text-gray-400" />
+            <p className="ml-2 text-base leading-6 text-gray-400">cemal@abradesignstudio.com</p>
         </div>
         <img 
             src={imageLoader("https://d3hojcyp0aupte.cloudfront.net/asset/Cemal_Çobanoğlu.jpg", 400)} 
             alt="Cemal Çobanoğlu" 
             className="mb-4 object-cover max-w-md"
         />
-        {cemal_cv}
+        <div className="flex-1">{cemal_cv}</div>
+        
         <a href="https://www.linkedin.com/in/cem-cemal-cobanoglu-71aa3531/" target="_blank" rel="noreferrer" className="flex justify-center text-gray-400 hover:text-gray-500">
             <span className="sr-only">LinkedIn</span>
             <FaLinkedin className="w-8 h-6" />
         </a>
     </div>
 </div>
+
 
 </div>
   
