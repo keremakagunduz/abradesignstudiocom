@@ -144,7 +144,7 @@ const basak_title = userLocale.startsWith('tr') ? (
   <div className="max-w-lg mx-auto">
     <div className="flex flex-col sm:flex-row sm:space-x-8">
       <div className="flex-1 mb-4 sm:mb-0 text-justify">
-        <p className="font-medium mt-2 mb-2 text-base md:text-lg leading-7 text-gray-600">
+        <p className="font-medium mt-0 mb-2 text-base md:text-lg leading-7 text-gray-600">
           Architect - ITU, co-Founder
         </p>
       </div>
@@ -154,7 +154,7 @@ const basak_title = userLocale.startsWith('tr') ? (
   <div className="max-w-lg mx-auto">
     <div className="flex flex-col sm:flex-row sm:space-x-8">
       <div className="flex-1 mb-4 sm:mb-0 text-justify">
-        <p className="font-medium mt-2 mb-2 text-base md:text-lg leading-7 text-gray-600">
+        <p className="font-medium mt-0 mb-2 text-base md:text-lg leading-7 text-gray-600">
           Architect - ITU, co-Founder
         </p>
       </div>
@@ -166,7 +166,7 @@ const cemal_title = userLocale.startsWith('tr') ? (
   <div className="max-w-lg mx-auto">
     <div className="flex flex-col sm:flex-row sm:space-x-8">
       <div className="flex-1 mb-4 sm:mb-0 text-justify">
-        <p className="font-medium mt-1 mb-2 text-base md:text-lg leading-7 text-gray-600">
+        <p className="font-medium mt-0 mb-2 text-base md:text-lg leading-7 text-gray-600">
           Architect - ITU, co-Founder
         </p>
       </div>
@@ -176,7 +176,7 @@ const cemal_title = userLocale.startsWith('tr') ? (
   <div className="max-w-lg mx-auto">
     <div className="flex flex-col sm:flex-row sm:space-x-8">
       <div className="flex-1 mb-4 sm:mb-0 text-justify">
-        <p className="font-medium mt-1 mb-2 text-base md:text-lg leading-7 text-gray-600">
+        <p className="font-medium mt-0 mb-2 text-base md:text-lg leading-7 text-gray-600">
           Architect - ITU, co-Founder
         </p>
       </div>
