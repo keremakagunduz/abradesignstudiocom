@@ -198,7 +198,7 @@ const cemal_title = userLocale.startsWith('tr') ? (
             ) : (
             <Carousel projects={allProjects} />
             )}
-      <div id="abra-icon">
+      <div id="abra-icon" className="sticky top-0 left-0 z-50 p-4">
         <img
             src={imageLoader("https://d3hojcyp0aupte.cloudfront.net/asset/Abra_Icon_png.png", 400)}
             alt="Abra Design Studio"
