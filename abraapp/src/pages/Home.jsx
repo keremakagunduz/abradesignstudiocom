@@ -168,9 +168,8 @@ const cemal_title = userLocale.startsWith('tr') ? (
   <div className="max-w-lg mx-auto">
     <div className="flex flex-col sm:flex-row sm:space-x-8">
       <div className="flex-1 mb-4 sm:mb-0 text-justify">
-        <p className="font-medium mt-2 mb-2 text-base md:text-lg leading-7 text-gray-600">
-          Architect - ITU, co-Founder<br></br>
-          Creative Director
+        <p className="font-medium mt-1 mb-2 text-base md:text-lg leading-7 text-gray-600">
+          Architect - ITU, co-Founder
         </p>
       </div>
     </div>
@@ -179,9 +178,8 @@ const cemal_title = userLocale.startsWith('tr') ? (
   <div className="max-w-lg mx-auto">
     <div className="flex flex-col sm:flex-row sm:space-x-8">
       <div className="flex-1 mb-4 sm:mb-0 text-justify">
-        <p className="font-medium mt-2 mb-2 text-base md:text-lg leading-7 text-gray-600">
-          Architect - ITU, co-Founder<br></br>
-          Creative Director
+        <p className="font-medium mt-1 mb-2 text-base md:text-lg leading-7 text-gray-600">
+          Architect - ITU, co-Founder
         </p>
       </div>
     </div>
@@ -213,11 +211,11 @@ const cemal_title = userLocale.startsWith('tr') ? (
   </button>
   <div className="block px-6 py-12 pt-24 sm:pt-12 lg:px-48 place-self-center">
 
-    <h2 className="text-3xl font-light underline underline-offset-8 decoration-1 text-gray-600 mb-6 max-w-4xl">Studio<span aria-hidden="true">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></h2>
+    <h2 className="text-3xl font-light underline underline-offset-8 decoration-1 text-gray-600 mb-12 max-w-4xl">Studio<span aria-hidden="true">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></h2>
     {about_text}
 
 
-    <h2 className="text-3xl font-light underline underline-offset-8 decoration-1 text-gray-600 mb-6 mt-24 max-w-4xl">Team<span aria-hidden="true">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></h2>
+    <h2 className="text-3xl font-light underline underline-offset-8 decoration-1 text-gray-600 mb-12 mt-24 max-w-4xl">Team<span aria-hidden="true">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></h2>
 <div className="flex flex-col xl:flex-row justify-center mt-12 space-y-12 xl:space-y-0 xl:space-x-12 max-w-4xl">
     <div className="block bg-white p-2">
         <h3 className="text-xl font-semibold  text-gray-600">Başak Bakkaloğlu</h3>
