@@ -77,7 +77,7 @@ const Carousel = ({ projects }) => {
         </div>
       </article>
 
-      <div className="absolute inset-0 bg-black bg-opacity-50 flex w-full h-fit place-self-center pt-16 pb-20">
+      <div className="absolute inset-0 bg-black bg-opacity-50 flex w-full h-fit place-self-center pt-20 pb-24">
         <div className="flex absolute self-center justify-between text-4xl w-full h-full">
           <button onClick={goToPrevious} className="pl-4"><IoIosArrowDropleftCircle className="[fill:white]"/></button>
           <ScrollToBottom />
@@ -86,7 +86,7 @@ const Carousel = ({ projects }) => {
 
 
         <img
-          src={imageLoader("https://d3hojcyp0aupte.cloudfront.net/asset/Abra_Logo_png.png", 800)}
+          src={imageLoader("https://d3hojcyp0aupte.cloudfront.net/asset/logo_beyaz.jpeg", 800)}
           alt="Abra Design Studio"
           className="max-w-48 mx-auto"
         />
