@@ -24,10 +24,12 @@ const ScrollToTop = () => {
         <div className="btm-to-top">
             {" "}
             {showTopBtn && (
-                <FaAngleUp
-                    className="icon-position icon-style"
-                    onClick={goToTop}
-                />
+                <img
+            src={imageLoader("https://d3hojcyp0aupte.cloudfront.net/asset/Abra_Icon_png.png", 400)}
+            alt="Abra Design Studio"
+            className="max-w-40 ml-0 mr-auto absolute pt-0 sm:pt-6"
+            onClick={goToTop}
+            />
             )}{" "}
         </div>
     );

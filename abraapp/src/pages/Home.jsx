@@ -199,11 +199,7 @@ const cemal_title = userLocale.startsWith('tr') ? (
             <Carousel projects={allProjects} />
             )}
       <div id="abra-icon" className="sticky top-0 left-0 z-50 p-4">
-        <img
-            src={imageLoader("https://d3hojcyp0aupte.cloudfront.net/asset/Abra_Icon_png.png", 400)}
-            alt="Abra Design Studio"
-            className="max-w-40 ml-0 mr-auto absolute pt-0 sm:pt-6"
-        />
+        <ScrollToTop />
       </div>
 
   <button
