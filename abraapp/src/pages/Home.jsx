@@ -46,13 +46,16 @@ export default function Home() {
   <>
   <div className="text-justify">
     <p className="mt-2 text-base leading-7 text-gray-600 max-w-4xl">
-        2014 yılında Başak Bakkaloğlu ve Cemal Çobanoğlu tarafından İstanbul’da kurulan ABRA Design Studio, mobilya ve ürün tasarımının yanında, mimarlık, iç mimarlık ve kamusal mekan tasarımı disiplinlerinde üretimler yapmaktadır.
+      Abra Design Studio, 2014 yılında mimar Başak Bakkaloğlu ve yüksek iç mimar Cemal Çobanoğlu tarafından İstanbul'da kurulan; mimarlık, iç mimarlık, kamusal alan tasarımı ve mobilya tasarımı alanlarında çalışan bir tasarım stüdyosudur.
     </p>
     <p className="mt-4 text-base leading-7 text-gray-600 max-w-4xl">
-        ABRA, Türkçe’de denge anlamına gelmektedir ve denge tüm ABRA tasarımları için bir başlangıç noktasıdır. Hem bir tasarım fikrinin ortaya çıkışında hem de kullanıcı-tasarım ve tasarım-mekan arasında bir etkileşim yaratma sürecinde, bu “denge arayışı” ABRA’ya rehberlik etmektedir.
+        Kuruluşundan itibaren sekiz yıl boyunca İstanbul merkezli çalışan Abra, 2022’de Ayvalık ofisinin açılmasıyla üretimini iki kent arasında sürdürmeye başlamıştır.
     </p>
     <p className="mt-4 text-base leading-7 text-gray-600 max-w-4xl">
-        ABRA, çeşitli ürünleri ile bugüne kadar Milano Design Week, Design Week Turkey, Design Spirit, States of Materials, Yan, Deka II gibi pek çok ulusal ve uluslararası fuar ve sergide küratör ya da katılımcı olarak yer aldı, yurt içi ve yurt dışında birçok basın organında tasarımları ile yer buldu, İstanbul Senin Kent Mobilyaları Yarışması birinciliği başta olmak üzere, çeşitli yarışmalarda farklı derecelerde ödüller aldı.
+        Abra, Türkçe'de denge anlamına gelir ve denge stüdyonun tasarımları için bir başlangıç noktasıdır. İlk kavramsal fikrin ortaya çıkışından, tasarımın kullanıcıyla etkileşime geçtiği ana kadar bu "denge arayışı" Abra'ya rehberlik eder.
+    </p> 
+    <p className="mt-4 text-base leading-7 text-gray-600 max-w-4xl">
+     Farklı ölçek ve işlevlerde projeler üreten Abra,  bu sayede tasarım refleksini sürekli sınar, her projeyi kendi bağlamı içinde ele alır ve sabit bir dil tekrarının yerine proje özelinde geliştirilen çözümleri önceliklendirir. Kalıcılık ile güncel olma hâli arasındaki dengeyi kuran ve tasarımı ile öne çıkarken kullanıcısına ifade alanı açan üretimler ortaya çıkarmak, Abra’nın temel motivasyonlarındandır. Bu süreçte kurulan multidisipliner işbirlikleri, stüdyonun üretim sürecinin önemli bir parçasıdır. 
     </p> 
   </div>
 </>
@@ -60,13 +63,16 @@ export default function Home() {
   <>
     <div className="text-justify">
     <p className="mt-2 text-base leading-7 text-gray-600 max-w-4xl">
-    ABRA Design Studio, founded in 2014 in Istanbul by Başak Bakkaloğlu and Cemal Çobanoğlu, engages in furniture and product design as well as architecture, interior architecture, and public space design. 
+    Abra Design Studio is an architecture and design practice founded in Istanbul in 2014 by architect Başak Bakkaloğlu and interior architect Cemal Çobanoğlu. The practice engages with projects across architecture, interiors, public space, and furniture design.
     </p>
     <p className="mt-4 text-base leading-7 text-gray-600 max-w-4xl">
-    The name ABRA means "balance" in Turkish, and balance serves as a starting point for all ABRA designs. This "quest for balance" guides the studio both in the emergence of design ideas and in creating interactions between users, design, and space.
+    Originally established in Istanbul, Abra maintained its practice in the city for eight years before expanding to Ayvalık in 2022, and has since continued to operate between the two locations.
     </p>
     <p className="mt-4 text-base leading-7 text-gray-600 max-w-4xl">
-      To date, ABRA has participated as a curator or exhibitor in many national and international fairs and exhibitions, including Milan Design Week, Design Week Turkey, Design Spirit, States of Materials, Yan, and Deka II. The studio has also been featured in various press outlets both domestically and internationally, and it has received different levels of awards in various competitions, notably winning first place in the Istanbul Your City Furniture Competition.
+      The word “Abra” refers to balance, a notion that lies at the core of the studio’s design approach. From the emergence of an initial concept to the stage at which the project is encountered by the user, this pursuit of balance continues to guide the studio’s process.
+    </p>
+    <p className="mt-4 text-base leading-7 text-gray-600 max-w-4xl">
+      Working across varying scales and programs enables Abra to critically re-evaluate its design approach, respond to the specific conditions of each project, and develop context-specific solutions rather than operating through a fixed formal logic. The practice is shaped by an interest in producing architectural responses that negotiate between permanence and contemporaneity, maintaining a distinct design character while allowing space for individual interpretation. Multidisciplinary collaborations throughout the process constitute an essential part of Abra’s working methodology.
     </p>
     </div>
 </>
@@ -78,14 +84,11 @@ const basak_cv = userLocale.startsWith('tr') ? (
     <div className="flex flex-col sm:flex-row sm:space-x-8">
       <div className="flex-1 mb-4 sm:mb-0 text-justify">
         <p className="mt-2 text-base leading-7 text-gray-600 p-4 rounded-lg">
-          Lisans eğitimini İ.T.Ü. Mimarlık Fakültesi, Mimarlık Bölümü’nde tamamladı. Mezuniyeti sonrasında, çeşitli mimarlık ofislerinde, kentsel 
-          tasarım, konut, ofis ve mağaza tasarımı gibi farklı fonksiyon ve ölçekler üzerine çalışma imkanı buldu, deneyim kazandı. Eş zamanlı olarak 
-          mobilya ve ürün tasarımına ağırlık verdi. Mimarlık, iç mimarlık ve ürün tasarımı çalışmalarını tek bir isim altında sürdürme isteğiyle, 2014 
-          yılında Cemal Çobanoğlu ile “ABRA Design Studio”yu kurdu.
-
-          Kadir Has Üniversitesi, MEF Üniversitesi ve Beykent Üniversitesi’nde temel tasarım, mobilya tasarımı, mobilya tarihi ve ileri sunum teknikleri 
-          dersleri verdi. Tasarımları yurt içinde ve yurt dışında pek çok farklı sergi ve yayında yer aldı. Mobilya tasarımı yarışmalarında çeşitli 
-          ödüller aldı. Pek çok konferans ve söyleşide konuşmacı olarak yer aldı.
+        Lisans eğitimini İ.T.Ü. Mimarlık Fakültesi Mimarlık Bölümü’nde tamamladı. Çeşitli mimarlık ofislerinde kentsel tasarım, konut, ofis ve ticari mekân projelerinde görev aldı; 
+        eş zamanlı olarak mobilya ve ürün tasarımı alanında çalışmalar yürüttü. Mimarlık, iç mimarlık ve ürün tasarımı çalışmalarını tek bir çatı altında sürdürme isteğiyle, 
+        2014 yılında Cemal Çobanoğlu ile birlikte ABRA Design Studio’yu kurdu. Kadir Has Üniversitesi, MEF Üniversitesi ve Beykent Üniversitesi’nde temel tasarım, mobilya tasarımı, 
+        mobilya tarihi ve ileri sunum teknikleri dersleri verdi. Tasarımları yurt içinde ve yurt dışında çeşitli sergi ve yayınlarda yer aldı; mobilya tasarımı alanındaki yarışmalarda 
+        ödüller kazandı. Mimarlık ve tasarım alanlarında düzenlenen konferans ve söyleşilerde konuşmacı olarak yer aldı.
         </p>
       </div>
     </div>
@@ -95,14 +98,11 @@ const basak_cv = userLocale.startsWith('tr') ? (
     <div className="flex flex-col sm:flex-row sm:space-x-8">
       <div className="flex-1 mb-4 sm:mb-0 text-justify">
         <p className="mt-2 text-base leading-7 text-gray-600 p-4 rounded-lg">
-          She completed her bachelor’s degree in I.T.U. Architecture Faculty, Architecture Department. After graduation, she worked in several 
-          architecture offices, where she had the opportunity to work and gained experience on different functions and scales like urban design, 
-          residence, office, and showroom designs.
-
-          In the meanwhile, she continued to explore the world of furniture and product design. In 2014, aiming to go on with her works on 
-          architecture, interior design, and product design, under a single name, she founded “ABRA Design Studio” with Cemal Cobanoğlu. She gave 
-          basic design, furniture design, furniture history, and advanced representation techniques courses at Kadir Has University, MEF University, 
-          and Beykent University.
+          Following her graduation from the Department of Architecture at Istanbul Technical University, she worked on urban design, residential, office and commercial projects at 
+          various architectural practices, while also focusing on furniture and product design. In 2014, she co-founded ABRA Design Studio with Cemal Çobanoğlu, aiming to unite her 
+          work in architecture, interior architecture and product design. Alongside her studio practice, she led courses in Basic Design, Furniture Design, Furniture History and 
+          Visual Communication at Kadir Has University, MEF University and Beykent University. Her work has been featured in various exhibitions and publications in Turkey and abroad 
+          and has received awards in furniture design competitions. She participated in conferences and talks on architecture and design as a guest speaker.
         </p>
       </div>
     </div>
@@ -114,11 +114,13 @@ const cemal_cv = userLocale.startsWith('tr') ? (
     <div className="flex flex-col sm:flex-row sm:space-x-8">
       <div className="flex-1 mb-4 sm:mb-0 text-justify">
         <p className="mt-2 text-base leading-7 text-gray-600 p-4 rounded-lg">
-          Lisans eğitimini İ.T.Ü. Mimarlık Fakültesi, İç Mimarlık Bölümü’nde, yüksek lisans eğitimini ise IMIAD’da tamamladı. IMIAD kapsamında İ.T.Ü 
-          ile birlikte, Finlandiya’da Lahti University of Applied Sciences’da, İskoçya’da Edinburgh College of Art’da eğitim aldı. Bu süreçte yüzyıl 
-          ortası mobilya tasarımı ve İskandinav tasarımı üzerine tezini yazdı.
-          Katıldığı kentsel tasarım, iç mimarlık ve mobilya tasarımı yarışmalarında birçok farklı ödül aldı. Mezuniyeti sonrasında, çeşitli iç 
-          mimarlık ve tasarım ofislerinde deneyim kazandı. 2014 senesinde Başak Bakkaloğlu ile birlikte “ABRA Design Studio”yu kurdu.
+          Lisans eğitimini İ.T.Ü. Mimarlık Fakültesi İç Mimarlık Bölümü’nde, yüksek lisans eğitimini ise IMIAD’da tamamladı. 
+          IMIAD kapsamında Finlandiya’daki Lahti University of Applied Sciences ve İskoçya’daki Edinburgh College of Art’ta eğitim aldı. 
+          süreçte yüzyıl ortası mobilya tasarımı ve İskandinav tasarımı üzerine tezini yazdı. Katıldığı kentsel tasarım, iç mimarlık ve mobilya tasarımı yarışmalarında ödüller kazandı. 
+          Çeşitli iç mimarlık ve tasarım ofislerinde çalıştıktan sonra, 2014 yılında Başak Bakkaloğlu ile birlikte ABRA Design Studio’yu kurdu. 
+          Stüdyo pratiğine paralel olarak, Kadir Has Üniversitesi ve MEF Üniversitesi’nde temel tasarım, mobilya tasarımı ve mobilya tarihi dersleri verdi; 
+          Design Week Turkey ve Furnishing & Design Istanbul başta olmak üzere tasarım etkinliklerinde danışmanlık yaptı, 
+          mobilya ve iç mekân tasarımı alanındaki yarışmalarda jüri üyeliği görevlerini üstlendi ve tasarım sergilerinde küratöryel çalışmalar yürüttü.
         </p>
       </div>
     </div>
@@ -128,12 +130,13 @@ const cemal_cv = userLocale.startsWith('tr') ? (
     <div className="flex flex-col sm:flex-row sm:space-x-8">
       <div className="flex-1 mb-4 sm:mb-0 text-justify">
         <p className="mt-2 text-base leading-7 text-gray-600 p-4 rounded-lg">
-          He completed his bachelor’s degree in I.T.U. Architecture Faculty, Interior Architecture Department and his postgraduate degree in IMIAD, 
-          where he studied in I.T.U, in Finland, Lahti University of Applied Sciences and in Scotland, Edinburgh College of Art.
-
-          In this period, he wrote his thesis on mid-century furniture design and Scandinavian design. He won several different prizes in urban design, 
-          interior design and furniture design competitions. After graduation, he gained experience in several interior architecture and design studios. 
-          In 2014, he founded “ABRA Design Studio” with Başak Bakkaloğlu.
+          Educated in Interior Architecture at Istanbul Technical University, he received his master’s degree from IMIAD. As part of the IMIAD program, 
+          he studied at Lahti University of Applied Sciences in Finland and Edinburgh College of Art in Scotland. His thesis focused on mid-century furniture design and 
+          Scandinavian design. He also received awards in urban design, interior architecture, and furniture design competitions. 
+          In 2014, he co-founded ABRA Design Studio with Başak Bakkaloğlu, following several years of experience in interior architecture and design offices. 
+          In parallel his studio practice, he led courses in Basic Design, Furniture Design and Furniture History at Kadir Has University and MEF University. 
+          His work includes consultancy for design events such as Design Week Turkey and Furnishing & Design Istanbul, jury memberships for furniture and interior design competitions, 
+          and the curation of design exhibitions.
         </p>
       </div>
     </div>
