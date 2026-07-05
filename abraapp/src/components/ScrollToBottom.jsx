@@ -18,7 +18,7 @@ const ScrollToBottom = () => {
                 <FaInstagram className="max-w-8 self-end cursor-pointer" />
             </a>
             <BsEnvelope onClick={goToBottom} className="max-w-8 self-end cursor-pointer mt-4 mr-6 ml-6 [fill:white]" />
-            <FaPhoneAlt onClick={goToBottom} className="max-w-8 self-end cursor-pointer mt-4 ml-6 [stroke:white] [stroke-width:25] fill-transparent" />
+            <FaPhoneAlt onClick={goToBottom} className="max-w-8 self-end cursor-pointer mt-4 ml-6 [stroke:white] [stroke-width:35] fill-transparent" />
         </div>
         </>
     );
