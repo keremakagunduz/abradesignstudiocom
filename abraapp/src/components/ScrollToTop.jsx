@@ -22,7 +22,7 @@ const ScrollToTop = () => {
                 <img
             src={imageLoader("https://d3hojcyp0aupte.cloudfront.net/asset/Abra_Icon_png.png", 400)}
             alt="Abra Design Studio"
-            className="max-w-40 ml-0 mr-auto absolute pt-0 sm:pt-6"
+            className="sm:max-w-40 sm:ml-0 sm:mr-auto sm:absolute sm:pt-0 sm:pt-6"
             onClick={goToTop}
             />
             }{" "}
