@@ -188,11 +188,11 @@ const cemal_title = userLocale.startsWith('tr') ? (
   </button>
   <div className="block px-6 py-12 pt-24 sm:pt-12 px-4 sm:px-6 md:px-12 lg:px-48 place-self-center">
 
-    <h2 className="text-2xl sm:text-3xl font-light text-gray-600 mb-8 sm:mb-12 pb-4 border-b border-gray-300">Studio</h2>
+<h2 className="text-2xl sm:text-3xl font-light text-gray-600 mb-8 sm:mb-12 mt-16 sm:mt-24 underline underline-offset-4 decoration-1 w-fit">Studio</h2>
     {about_text}
 
 
-     <h2 className="text-2xl sm:text-3xl font-light text-gray-600 mb-8 sm:mb-12 mt-16 sm:mt-24 pb-4 border-b border-gray-300">Team</h2>
+<h2 className="text-2xl sm:text-3xl font-light text-gray-600 mb-8 sm:mb-12 mt-16 sm:mt-24 underline underline-offset-4 decoration-1 w-fit">Team</h2>
 <div className="flex flex-col grid grid-cols-1 lg:grid-cols-2 justify-center mt-12 space-y-12 xl:space-y-0 xl:space-x-12 max-w-full sm:max-w-4xl">
     <div className="flex flex-col bg-white p-2 flex-1">
         <div className="">
@@ -204,7 +204,7 @@ const cemal_title = userLocale.startsWith('tr') ? (
             <p className="ml-2 text-sm sm:text-base leading-6 text-gray-400 break-all">basak@abradesignstudio.com</p>
         </div>
         <img 
-            src={imageLoader("https://d3hojcyp0aupte.cloudfront.net/asset/Başak_Bakkaloğlu.jpg", 400)} 
+            src={imageLoader("https://d3hojcyp0aupte.cloudfront.net/asset/Başak_Bakkaloğlu.jpg", 1200)} 
             alt="Başak Bakkaloğlu" 
             className="mb-4 object-cover w-full max-h-96 rounded"
         />
@@ -227,7 +227,7 @@ const cemal_title = userLocale.startsWith('tr') ? (
             <p className="ml-2 text-sm sm:text-base leading-6 text-gray-400 break-all">cemal@abradesignstudio.com</p>
         </div>
         <img 
-            src={imageLoader("https://d3hojcyp0aupte.cloudfront.net/asset/Cemal_Çobanoğlu.jpg", 400)} 
+            src={imageLoader("https://d3hojcyp0aupte.cloudfront.net/asset/Cemal_Çobanoğlu.jpg", 1200)} 
             alt="Cemal Çobanoğlu" 
             className="mb-4 object-cover w-full max-h-96 rounded"
         />
