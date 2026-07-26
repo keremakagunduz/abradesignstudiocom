@@ -166,7 +166,7 @@ const cemal_title = userLocale.startsWith('tr') ? (
   <div className="flex flex-col bg-white rounded-lg h-full">
     <div className="mb-4">
       <h3 className="text-lg sm:text-xl font-semibold text-gray-600">Başak Bakkaloğlu</h3>
-      {BasakTitle}
+      {basak_title}
     </div>
 
     <div className="flex items-center mb-4 text-xs sm:text-sm">
@@ -180,7 +180,7 @@ const cemal_title = userLocale.startsWith('tr') ? (
       className="mb-4 object-cover w-full max-h-96 rounded"
     />
 
-    <div>{BasakCV}</div>
+    <div>{basak_cv}</div>
 
     <a
       href="https://www.linkedin.com/in/ba%C5%9Fak-bakkalo%C4%9Flu-8502b6126/"
@@ -197,7 +197,7 @@ const cemal_title = userLocale.startsWith('tr') ? (
   <div className="flex flex-col bg-white rounded-lg h-full">
     <div className="mb-4">
       <h3 className="text-lg sm:text-xl font-semibold text-gray-600">Cemal Çobanoğlu</h3>
-      {CemalTitle}
+      {cemal_title}
     </div>
 
     <div className="flex items-center mb-4 text-xs sm:text-sm">
@@ -211,7 +211,7 @@ const cemal_title = userLocale.startsWith('tr') ? (
       className="mb-4 object-cover w-full max-h-96 rounded"
     />
 
-    <div>{CemalCV}</div>
+    <div>{cemal_cv}</div>
 
     <a
       href="https://www.linkedin.com/in/cem-cemal-cobanoglu-71aa3531/"
