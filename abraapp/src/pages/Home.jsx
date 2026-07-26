@@ -177,7 +177,7 @@ const cemal_title = userLocale.startsWith('tr') ? (
             className="my-4 object-cover w-full aspect-square sm:aspect-auto sm:max-h-96 rounded"
         />
         
-        <div className="flex-1 text-sm sm:text-base">{basak_cv}</div>
+        <div className="w-full text-sm sm:text-base">{basak_cv}</div>
         
         <a href="https://www.linkedin.com/in/ba%C5%9Fak-bakkalo%C4%9Flu-8502b6126/" target="_blank" rel="noreferrer" className="flex justify-center mt-6 text-gray-400 hover:text-gray-600 transition-colors">
             <span className="sr-only">LinkedIn</span>
@@ -199,7 +199,7 @@ const cemal_title = userLocale.startsWith('tr') ? (
             alt="Cemal Çobanoğlu" 
             className="my-4 object-cover w-full aspect-square sm:aspect-auto sm:max-h-96 rounded"
         />
-        <div className="flex-1 text-sm sm:text-base">{cemal_cv}</div>
+        <div className="w-full text-sm sm:text-base">{cemal_cv}</div>
         
         <a href="https://www.linkedin.com/in/cem-cemal-cobanoglu-71aa3531/" target="_blank" rel="noreferrer" className="flex justify-center mt-6 text-gray-400 hover:text-gray-600 transition-colors">
             <span className="sr-only">LinkedIn</span>
