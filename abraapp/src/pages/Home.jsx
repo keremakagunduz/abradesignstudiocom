@@ -120,15 +120,15 @@ const cemal_cv = userLocale.startsWith('tr') ? (
 
 
 const basak_title = userLocale.startsWith('tr') ? (
-<p className="text-xl font-semibold text-gray-600">Mimar - İTÜ, co-Founder</p>
+<p className="text-xl font-semibold text-gray-600">Mimar - İTÜ<br></br>co-Founder</p>
 ) : (
-<p className="text-xl font-semibold text-gray-600">Architect - ITU, co-Founder</p>
+<p className="text-xl font-semibold text-gray-600">Architect - ITU<br></br>co-Founder</p>
 );
 
 const cemal_title = userLocale.startsWith('tr') ? (
-<p className="text-xl font-semibold text-gray-600">Y. İç Mimar - İTÜ, co-Founder</p>
+<p className="text-xl font-semibold text-gray-600">Y. İç Mimar - İTÜ<br></br>co-Founder</p>
 ) : (
-<p className="text-xl font-semibold text-gray-600">M.Sc. Interior Architect - ITU, co-Founder</p>
+<p className="text-xl font-semibold text-gray-600">M.Sc. Interior Architect - ITU<br></br>co-Founder</p>
 );
 
   return (
