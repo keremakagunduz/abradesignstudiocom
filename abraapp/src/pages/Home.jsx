@@ -161,52 +161,70 @@ const cemal_title = userLocale.startsWith('tr') ? (
 
 
 <h2 className="text-2xl sm:text-3xl font-light text-gray-600 mb-8 sm:mb-12 mt-16 sm:mt-24 underline underline-offset-4 decoration-1 w-fit">Team</h2>
-<div className="flex flex-col grid grid-cols-1 lg:grid-cols-2 justify-center mt-12 space-y-12 xl:space-y-0 xl:space-x-12 max-w-full sm:max-w-4xl">
-    <div className="flex flex-col bg-white p-2 flex-1">
-        <div className="">
-            <h3 className="text-xl font-semibold text-gray-600">Başak Bakkaloğlu</h3>
-            {basak_title}
-        </div>
-        <div className="w-fit flex items-center">
-            <BsEnvelope className="self-center text-gray-400" />
-            <p className="ml-2 text-sm sm:text-base leading-6 text-gray-400 break-all">basak@abradesignstudio.com</p>
-        </div>
-        <img 
-            src={imageLoader("https://d3hojcyp0aupte.cloudfront.net/asset/Başak_Bakkaloğlu.jpg", 1200)} 
-            alt="Başak Bakkaloğlu" 
-            className="mb-4 object-cover w-full max-h-96 rounded"
-        />
-        
-        <div className="flex-1">{basak_cv}</div>
-        
-        <a href="https://www.linkedin.com/in/ba%C5%9Fak-bakkalo%C4%9Flu-8502b6126/" target="_blank" rel="noreferrer" className="flex justify-center text-gray-400 hover:text-gray-500">
-            <span className="sr-only">LinkedIn</span>
-            <FaLinkedin className="w-8 h-6" />
-        </a>
+<div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-12 mt-8 sm:mt-12">
+  {/* Başak Card */}
+  <div className="flex flex-col bg-white rounded-lg h-full">
+    <div className="mb-4">
+      <h3 className="text-lg sm:text-xl font-semibold text-gray-600">Başak Bakkaloğlu</h3>
+      {BasakTitle}
     </div>
 
-    <div className="flex flex-col bg-white p-2 flex-1">
-        <div className="">
-            <h3 className="text-xl font-semibold text-gray-600">Cemal Çobanoğlu</h3>
-            {cemal_title}
-        </div>
-        <div className="w-fit flex items-center">
-            <BsEnvelope className="self-center text-gray-400" />
-            <p className="ml-2 text-sm sm:text-base leading-6 text-gray-400 break-all">cemal@abradesignstudio.com</p>
-        </div>
-        <img 
-            src={imageLoader("https://d3hojcyp0aupte.cloudfront.net/asset/Cemal_Çobanoğlu.jpg", 1200)} 
-            alt="Cemal Çobanoğlu" 
-            className="mb-4 object-cover w-full max-h-96 rounded"
-        />
-        <div className="flex-1">{cemal_cv}</div>
-        
-        <a href="https://www.linkedin.com/in/cem-cemal-cobanoglu-71aa3531/" target="_blank" rel="noreferrer" className="flex justify-center text-gray-400 hover:text-gray-500">
-            <span className="sr-only">LinkedIn</span>
-            <FaLinkedin className="w-8 h-6" />
-        </a>
+    <div className="flex items-center mb-4 text-xs sm:text-sm">
+      <BsEnvelope className="text-gray-400 flex-shrink-0" />
+      <p className="ml-2 text-gray-400 break-all">basak@abradesignstudio.com</p>
     </div>
+
+    <img
+      src={imageLoader("https://d3hojcyp0aupte.cloudfront.net/asset/Başak_Bakkaloğlu.jpg", 400)}
+      alt="Başak Bakkaloğlu"
+      className="mb-4 object-cover w-full max-h-96 rounded"
+    />
+
+    <div>{BasakCV}</div>
+
+    <a
+      href="https://www.linkedin.com/in/ba%C5%9Fak-bakkalo%C4%9Flu-8502b6126/"
+      target="_blank"
+      rel="noreferrer"
+      className="flex justify-center text-gray-400 hover:text-gray-600 py-2 mt-4"
+    >
+      <span className="sr-only">LinkedIn</span>
+      <FaLinkedin className="w-6 h-6" />
+    </a>
+  </div>
+
+  {/* Cemal Card */}
+  <div className="flex flex-col bg-white rounded-lg h-full">
+    <div className="mb-4">
+      <h3 className="text-lg sm:text-xl font-semibold text-gray-600">Cemal Çobanoğlu</h3>
+      {CemalTitle}
+    </div>
+
+    <div className="flex items-center mb-4 text-xs sm:text-sm">
+      <BsEnvelope className="text-gray-400 flex-shrink-0" />
+      <p className="ml-2 text-gray-400 break-all">cemal@abradesignstudio.com</p>
+    </div>
+
+    <img
+      src={imageLoader("https://d3hojcyp0aupte.cloudfront.net/asset/Cemal_Çobanoğlu.jpg", 400)}
+      alt="Cemal Çobanoğlu"
+      className="mb-4 object-cover w-full max-h-96 rounded"
+    />
+
+    <div>{CemalCV}</div>
+
+    <a
+      href="https://www.linkedin.com/in/cem-cemal-cobanoglu-71aa3531/"
+      target="_blank"
+      rel="noreferrer"
+      className="flex justify-center text-gray-400 hover:text-gray-600 py-2 mt-4"
+    >
+      <span className="sr-only">LinkedIn</span>
+      <FaLinkedin className="w-6 h-6" />
+    </a>
+  </div>
 </div>
+
 
 
 </div>
