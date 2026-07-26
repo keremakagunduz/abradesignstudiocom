@@ -120,47 +120,15 @@ const cemal_cv = userLocale.startsWith('tr') ? (
 );
 
 const basak_title = userLocale.startsWith('tr') ? (
-  <div className="max-w-lg mx-auto">
-    <div className="flex flex-col sm:flex-row sm:space-x-8">
-      <div className="flex-1 mb-4 sm:mb-0 text-justify">
-        <p className="font-medium mt-0 mb-2 text-sm sm:text-base md:text-lg leading-7 text-gray-600">
-          Mimar - İTÜ, co-Founder
-        </p>
-      </div>
-    </div>
-  </div>
+<p className="text-xl font-semibold text-gray-600">Mimar - İTÜ, co-Founder</p>
 ) : (
-  <div className="max-w-lg mx-auto">
-    <div className="flex flex-col sm:flex-row sm:space-x-8">
-      <div className="flex-1 mb-4 sm:mb-0 text-justify">
-        <p className="font-medium mt-0 mb-2 text-sm sm:text-base md:text-lg leading-7 text-gray-600">
-          Architect - ITU, co-Founder
-        </p>
-      </div>
-    </div>
-  </div>
+<p className="text-xl font-semibold text-gray-600">Architect - ITU, co-Founder</p>
 );
 
 const cemal_title = userLocale.startsWith('tr') ? (
-  <div className="max-w-lg mx-auto">
-    <div className="flex flex-col sm:flex-row sm:space-x-8">
-      <div className="flex-1 mb-4 sm:mb-0 text-justify">
-        <p className="font-medium mt-0 mb-2 text-sm sm:text-base md:text-lg leading-7 text-gray-600">
-          Y. İç Mimar - İTÜ, co-Founder
-        </p>
-      </div>
-    </div>
-  </div>
+<p className="text-xl font-semibold text-gray-600">Y. İç Mimar - İTÜ, co-Founder</p>
 ) : (
-  <div className="max-w-lg mx-auto">
-    <div className="flex flex-col sm:flex-row sm:space-x-8">
-      <div className="flex-1 mb-4 sm:mb-0 text-justify">
-        <p className="font-medium mt-0 mb-2 text-sm sm:text-base md:text-lg leading-7 text-gray-600">
-          M.Sc. Interior Architect - ITU, co-Founder
-        </p>
-      </div>
-    </div>
-  </div>
+<p className="text-xl font-semibold text-gray-600">M.Sc. Interior Architect - ITU, co-Founder</p>
 );
 
   return (
