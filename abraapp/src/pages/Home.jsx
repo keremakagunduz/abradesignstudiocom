@@ -78,46 +78,46 @@ export default function Home() {
 </>
 );
 
-
 const basak_cv = userLocale.startsWith('tr') ? (
-        <p className="text-sm sm:text-sm sm:text-base leading-7 text-gray-600 p-3 sm:p-4 rounded-lg">
-        Lisans eğitimini İ.T.Ü. Mimarlık Fakültesi Mimarlık Bölümü’nde tamamladı. Çeşitli mimarlık ofislerinde kentsel tasarım, konut, ofis ve ticari mekân projelerinde görev aldı; 
-        eş zamanlı olarak mobilya ve ürün tasarımı alanında çalışmalar yürüttü. Mimarlık, iç mimarlık ve ürün tasarımı çalışmalarını tek bir çatı altında sürdürme isteğiyle, 
-        2014 yılında Cemal Çobanoğlu ile birlikte ABRA Design Studio’yu kurdu. Kadir Has Üniversitesi, MEF Üniversitesi ve Beykent Üniversitesi’nde temel tasarım, mobilya tasarımı, 
-        mobilya tarihi ve ileri sunum teknikleri dersleri verdi. Tasarımları yurt içinde ve yurt dışında çeşitli sergi ve yayınlarda yer aldı; mobilya tasarımı alanındaki yarışmalarda 
-        ödüller kazandı. Mimarlık ve tasarım alanlarında düzenlenen konferans ve söyleşilerde konuşmacı olarak yer aldı.
-        </p>
+  <p className="text-sm sm:text-base leading-7 text-gray-600 p-3 sm:p-4 rounded-lg text-justify flex-1">
+    Lisans eğitimini İ.T.Ü. Mimarlık Fakültesi Mimarlık Bölümü'nde tamamladı. Çeşitli mimarlık ofislerinde kentsel tasarım, konut, ofis ve ticari mekân projelerinde görev aldı; 
+    eş zamanlı olarak mobilya ve ürün tasarımı alanında çalışmalar yürüttü. Mimarlık, iç mimarlık ve ürün tasarımı çalışmalarını tek bir çatı altında sürdürme isteğiyle, 
+    2014 yılında Cemal Çobanoğlu ile birlikte ABRA Design Studio'yu kurdu. Kadir Has Üniversitesi, MEF Üniversitesi ve Beykent Üniversitesi'nde temel tasarım, mobilya tasarımı, 
+    mobilya tarihi ve ileri sunum teknikleri dersleri verdi. Tasarımları yurt içinde ve yurt dışında çeşitli sergi ve yayınlarda yer aldı; mobilya tasarımı alanındaki yarışmalarda 
+    ödüller kazandı. Mimarlık ve tasarım alanlarında düzenlenen konferans ve söyleşilerde konuşmacı olarak yer aldı.
+  </p>
 ) : (
-        <p className="text-sm sm:text-sm sm:text-base leading-7 text-gray-600 p-3 sm:p-4 rounded-lg">
-          Following her graduation from the Department of Architecture at Istanbul Technical University, she worked on urban design, residential, office and commercial projects at 
-          various architectural practices, while also focusing on furniture and product design. In 2014, she co-founded ABRA Design Studio with Cemal Çobanoğlu, aiming to unite her 
-          work in architecture, interior architecture and product design. Alongside her studio practice, she led courses in Basic Design, Furniture Design, Furniture History and 
-          Visual Communication at Kadir Has University, MEF University and Beykent University. Her work has been featured in various exhibitions and publications in Turkey and abroad 
-          and has received awards in furniture design competitions. She participated in conferences and talks on architecture and design as a guest speaker.
-        </p>
+  <p className="text-sm sm:text-base leading-7 text-gray-600 p-3 sm:p-4 rounded-lg text-justify flex-1">
+    Following her graduation from the Department of Architecture at Istanbul Technical University, she worked on urban design, residential, office and commercial projects at 
+    various architectural practices, while also focusing on furniture and product design. In 2014, she co-founded ABRA Design Studio with Cemal Çobanoğlu, aiming to unite her 
+    work in architecture, interior architecture and product design. Alongside her studio practice, she led courses in Basic Design, Furniture Design, Furniture History and 
+    Visual Communication at Kadir Has University, MEF University and Beykent University. Her work has been featured in various exhibitions and publications in Turkey and abroad 
+    and has received awards in furniture design competitions. She participated in conferences and talks on architecture and design as a guest speaker.
+  </p>
 );
 
 const cemal_cv = userLocale.startsWith('tr') ? (
-        <p className="text-sm sm:text-sm sm:text-base leading-7 text-gray-600 p-3 sm:p-4 rounded-lg">
-          Lisans eğitimini İ.T.Ü. Mimarlık Fakültesi İç Mimarlık Bölümü’nde, yüksek lisans eğitimini ise IMIAD’da tamamladı. 
-          IMIAD kapsamında Finlandiya’daki Lahti University of Applied Sciences ve İskoçya’daki Edinburgh College of Art’ta eğitim aldı. 
-          süreçte yüzyıl ortası mobilya tasarımı ve İskandinav tasarımı üzerine tezini yazdı. Katıldığı kentsel tasarım, iç mimarlık ve mobilya tasarımı yarışmalarında ödüller kazandı. 
-          Çeşitli iç mimarlık ve tasarım ofislerinde çalıştıktan sonra, 2014 yılında Başak Bakkaloğlu ile birlikte ABRA Design Studio’yu kurdu. 
-          Stüdyo pratiğine paralel olarak, Kadir Has Üniversitesi ve MEF Üniversitesi’nde temel tasarım, mobilya tasarımı ve mobilya tarihi dersleri verdi; 
-          Design Week Turkey ve Furnishing & Design Istanbul başta olmak üzere tasarım etkinliklerinde danışmanlık yaptı, 
-          mobilya ve iç mekân tasarımı alanındaki yarışmalarda jüri üyeliği görevlerini üstlendi ve tasarım sergilerinde küratöryel çalışmalar yürüttü.
-        </p>
+  <p className="text-sm sm:text-base leading-7 text-gray-600 p-3 sm:p-4 rounded-lg text-justify flex-1">
+    Lisans eğitimini İ.T.Ü. Mimarlık Fakültesi İç Mimarlık Bölümü'nde, yüksek lisans eğitimini ise IMIAD'da tamamladı. 
+    IMIAD kapsamında Finlandiya'daki Lahti University of Applied Sciences ve İskoçya'daki Edinburgh College of Art'ta eğitim aldı. 
+    süreçte yüzyıl ortası mobilya tasarımı ve İskandinav tasarımı üzerine tezini yazdı. Katıldığı kentsel tasarım, iç mimarlık ve mobilya tasarımı yarışmalarında ödüller kazandı. 
+    Çeşitli iç mimarlık ve tasarım ofislerinde çalıştıktan sonra, 2014 yılında Başak Bakkaloğlu ile birlikte ABRA Design Studio'yu kurdu. 
+    Stüdyo pratiğine paralel olarak, Kadir Has Üniversitesi ve MEF Üniversitesi'nde temel tasarım, mobilya tasarımı ve mobilya tarihi dersleri verdi; 
+    Design Week Turkey ve Furnishing & Design Istanbul başta olmak üzere tasarım etkinliklerinde danışmanlık yaptı, 
+    mobilya ve iç mekân tasarımı alanındaki yarışmalarda jüri üyeliği görevlerini üstlendi ve tasarım sergilerinde küratöryel çalışmalar yürüttü.
+  </p>
 ) : (
-        <p className="text-sm sm:text-sm sm:text-base leading-7 text-gray-600 p-3 sm:p-4 rounded-lg">
-          Educated in Interior Architecture at Istanbul Technical University, he received his master’s degree from IMIAD. As part of the IMIAD program, 
-          he studied at Lahti University of Applied Sciences in Finland and Edinburgh College of Art in Scotland. His thesis focused on mid-century furniture design and 
-          Scandinavian design. He also received awards in urban design, interior architecture, and furniture design competitions. 
-          In 2014, he co-founded ABRA Design Studio with Başak Bakkaloğlu, following several years of experience in interior architecture and design offices. 
-          In parallel his studio practice, he led courses in Basic Design, Furniture Design and Furniture History at Kadir Has University and MEF University. 
-          His work includes consultancy for design events such as Design Week Turkey and Furnishing & Design Istanbul, jury memberships for furniture and interior design competitions, 
-          and the curation of design exhibitions.
-        </p>
+  <p className="text-sm sm:text-base leading-7 text-gray-600 p-3 sm:p-4 rounded-lg text-justify flex-1">
+    Educated in Interior Architecture at Istanbul Technical University, he received his master's degree from IMIAD. As part of the IMIAD program, 
+    he studied at Lahti University of Applied Sciences in Finland and Edinburgh College of Art in Scotland. His thesis focused on mid-century furniture design and 
+    Scandinavian design. He also received awards in urban design, interior architecture, and furniture design competitions. 
+    In 2014, he co-founded ABRA Design Studio with Başak Bakkaloğlu, following several years of experience in interior architecture and design offices. 
+    In parallel his studio practice, he led courses in Basic Design, Furniture Design and Furniture History at Kadir Has University and MEF University. 
+    His work includes consultancy for design events such as Design Week Turkey and Furnishing & Design Istanbul, jury memberships for furniture and interior design competitions, 
+    and the curation of design exhibitions.
+  </p>
 );
+
 
 const basak_title = userLocale.startsWith('tr') ? (
 <p className="text-xl font-semibold text-gray-600">Mimar - İTÜ, co-Founder</p>
