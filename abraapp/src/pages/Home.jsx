@@ -79,7 +79,7 @@ export default function Home() {
 );
 
 const basak_cv = userLocale.startsWith('tr') ? (
-  <p className="text-sm sm:text-base leading-7 text-gray-600 p-3 sm:p-4 rounded-lg text-justify flex-1">
+  <p className="text-sm sm:text-base leading-7 text-gray-600 sm:p-4 rounded-lg text-justify flex-1">
     Lisans eğitimini İ.T.Ü. Mimarlık Fakültesi Mimarlık Bölümü'nde tamamladı. Çeşitli mimarlık ofislerinde kentsel tasarım, konut, ofis ve ticari mekân projelerinde görev aldı; 
     eş zamanlı olarak mobilya ve ürün tasarımı alanında çalışmalar yürüttü. Mimarlık, iç mimarlık ve ürün tasarımı çalışmalarını tek bir çatı altında sürdürme isteğiyle, 
     2014 yılında Cemal Çobanoğlu ile birlikte ABRA Design Studio'yu kurdu. Kadir Has Üniversitesi, MEF Üniversitesi ve Beykent Üniversitesi'nde temel tasarım, mobilya tasarımı, 
@@ -87,7 +87,7 @@ const basak_cv = userLocale.startsWith('tr') ? (
     ödüller kazandı. Mimarlık ve tasarım alanlarında düzenlenen konferans ve söyleşilerde konuşmacı olarak yer aldı.
   </p>
 ) : (
-  <p className="text-sm sm:text-base leading-7 text-gray-600 p-3 sm:p-4 rounded-lg text-justify flex-1">
+  <p className="text-sm sm:text-base leading-7 text-gray-600 sm:p-4 rounded-lg text-justify flex-1">
     Following her graduation from the Department of Architecture at Istanbul Technical University, she worked on urban design, residential, office and commercial projects at 
     various architectural practices, while also focusing on furniture and product design. In 2014, she co-founded ABRA Design Studio with Cemal Çobanoğlu, aiming to unite her 
     work in architecture, interior architecture and product design. Alongside her studio practice, she led courses in Basic Design, Furniture Design, Furniture History and 
@@ -97,7 +97,7 @@ const basak_cv = userLocale.startsWith('tr') ? (
 );
 
 const cemal_cv = userLocale.startsWith('tr') ? (
-  <p className="text-sm sm:text-base leading-7 text-gray-600 p-3 sm:p-4 rounded-lg text-justify flex-1">
+  <p className="text-sm sm:text-base leading-7 text-gray-600 sm:p-4 rounded-lg text-justify flex-1">
     Lisans eğitimini İ.T.Ü. Mimarlık Fakültesi İç Mimarlık Bölümü'nde, yüksek lisans eğitimini ise IMIAD'da tamamladı. 
     IMIAD kapsamında Finlandiya'daki Lahti University of Applied Sciences ve İskoçya'daki Edinburgh College of Art'ta eğitim aldı. 
     süreçte yüzyıl ortası mobilya tasarımı ve İskandinav tasarımı üzerine tezini yazdı. Katıldığı kentsel tasarım, iç mimarlık ve mobilya tasarımı yarışmalarında ödüller kazandı. 
@@ -107,7 +107,7 @@ const cemal_cv = userLocale.startsWith('tr') ? (
     mobilya ve iç mekân tasarımı alanındaki yarışmalarda jüri üyeliği görevlerini üstlendi ve tasarım sergilerinde küratöryel çalışmalar yürüttü.
   </p>
 ) : (
-  <p className="text-sm sm:text-base leading-7 text-gray-600 p-3 sm:p-4 rounded-lg text-justify flex-1">
+  <p className="text-sm sm:text-base leading-7 text-gray-600 sm:p-4 rounded-lg text-justify flex-1">
     Educated in Interior Architecture at Istanbul Technical University, he received his master's degree from IMIAD. As part of the IMIAD program, 
     he studied at Lahti University of Applied Sciences in Finland and Edinburgh College of Art in Scotland. His thesis focused on mid-century furniture design and 
     Scandinavian design. He also received awards in urban design, interior architecture, and furniture design competitions. 
