@@ -13,12 +13,6 @@ const ScrollToBottom = () => {
             behavior: "smooth",
         });
         
- 
-        setShowOverlay(true);
-        
-        setTimeout(() => {
-            setShowOverlay(false);
-        }, 2000);
     };
 
     return (
