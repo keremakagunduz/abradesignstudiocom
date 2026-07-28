@@ -72,7 +72,7 @@ const Carousel = ({ projects }) => {
 </div>
 
 
-        <div className="absolute inset-0 self-end w-fit p-32 text-4xl rounded">
+        <div className="absolute inset-0 self-end w-fit p-32 text-small sm:text-4xl rounded">
           <button onClick={scrollToElement} className="text-white font-bold tracking-widest">WHO WE ARE</button>
         </div>
       </article>
