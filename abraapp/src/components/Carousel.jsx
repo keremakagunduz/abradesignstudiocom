@@ -72,8 +72,8 @@ const Carousel = ({ projects }) => {
 </div>
 
 
-        <div className="absolute justify-items-stretch inset-0 self-end w-fit p-32 text-small sm:text-4xl rounded">
-          <button onClick={scrollToElement} className="justify-self-center text-white font-bold tracking-widest">WHO WE ARE</button>
+        <div className="absolute justify-self-anchor-stretch inset-0 self-end w-fit p-32 text-small sm:text-4xl rounded">
+          <button onClick={scrollToElement} className="justify-self-anchor-center text-white font-bold tracking-widest">WHO WE ARE</button>
         </div>
       </article>
 
