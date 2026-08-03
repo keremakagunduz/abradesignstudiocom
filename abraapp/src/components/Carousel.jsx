@@ -51,7 +51,7 @@ const Carousel = ({ projects }) => {
 
   return (
     <>
-      <article className="items-center touch-auto">
+      <article className="items-center">
 <div className="relative h-svh sm:h-screen flex justify-center overflow-hidden">
     <img
         src={imageLoader(projects[currentIndex].cover_image, 2400)} 
@@ -67,7 +67,7 @@ const Carousel = ({ projects }) => {
                1600px"
         alt={projects[currentIndex].title}
         loading="lazy"
-        className="w-full sm:h-full object-cover"
+        className="w-full sm:h-full object-cover touch-auto"
     />
 </div>
 
@@ -77,8 +77,8 @@ const Carousel = ({ projects }) => {
         </div>
       </article>
 
-      <div className="absolute inset-0 bg-black bg-opacity-50 flex w-full h-fit place-self-center pt-16 pb-20 sm:pt-20 sm:pb-24">
-        <div className="flex absolute self-center justify-between text-small sm:text-4xl w-full h-full">
+      <div className="absolute inset-0 bg-black bg-opacity-50 flex w-full h-fit place-self-center pt-16 pb-20 sm:pt-20 sm:pb-24 touch-auto">
+        <div className="flex absolute self-center justify-between text-small sm:text-4xl w-full h-full touch-auto">
           <button onClick={goToPrevious} className="pl-4"><IoIosArrowDropleftCircle className="[fill:white] hidden sm:block"/></button>
           <ScrollToBottom />
           <button onClick={goToNext} className="pr-4"><IoIosArrowDroprightCircle className="[fill:white] hidden sm:block" /></button>
