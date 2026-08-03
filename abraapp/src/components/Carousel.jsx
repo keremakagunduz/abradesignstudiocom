@@ -11,6 +11,9 @@ const imageLoader = (src, width, quality) => {
 const Carousel = ({ projects }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const intervalRef = useRef(null);
+  const touchStartX = useRef(0);
+  const touchEndX = useRef(0);
+  const carouselRef = useRef(null);
 
   useEffect(() => {
     intervalRef.current = setInterval(() => {
@@ -40,58 +43,81 @@ const Carousel = ({ projects }) => {
     setCurrentIndex(index);
   };
 
+  const handleTouchStart = (e) => {
+    touchStartX.current = e.changedTouches[0].clientX;
+  };
+
+  const handleTouchEnd = (e) => {
+    touchEndX.current = e.changedTouches[0].clientX;
+    handleSwipe();
+  };
+
+  const handleSwipe = () => {
+    const swipeThreshold = 50; // Minimum distance to trigger a swipe
+    const diff = touchStartX.current - touchEndX.current;
+
+    if (Math.abs(diff) > swipeThreshold) {
+      if (diff > 0) {
+        // Swiped left, go to next slide
+        goToNext();
+      } else {
+        // Swiped right, go to previous slide
+        goToPrevious();
+      }
+    }
+  };
+
   const scrollToElement = () => {
     const element = document.getElementById('abra-icon');
     if (element) {
       element.scrollIntoView({ behavior: 'smooth' });
     }
-    
   };
-
 
   return (
     <>
       <article className="items-center">
-<div className="relative h-svh sm:h-screen flex justify-center overflow-hidden">
-    <img
-        src={imageLoader(projects[currentIndex].cover_image, 2400)} 
-        srcSet={`
-            ${imageLoader(projects[currentIndex].cover_image, 800)} 400w,
-            ${imageLoader(projects[currentIndex].cover_image, 1600)} 800w,
-            ${imageLoader(projects[currentIndex].cover_image, 2400)} 1200w,
-            ${imageLoader(projects[currentIndex].cover_image, 3200)} 1600w
-        `}
-        sizes="(max-width: 400px) 400px,
-               (max-width: 800px) 800px,
-               (max-width: 1200px) 1200px,
-               1600px"
-        alt={projects[currentIndex].title}
-        loading="lazy"
-        className="w-full sm:h-full object-cover touch-auto"
-    />
-</div>
-
+        <div
+          className="relative h-svh sm:h-screen flex justify-center overflow-hidden"
+          ref={carouselRef}
+          onTouchStart={handleTouchStart}
+          onTouchEnd={handleTouchEnd}
+        >
+          <img
+            src={imageLoader(projects[currentIndex].cover_image, 2400)}
+            srcSet={`
+              ${imageLoader(projects[currentIndex].cover_image, 800)} 400w,
+              ${imageLoader(projects[currentIndex].cover_image, 1600)} 800w,
+              ${imageLoader(projects[currentIndex].cover_image, 2400)} 1200w,
+              ${imageLoader(projects[currentIndex].cover_image, 3200)} 1600w
+            `}
+            sizes="(max-width: 400px) 400px,
+                   (max-width: 800px) 800px,
+                   (max-width: 1200px) 1200px,
+                   1600px"
+            alt={projects[currentIndex].title}
+            loading="lazy"
+            className="w-full sm:h-full object-cover"
+          />
+        </div>
 
         <div className="absolute mx-auto sm:mx-0 inset-0 self-end w-fit p-32 text-small sm:text-4xl rounded">
           <button onClick={scrollToElement} className="text-white font-bold tracking-widest">WHO WE ARE</button>
         </div>
       </article>
 
-      <div className="absolute inset-0 bg-black bg-opacity-50 flex w-full h-fit place-self-center pt-16 pb-20 sm:pt-20 sm:pb-24 touch-auto">
-        <div className="flex absolute self-center justify-between text-small sm:text-4xl w-full h-full touch-auto">
+      <div className="absolute inset-0 bg-black bg-opacity-50 flex w-full h-fit place-self-center pt-16 pb-20 sm:pt-20 sm:pb-24">
+        <div className="flex absolute self-center justify-between text-small sm:text-4xl w-full h-full">
           <button onClick={goToPrevious} className="pl-4"><IoIosArrowDropleftCircle className="[fill:white] hidden sm:block"/></button>
           <ScrollToBottom />
           <button onClick={goToNext} className="pr-4"><IoIosArrowDroprightCircle className="[fill:white] hidden sm:block" /></button>
         </div>
-
 
         <img
           src={imageLoader("https://d3hojcyp0aupte.cloudfront.net/asset/abra_logo_beyaz_seffaf.png", 800)}
           alt="Abra Design Studio"
           className="max-w-24 sm:max-w-48 mx-auto"
         />
-
-
       </div>
 
       <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-2">
