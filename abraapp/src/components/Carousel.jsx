@@ -10,9 +10,10 @@ const imageLoader = (src, width, quality) => {
 
 const Carousel = ({ projects }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [translateX, setTranslateX] = useState(0);
+  const [isTransitioning, setIsTransitioning] = useState(false);
   const intervalRef = useRef(null);
   const touchStartX = useRef(0);
-  const touchEndX = useRef(0);
   const carouselRef = useRef(null);
 
   useEffect(() => {
@@ -26,6 +27,12 @@ const Carousel = ({ projects }) => {
       clearInterval(intervalRef.current);
     };
   }, [projects.length]);
+
+  // Update translateX when currentIndex changes
+  useEffect(() => {
+    setIsTransitioning(true);
+    setTranslateX(-currentIndex * 100);
+  }, [currentIndex]);
 
   const goToNext = () => {
     setCurrentIndex((prevIndex) =>
@@ -44,17 +51,23 @@ const Carousel = ({ projects }) => {
   };
 
   const handleTouchStart = (e) => {
+    setIsTransitioning(false);
     touchStartX.current = e.changedTouches[0].clientX;
   };
 
-  const handleTouchEnd = (e) => {
-    touchEndX.current = e.changedTouches[0].clientX;
-    handleSwipe();
+  const handleTouchMove = (e) => {
+    const currentX = e.changedTouches[0].clientX;
+    const diff = touchStartX.current - currentX;
+    const movePercent = (diff / carouselRef.current.offsetWidth) * 100;
+    setTranslateX(-currentIndex * 100 - movePercent);
   };
 
-  const handleSwipe = () => {
-    const swipeThreshold = 50; // Minimum distance to trigger a swipe
-    const diff = touchStartX.current - touchEndX.current;
+  const handleTouchEnd = (e) => {
+    const touchEndX = e.changedTouches[0].clientX;
+    const swipeThreshold = 50;
+    const diff = touchStartX.current - touchEndX;
+
+    setIsTransitioning(true);
 
     if (Math.abs(diff) > swipeThreshold) {
       if (diff > 0) {
@@ -64,6 +77,9 @@ const Carousel = ({ projects }) => {
         // Swiped right, go to previous slide
         goToPrevious();
       }
+    } else {
+      // Snap back to current slide
+      setTranslateX(-currentIndex * 100);
     }
   };
 
@@ -81,24 +97,36 @@ const Carousel = ({ projects }) => {
           className="relative h-svh sm:h-screen flex justify-center overflow-hidden"
           ref={carouselRef}
           onTouchStart={handleTouchStart}
+          onTouchMove={handleTouchMove}
           onTouchEnd={handleTouchEnd}
         >
-          <img
-            src={imageLoader(projects[currentIndex].cover_image, 2400)}
-            srcSet={`
-              ${imageLoader(projects[currentIndex].cover_image, 800)} 400w,
-              ${imageLoader(projects[currentIndex].cover_image, 1600)} 800w,
-              ${imageLoader(projects[currentIndex].cover_image, 2400)} 1200w,
-              ${imageLoader(projects[currentIndex].cover_image, 3200)} 1600w
-            `}
-            sizes="(max-width: 400px) 400px,
-                   (max-width: 800px) 800px,
-                   (max-width: 1200px) 1200px,
-                   1600px"
-            alt={projects[currentIndex].title}
-            loading="lazy"
-            className="w-full sm:h-full object-cover"
-          />
+          <div
+            className={`w-full h-full flex ${isTransitioning ? 'transition-transform duration-500' : ''}`}
+            style={{
+              transform: `translateX(${translateX}%)`,
+            }}
+          >
+            {projects.map((project, index) => (
+              <div key={index} className="w-full h-full flex-shrink-0">
+                <img
+                  src={imageLoader(project.cover_image, 2400)}
+                  srcSet={`
+                    ${imageLoader(project.cover_image, 800)} 400w,
+                    ${imageLoader(project.cover_image, 1600)} 800w,
+                    ${imageLoader(project.cover_image, 2400)} 1200w,
+                    ${imageLoader(project.cover_image, 3200)} 1600w
+                  `}
+                  sizes="(max-width: 400px) 400px,
+                         (max-width: 800px) 800px,
+                         (max-width: 1200px) 1200px,
+                         1600px"
+                  alt={project.title}
+                  loading="lazy"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+            ))}
+          </div>
         </div>
 
         <div className="absolute mx-auto sm:mx-0 inset-0 self-end w-fit p-32 text-small sm:text-4xl rounded">
