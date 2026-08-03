@@ -79,7 +79,7 @@ export default function Home() {
 );
 
 const basak_cv = userLocale.startsWith('tr') ? (
-  <p className="text-sm sm:text-base leading-7 text-gray-600 sm:p-4 rounded-lg text-justify flex-1">
+  <p className="text-sm sm:text-base leading-6 text-gray-600 sm:p-4 rounded-lg text-justify flex-1">
     Lisans eğitimini İ.T.Ü. Mimarlık Fakültesi Mimarlık Bölümü'nde tamamladı. Çeşitli mimarlık ofislerinde kentsel tasarım, konut, ofis ve ticari mekân projelerinde görev aldı; 
     eş zamanlı olarak mobilya ve ürün tasarımı alanında çalışmalar yürüttü. Mimarlık, iç mimarlık ve ürün tasarımı çalışmalarını tek bir çatı altında sürdürme isteğiyle, 
     2014 yılında Cemal Çobanoğlu ile birlikte ABRA Design Studio'yu kurdu. Kadir Has Üniversitesi, MEF Üniversitesi ve Beykent Üniversitesi'nde temel tasarım, mobilya tasarımı, 
@@ -87,7 +87,7 @@ const basak_cv = userLocale.startsWith('tr') ? (
     ödüller kazandı. Mimarlık ve tasarım alanlarında düzenlenen konferans ve söyleşilerde konuşmacı olarak yer aldı.
   </p>
 ) : (
-  <p className="text-sm sm:text-base leading-7 text-gray-600 sm:p-4 rounded-lg text-justify flex-1">
+  <p className="text-sm sm:text-base leading-6 text-gray-600 sm:p-4 rounded-lg text-justify flex-1">
     Following her graduation from the Department of Architecture at Istanbul Technical University, she worked on urban design, residential, office and commercial projects at 
     various architectural practices, while also focusing on furniture and product design. In 2014, she co-founded ABRA Design Studio with Cemal Çobanoğlu, aiming to unite her 
     work in architecture, interior architecture and product design. Alongside her studio practice, she led courses in Basic Design, Furniture Design, Furniture History and 
@@ -97,7 +97,7 @@ const basak_cv = userLocale.startsWith('tr') ? (
 );
 
 const cemal_cv = userLocale.startsWith('tr') ? (
-  <p className="text-sm sm:text-base leading-7 text-gray-600 sm:p-4 rounded-lg text-justify flex-1">
+  <p className="text-sm sm:text-base leading-6 text-gray-600 sm:p-4 rounded-lg text-justify flex-1">
     Lisans eğitimini İ.T.Ü. Mimarlık Fakültesi İç Mimarlık Bölümü'nde, yüksek lisans eğitimini ise IMIAD'da tamamladı. 
     IMIAD kapsamında Finlandiya'daki Lahti University of Applied Sciences ve İskoçya'daki Edinburgh College of Art'ta eğitim aldı. 
     süreçte yüzyıl ortası mobilya tasarımı ve İskandinav tasarımı üzerine tezini yazdı. Katıldığı kentsel tasarım, iç mimarlık ve mobilya tasarımı yarışmalarında ödüller kazandı. 
@@ -107,7 +107,7 @@ const cemal_cv = userLocale.startsWith('tr') ? (
     mobilya ve iç mekân tasarımı alanındaki yarışmalarda jüri üyeliği görevlerini üstlendi ve tasarım sergilerinde küratöryel çalışmalar yürüttü.
   </p>
 ) : (
-  <p className="text-sm sm:text-base leading-7 text-gray-600 sm:p-4 rounded-lg text-justify flex-1">
+  <p className="text-sm sm:text-base leading-6 text-gray-600 sm:p-4 rounded-lg text-justify flex-1">
     Educated in Interior Architecture at Istanbul Technical University, he received his master's degree from IMIAD. As part of the IMIAD program, 
     he studied at Lahti University of Applied Sciences in Finland and Edinburgh College of Art in Scotland. His thesis focused on mid-century furniture design and 
     Scandinavian design. He also received awards in urban design, interior architecture, and furniture design competitions. 
@@ -120,15 +120,15 @@ const cemal_cv = userLocale.startsWith('tr') ? (
 
 
 const basak_title = userLocale.startsWith('tr') ? (
-<p className="text-xl font-semibold text-gray-600">Mimar - İTÜ<br></br>co-Founder</p>
+<p className="text-xl font-semibold text-gray-600 leading-6">Mimar - İTÜ<br></br>co-Founder</p>
 ) : (
-<p className="text-xl font-semibold text-gray-600">Architect - ITU<br></br>co-Founder</p>
+<p className="text-xl font-semibold text-gray-600 leading-6">Architect - ITU<br></br>co-Founder</p>
 );
 
 const cemal_title = userLocale.startsWith('tr') ? (
-<p className="text-xl font-semibold text-gray-600">Y. İç Mimar - İTÜ<br></br>co-Founder</p>
+<p className="text-xl font-semibold text-gray-600 leading-6">Y. İç Mimar - İTÜ<br></br>co-Founder</p>
 ) : (
-<p className="text-xl font-semibold text-gray-600">M.Sc. Interior Architect - ITU<br></br>co-Founder</p>
+<p className="text-xl font-semibold text-gray-600 leading-6">M.Sc. Interior Architect - ITU<br></br>co-Founder</p>
 );
 
   return (
@@ -161,7 +161,7 @@ const cemal_title = userLocale.startsWith('tr') ? (
 
 
 <h2 className="text-2xl sm:text-3xl font-light text-gray-600 mb-8 sm:mb-12 mt-16 sm:mt-24 underline underline-offset-4 decoration-1 w-fit">Team</h2>
-<div className="flex flex-col lg:grid lg:grid-cols-2 justify-center mt-12 gap-8 lg:gap-12 w-full max-w-4xl mx-auto px-4">
+<div className="flex flex-col lg:grid lg:grid-cols-2 justify-center mt-12 gap-8 lg:gap-12 w-full max-w-4xl mx-auto px-12">
     <div className="flex flex-col bg-white p-4 sm:p-6 rounded-lg shadow-sm">
         <div>
             <h3 className="text-lg sm:text-xl font-semibold text-gray-600">Başak Bakkaloğlu</h3>
