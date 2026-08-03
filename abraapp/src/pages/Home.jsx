@@ -44,34 +44,34 @@ export default function Home() {
 
   const about_text = userLocale.startsWith('tr') ? (
   <>
-  <div className="text-justify">
-    <p className="mt-2 text-sm sm:text-base leading-7 text-gray-600 max-w-full sm:max-w-4xl">
+  <div className="text-justify px-12">
+    <p className="mt-2 text-sm sm:text-base leading-6 text-gray-600 max-w-full sm:max-w-4xl">
       Abra Design Studio, 2014 yılında mimar Başak Bakkaloğlu ve yüksek iç mimar Cemal Çobanoğlu tarafından İstanbul'da kurulan; mimarlık, iç mimarlık, kamusal alan tasarımı ve mobilya tasarımı alanlarında çalışan bir tasarım stüdyosudur.
     </p>
-    <p className="mt-4 text-sm sm:text-base leading-7 text-gray-600 max-w-full sm:max-w-4xl">
+    <p className="mt-4 text-sm sm:text-base leading-6 text-gray-600 max-w-full sm:max-w-4xl">
         Kuruluşundan itibaren sekiz yıl boyunca İstanbul merkezli çalışan Abra, 2022’de Ayvalık ofisinin açılmasıyla üretimini iki kent arasında sürdürmeye başlamıştır.
     </p>
-    <p className="mt-4 text-sm sm:text-base leading-7 text-gray-600 max-w-full sm:max-w-4xl">
+    <p className="mt-4 text-sm sm:text-base leading-6 text-gray-600 max-w-full sm:max-w-4xl">
         Abra, Türkçe'de denge anlamına gelir ve denge stüdyonun tasarımları için bir başlangıç noktasıdır. İlk kavramsal fikrin ortaya çıkışından, tasarımın kullanıcıyla etkileşime geçtiği ana kadar bu "denge arayışı" Abra'ya rehberlik eder.
     </p> 
-    <p className="mt-4 text-sm sm:text-base leading-7 text-gray-600 max-w-full sm:max-w-4xl">
+    <p className="mt-4 text-sm sm:text-base leading-6 text-gray-600 max-w-full sm:max-w-4xl">
      Farklı ölçek ve işlevlerde projeler üreten Abra,  bu sayede tasarım refleksini sürekli sınar, her projeyi kendi bağlamı içinde ele alır ve sabit bir dil tekrarının yerine proje özelinde geliştirilen çözümleri önceliklendirir. Kalıcılık ile güncel olma hâli arasındaki dengeyi kuran ve tasarımı ile öne çıkarken kullanıcısına ifade alanı açan üretimler ortaya çıkarmak, Abra’nın temel motivasyonlarındandır. Bu süreçte kurulan multidisipliner işbirlikleri, stüdyonun üretim sürecinin önemli bir parçasıdır. 
     </p> 
   </div>
 </>
 ):(
   <>
-    <div className="text-justify">
-    <p className="mt-2 text-sm sm:text-base leading-7 text-gray-600 max-w-full sm:max-w-4xl">
+    <div className="text-justify px-12">
+    <p className="mt-2 text-sm sm:text-base leading-6 text-gray-600 max-w-full sm:max-w-4xl">
     Abra Design Studio is an architecture and design practice founded in Istanbul in 2014 by architect Başak Bakkaloğlu and interior architect Cemal Çobanoğlu. The practice engages with projects across architecture, interiors, public space, and furniture design.
     </p>
-    <p className="mt-4 text-sm sm:text-base leading-7 text-gray-600 max-w-full sm:max-w-4xl">
+    <p className="mt-4 text-sm sm:text-base leading-6 text-gray-600 max-w-full sm:max-w-4xl">
     Originally established in Istanbul, Abra maintained its practice in the city for eight years before expanding to Ayvalık in 2022, and has since continued to operate between the two locations.
     </p>
-    <p className="mt-4 text-sm sm:text-base leading-7 text-gray-600 max-w-full sm:max-w-4xl">
+    <p className="mt-4 text-sm sm:text-base leading-6 text-gray-600 max-w-full sm:max-w-4xl">
       The word “Abra” refers to balance, a notion that lies at the core of the studio’s design approach. From the emergence of an initial concept to the stage at which the project is encountered by the user, this pursuit of balance continues to guide the studio’s process.
     </p>
-    <p className="mt-4 text-sm sm:text-base leading-7 text-gray-600 max-w-full sm:max-w-4xl">
+    <p className="mt-4 text-sm sm:text-base leading-6 text-gray-600 max-w-full sm:max-w-4xl">
       Working across varying scales and programs enables Abra to critically re-evaluate its design approach, respond to the specific conditions of each project, and develop context-specific solutions rather than operating through a fixed formal logic. The practice is shaped by an interest in producing architectural responses that negotiate between permanence and contemporaneity, maintaining a distinct design character while allowing space for individual interpretation. Multidisciplinary collaborations throughout the process constitute an essential part of Abra’s working methodology.
     </p>
     </div>
