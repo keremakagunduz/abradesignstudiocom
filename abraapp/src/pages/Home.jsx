@@ -174,7 +174,7 @@ const studio_text = userLocale.startsWith('tr') ? (
 
 <h2 className="text-2xl sm:text-3xl pl-12 sm:pl-0 font-light text-gray-600 mb-8 sm:mb-12 mt-16 sm:mt-24 underline underline-offset-4 decoration-1 w-fit">{team_text}</h2>
 <div className="flex flex-col lg:grid lg:grid-cols-2 justify-center mt-12 gap-8 lg:gap-12 w-full max-w-4xl mx-auto px-12">
-    <div className="flex flex-col bg-white p-4 sm:p-6 rounded-lg shadow-sm">
+    <div className="flex flex-col bg-white sm:p-4 rounded-lg shadow-sm">
         <div>
             <h3 className="text-lg sm:text-xl font-semibold text-gray-600">Başak Bakkaloğlu</h3>
             {basak_title}
@@ -197,7 +197,7 @@ const studio_text = userLocale.startsWith('tr') ? (
         </a>
     </div>
 
-    <div className="flex flex-col bg-white p-4 sm:p-6 rounded-lg shadow-sm">
+    <div className="flex flex-col bg-white sm:p-4 rounded-lg shadow-sm">
         <div>
             <h3 className="text-lg sm:text-xl font-semibold text-gray-600">Cemal Çobanoğlu</h3>
             {cemal_title}
