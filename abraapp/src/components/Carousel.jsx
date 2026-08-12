@@ -28,7 +28,6 @@ const Carousel = ({ projects }) => {
     };
   }, [projects.length]);
 
-  // Update translateX when currentIndex changes
   useEffect(() => {
     setIsTransitioning(true);
     setTranslateX(-currentIndex * 100);
@@ -52,11 +51,13 @@ const Carousel = ({ projects }) => {
 
   const handleTouchStart = (e) => {
     setIsTransitioning(false);
-    touchStartX.current = e.changedTouches[0].clientX;
+    touchStartX.current = e.touches[0].clientX;
   };
 
   const handleTouchMove = (e) => {
-    const currentX = e.changedTouches[0].clientX;
+    if (!carouselRef.current) return;
+    
+    const currentX = e.touches[0].clientX;
     const diff = touchStartX.current - currentX;
     const movePercent = (diff / carouselRef.current.offsetWidth) * 100;
     setTranslateX(-currentIndex * 100 - movePercent);
@@ -71,14 +72,11 @@ const Carousel = ({ projects }) => {
 
     if (Math.abs(diff) > swipeThreshold) {
       if (diff > 0) {
-        // Swiped left, go to next slide
         goToNext();
       } else {
-        // Swiped right, go to previous slide
         goToPrevious();
       }
     } else {
-      // Snap back to current slide
       setTranslateX(-currentIndex * 100);
     }
   };
@@ -94,16 +92,18 @@ const Carousel = ({ projects }) => {
     <>
       <article className="items-center">
         <div
-          className="relative h-svh sm:h-screen flex justify-center overflow-hidden"
+          className="relative h-svh sm:h-screen flex justify-center overflow-hidden touch-none"
           ref={carouselRef}
           onTouchStart={handleTouchStart}
           onTouchMove={handleTouchMove}
           onTouchEnd={handleTouchEnd}
+          style={{ userSelect: 'none', WebkitUserSelect: 'none' }}
         >
           <div
-            className={`w-full h-full flex ${isTransitioning ? 'transition-transform duration-500' : ''}`}
+            className={`w-full h-full flex ${isTransitioning ? 'transition-transform duration-500 ease-out' : ''}`}
             style={{
               transform: `translateX(${translateX}%)`,
+              willChange: isTransitioning ? 'transform' : 'auto',
             }}
           >
             {projects.map((project, index) => (
@@ -122,20 +122,21 @@ const Carousel = ({ projects }) => {
                          1600px"
                   alt={project.title}
                   loading="lazy"
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-cover pointer-events-none"
+                  draggable="false"
                 />
               </div>
             ))}
           </div>
         </div>
 
-        <div className="absolute mx-auto sm:mx-0 inset-0 self-end w-fit p-32 text-small sm:text-4xl rounded">
-          <button onClick={scrollToElement} className="text-white font-bold tracking-widest">WHO WE ARE</button>
+        <div className="absolute mx-auto sm:mx-0 inset-0 self-end w-fit p-32 text-small sm:text-4xl rounded pointer-events-none">
+          <button onClick={scrollToElement} className="text-white font-bold tracking-widest pointer-events-auto">WHO WE ARE</button>
         </div>
       </article>
 
-      <div className="absolute inset-0 bg-black bg-opacity-50 flex w-full h-fit place-self-center pt-16 pb-20 sm:pt-20 sm:pb-24">
-        <div className="flex absolute self-center justify-between text-small sm:text-4xl w-full h-full">
+      <div className="absolute inset-0 bg-black bg-opacity-50 flex w-full h-fit place-self-center pt-16 pb-20 sm:pt-20 sm:pb-24 pointer-events-none">
+        <div className="flex absolute self-center justify-between text-small sm:text-4xl w-full h-full pointer-events-auto">
           <button onClick={goToPrevious} className="pl-4"><IoIosArrowDropleftCircle className="[fill:white] hidden sm:block"/></button>
           <ScrollToBottom />
           <button onClick={goToNext} className="pr-4"><IoIosArrowDroprightCircle className="[fill:white] hidden sm:block" /></button>
@@ -144,7 +145,7 @@ const Carousel = ({ projects }) => {
         <img
           src={imageLoader("https://d3hojcyp0aupte.cloudfront.net/asset/abra_logo_beyaz_seffaf.png", 800)}
           alt="Abra Design Studio"
-          className="max-w-24 sm:max-w-48 mx-auto"
+          className="max-w-24 sm:max-w-48 mx-auto pointer-events-none"
         />
       </div>
 
