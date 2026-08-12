@@ -191,7 +191,7 @@ const studio_text = userLocale.startsWith('tr') ? (
         
         <div className="w-full text-sm sm:text-base">{basak_cv}</div>
         
-        <a href="https://www.linkedin.com/in/ba%C5%9Fak-bakkalo%C4%9Flu-8502b6126/" target="_blank" rel="noreferrer" className="flex justify-center mt-6 text-gray-400 hover:text-gray-600 transition-colors">
+        <a href="https://www.linkedin.com/in/ba%C5%9Fak-bakkalo%C4%9Flu-8502b6126/" target="_blank" rel="noreferrer" className="flex justify-center mt-6 mb-6 text-gray-400 hover:text-gray-600 transition-colors">
             <span className="sr-only">LinkedIn</span>
             <FaLinkedin className="w-6 h-6" />
         </a>
@@ -213,7 +213,7 @@ const studio_text = userLocale.startsWith('tr') ? (
         />
         <div className="w-full text-sm sm:text-base">{cemal_cv}</div>
         
-        <a href="https://www.linkedin.com/in/cem-cemal-cobanoglu-71aa3531/" target="_blank" rel="noreferrer" className="flex justify-center mt-6 text-gray-400 hover:text-gray-600 transition-colors">
+        <a href="https://www.linkedin.com/in/cem-cemal-cobanoglu-71aa3531/" target="_blank" rel="noreferrer" className="flex justify-center mt-6 mb-6 text-gray-400 hover:text-gray-600 transition-colors">
             <span className="sr-only">LinkedIn</span>
             <FaLinkedin className="w-6 h-6" />
         </a>
