@@ -120,15 +120,27 @@ const cemal_cv = userLocale.startsWith('tr') ? (
 
 
 const basak_title = userLocale.startsWith('tr') ? (
-<p className="text-xl font-semibold text-gray-600 leading-6">Mimar - İTÜ<br></br>co-Founder</p>
+<p className="text-lg font-semibold text-gray-600 leading-6">Mimar - İTÜ<br></br>co-Founder</p>
 ) : (
-<p className="text-xl font-semibold text-gray-600 leading-6">Architect - ITU<br></br>co-Founder</p>
+<p className="text-lg font-semibold text-gray-600 leading-6">Architect - ITU<br></br>co-Founder</p>
 );
 
 const cemal_title = userLocale.startsWith('tr') ? (
-<p className="text-xl font-semibold text-gray-600 leading-6">Y. İç Mimar - İTÜ<br></br>co-Founder</p>
+<p className="text-lg font-semibold text-gray-600 leading-6">Y. İç Mimar - İTÜ<br></br>co-Founder</p>
 ) : (
-<p className="text-xl font-semibold text-gray-600 leading-6">M.Sc. Interior Architect - ITU<br></br>co-Founder</p>
+<p className="text-lg font-semibold text-gray-600 leading-6">M.Sc. Interior Architect - ITU<br></br>co-Founder</p>
+);
+
+const team_text = userLocale.startsWith('tr') ? (
+"Ekip"
+) : (
+"Team"
+);
+
+const studio_text = userLocale.startsWith('tr') ? (
+"Stüdyo"
+) : (
+"Studio"
 );
 
   return (
@@ -156,11 +168,11 @@ const cemal_title = userLocale.startsWith('tr') ? (
   </button>
   <div className="block px-6 py-12 pt-24 sm:pt-12 px-4 sm:px-6 md:px-12 lg:px-48 place-self-center">
 
-<h2 className="text-2xl sm:text-3xl font-light text-gray-600 mb-8 sm:mb-12 mt-16 sm:mt-24 underline underline-offset-4 decoration-1 w-fit">Studio</h2>
+<h2 className="text-2xl sm:text-3xl pl-12 sm:pl-0 font-light text-gray-600 mb-8 sm:mb-12 mt-16 sm:mt-24 underline underline-offset-4 decoration-1 w-fit">{studio_text}</h2>
     {about_text}
 
 
-<h2 className="text-2xl sm:text-3xl font-light text-gray-600 mb-8 sm:mb-12 mt-16 sm:mt-24 underline underline-offset-4 decoration-1 w-fit">Team</h2>
+<h2 className="text-2xl sm:text-3xl pl-12 sm:pl-0 font-light text-gray-600 mb-8 sm:mb-12 mt-16 sm:mt-24 underline underline-offset-4 decoration-1 w-fit">{team_text}</h2>
 <div className="flex flex-col lg:grid lg:grid-cols-2 justify-center mt-12 gap-8 lg:gap-12 w-full max-w-4xl mx-auto px-12">
     <div className="flex flex-col bg-white p-4 sm:p-6 rounded-lg shadow-sm">
         <div>
